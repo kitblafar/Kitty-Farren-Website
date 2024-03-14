@@ -17,113 +17,161 @@
     <title>Kitty Farren</title>
 
     <style>
-    body {
-    font-family: sans-serif;
-    font-size: 1rem;
-    background-color: #1c1b22;
-    color: #dddddd;
+    @import url('https://fonts.googleapis.com/css2?family=Cabin:wght@600&family=Lato:wght@700&family=Poppins:wght@200;400;600&display=swap');
+:root {
+  --blue-one-hex: 93,203,215;
 }
 
-article {
-    font-family: sans-serif;
-    line-height: 1.2em;
-    letter-spacing: 0.3px;
+html{
+  background: #360051;
+  padding: 2rem 2rem;
 }
 
-@media only screen and (min-width: 51rem) {
-    body {
-        width: 50rem;
-        margin: auto;
-        font-size: 1.2rem;
-        letter-spacing: 0.3px;
-        line-height: 1.3em;
-    }
+body{
+    max-width: 600px;
+    margin: 0 auto;
+    color:#ffffff;
+    font-family: Poppins;
+    background-color: #360051;
+    font-size: 16px;
+  }
+
+.size {
+  margin:0;
+  font-size: 1.25rem;
+  font-weight: 600;
+  text-transform: uppercase;
 }
 
-.header p {
-    font-size: 1.2em;
-    margin-bottom: 2em;
-    text-decoration: underline wavy #808080;
-    font-style: italic;
-    color: inherit;
-}
-
-.header a {
-    text-decoration: underline wavy #808080;
-    color: inherit;
-}
-
-.footer {
-    margin-bottom: 15rem;
-}
-
-.footer p {
-    padding-bottom: 1.5em;
-}
-
-.footlink {
-    color: inherit;
-    font-size: 1em;
-    margin-right: 2em;
-    white-space: nowrap;
-}
-
-.plain {
-    color: inherit;
-    letter-spacing: 0.8px;
-    font-weight: bolder;
-}
-
-hr {
-    margin-top: 2em;
-    margin-bottom: 2em;
-}
-
-ul .linklist {
-    list-style-type: none;
-    margin: 0;
-    line-height: 1.7em;
-    padding: 0;
-}
-
-.title a {
-    color: inherit;
-    text-decoration: none;
-}
-
-h3 {
-    letter-spacing: 1px;
-    margin-top: 2em;
-    color: #eeeeee;
+.small {
+  font-size: 1.2rem;
+  line-height: 1.2rem;
+  font-weight: 600;
 }
 
 h2 {
-    letter-spacing: 1px;
-    margin-top: 2em;
-    color: #eeeeee;
+  font-weight: 600;
+  margin: 0;
+  font-size: 38px;
+  text-transform: uppercase;
+  line-height: 2.5rem;
 }
 
-h1 {
-    letter-spacing: 1px;
-    color: #eeeeee;
+.right {
+  text-align:right;
 }
 
-.fullwidth {
-    width:95%;
-    height:200%;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
+.center {
+  text-align: center;
+  line-height: 1.75rem;
 }
 
-.halfwidth {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 55%;
-    height: auto;
+
+/* unvisited link */
+a:link {
+    color: pink;
+  }
+  
+  /* visited link */
+  a:visited {
+    color: palegoldenrod;
+  }
+
+.text{
+  background: #000000;
+  color:#ffffff;
+  font-family: arial;
+  font-weight: 600;
 }
 
+#maintitle {
+    margin-top: 0px;
+    margin-bottom: 50px;
+    text-align: center;
+    font-family: sans-serif;
+    font-size: 3rem;
+    letter-spacing: 0.15rem;
+    text-transform: uppercase;
+    color: #fff;
+    text-shadow: -2px 2px #ef3550,
+                 -4px 4px #f48fb1,
+                 -6px 6px #7e57c2,
+                 -8px 8px #2196f3,
+                 -10px 10px #26c6da,
+                 -12px 12px #43a047,
+                 -14px 14px #eeff41,
+                 -16px 16px #f9a825,
+                 -18px 18px #ff5722;
+
+.featured{
+  display: grid;
+  grid-template-columns: 50px 1fr;
+  grid-gap:0rem;
+  align-items: center;
+  max-width: 210px;
+  .text {
+    margin:0 0 1rem 0;
+    padding: 0;
+  }
+}
+
+#org {
+  display:block;
+  clear:both;
+  font-size: 108px;
+  margin: 5rem 0 0 0;
+  line-height: 6rem;
+  span{
+    display:inline-block;
+    margin:0;
+  }
+  @media only screen and (max-width: 800px){
+    font-size: 15vw;
+  }
+}
+
+hr {
+    border: 0;
+    width: 100%;
+    height: 0;
+    border-top: 0.3rem dotted yellow;
+    position: relative;
+    overflow: visible;
+    margin: 2rem 0;
+  }
+  hr:before {
+    animation: move 10s infinite linear;
+    position: absolute;
+    top: -14px;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' height='571.11' width='541.6'%3E%3Cpath style='fill:%23ffcc00' d='M535.441,412.339A280.868,280.868 0 1,1 536.186,161.733L284.493,286.29Z'/%3E%3C/svg%3E");
+    background-size: 22px;
+    background-repeat: no-repeat;
+    background-position: 100% 0;
+    content: ' ';
+    height: 24px;
+  }
+  hr:after {
+    animation: move 10s 1s infinite linear;
+    position: absolute;
+    top: -14px;
+    left:0;
+    right: 0;
+    bottom: 0;
+    background-image: url("data:image/svg+xml,%3C%3Fxml version='1.0' encoding='UTF-8'%3F%3E%3Csvg version='1.1' viewBox='0 0 400 444.34' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill-rule='evenodd'%3E%3Cpath d='...");
+    background-size: 24px;
+    background-repeat: no-repeat;
+    background-position: 100% 0;
+    content: ' ';
+    height: 24px;
+  }
+  @keyframes move {
+    0% {
+      background-position: 0 0;
+    }
+  }
     </style>
 
 </head>
@@ -131,17 +179,45 @@ h1 {
 <body>
 
     <div class="header">
-    <h1><span class="title"><a href="/">👩‍💻 kittyfarren.dev</a></span></h1>
-<p><a href="/">Kitty's Website</a></p>
-<hr>
+    <h1><span class="title" id="maintitle"><a href="/">👩‍💻 kittyfarren.dev</a></span></h1>
+<p><h3> <a href="/">Kitty's Website</a> </h3> </p>
+<hr />
+
+        
 
     </div>
 
     <main>
-    <article>
+    
+<script src="https://cdn.jsdelivr.net/npm/@tsparticles/confetti@3.0.3/tsparticles.confetti.bundle.min.js"></script>
+<script>const end = Date.now() + 15 * 1000;
 
-    <h2>Home</h2>
+  const colors = ["#fdd0ff", "#ffffff"];
+  
+  (function frame() {
+    confetti({
+      particleCount: 2,
+      angle: 60,
+      spread: 55,
+      origin: { x: 0 },
+      colors: colors,
+    });
+  
+    confetti({
+      particleCount: 2,
+      angle: 120,
+      spread: 55,
+      origin: { x: 1 },
+      colors: colors,
+    });
+  
+    if (Date.now() < end) {
+      requestAnimationFrame(frame);
+    }
+  })();</script>
 
+<article>
+    <h2 title="Title" id="org">Home</h2>
     <p>
         Homepage of <a href="https://kittyfarren.dev" class="plain">kittyfarren.dev</a>, 
         the personal website of Kitty Farren.

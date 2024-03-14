@@ -1,7 +1,33 @@
+
+<script src="https://cdn.jsdelivr.net/npm/@tsparticles/confetti@3.0.3/tsparticles.confetti.bundle.min.js"></script>
+<script>const end = Date.now() + 15 * 1000;
+
+  const colors = ["#fdd0ff", "#ffffff"];
+  
+  (function frame() {
+    confetti({
+      particleCount: 2,
+      angle: 60,
+      spread: 55,
+      origin: { x: 0 },
+      colors: colors,
+    });
+  
+    confetti({
+      particleCount: 2,
+      angle: 120,
+      spread: 55,
+      origin: { x: 1 },
+      colors: colors,
+    });
+  
+    if (Date.now() < end) {
+      requestAnimationFrame(frame);
+    }
+  })();</script>
+
 <article>
-
-    <h2>Home</h2>
-
+    <h2 title="Title" id="org">Home</h2>
     <p>
         Homepage of <a href="https://kittyfarren.dev" class="plain">kittyfarren.dev</a>, 
         the personal website of Kitty Farren.
