@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?xml-stylesheet href="atom.xsl" type="text/xsl"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title>kittyfarren.dev</title>
+  <link rel="alternate" href="https://kittyfarren.dev"/>
+  <link rel="self" href="https://kittyfarren.dev//atom.xml"/>
+  <updated>2024-03-14T12:51:54.570Z</updated>
+  <author>
+    <name>Kitty Farren</name>
+  </author>
+  <id>https://kittyfarren.dev/</id>
+
+  <entry>
+    <title>kittyfarren.dev</title>
+    <link href="https://kittyfarren.dev/index.html"/>
+    <id>https://kittyfarren.dev/index.html</id>
+    <updated>2024-03-14T00:00:00Z</updated>
+    <summary>Homepage</summary>
+  </entry>
+  <entry>
+    <title>Example</title>
+    <link href="https://kittyfarren.dev/projects/example.html"/>
+    <id>https://kittyfarren.dev/projects/example.html</id>
+    <updated>2024-03-14T00:00:00Z</updated>
+    <summary>An example to fill in</summary>
+  </entry>
+
+</feed>

@@ -1,0 +1,30 @@
+{:title "kittyfarren.dev"
+ :url "https://kittyfarren.dev"
+ :feedid "https://kittyfarren.dev/"
+ :authorname "Kitty Farren"
+ :feedsdir ""
+ :folders {:index {:name "Index"
+                   :infolder "index"
+                   :outfolder ""
+                   :template "base.html"
+                   :header "header.html"
+                   :footer "footer.html"
+                   :style "style.css"
+                   :pages [{:title "kittyfarren.dev"
+                            :date "2024-03-14"
+                            :file "index.html"
+                            :summary "Homepage"}]}
+
+           :projects {:name "Projects"
+                      :infolder "projects"
+                      :outfolder "projects"
+                      :template "base.html"
+                      :header "header.html"
+                      :footer "footer.html"
+                      :style "style.css"
+                      :pages [{:title "Example"
+                               :date "2024-03-14"
+                               :file "example.html"
+                               :summary
+                               "An example to fill in"}
+                              ]}}}
