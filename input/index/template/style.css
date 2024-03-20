@@ -5,11 +5,10 @@
 
 html{
   background: #360051;
-  padding: 2rem 2rem;
+  padding: 10vw;
 }
 
 body{
-    max-width: 600px;
     margin: 0 auto;
     color:#ffffff;
     font-family: Poppins;
@@ -66,34 +65,23 @@ a:link {
 }
 
 #maintitle {
-    margin-top: 0px;
-    margin-bottom: 50px;
-    text-align: center;
-    font-family: sans-serif;
-    font-size: 3rem;
-    letter-spacing: 0.15rem;
-    text-transform: uppercase;
-    color: #fff;
-    text-shadow: -2px 2px #ef3550,
-                 -4px 4px #f48fb1,
-                 -6px 6px #7e57c2,
-                 -8px 8px #2196f3,
-                 -10px 10px #26c6da,
-                 -12px 12px #43a047,
-                 -14px 14px #eeff41,
-                 -16px 16px #f9a825,
-                 -18px 18px #ff5722;
-
-.featured{
-  display: grid;
-  grid-template-columns: 50px 1fr;
-  grid-gap:0rem;
-  align-items: center;
-  max-width: 210px;
-  .text {
-    margin:0 0 1rem 0;
-    padding: 0;
-  }
+  margin-top: 0px;
+  margin-bottom: 50px;
+  text-align: center;
+  font-family: sans-serif;
+  font-size: min(5vw, 50px);
+  letter-spacing: 0.15rem;
+  text-transform: uppercase;
+  color: #fff;
+  text-shadow: max(-0.2vw, -2px) min(0.2vw, 2px) #ef3550,
+               max(-0.4vw, -4px) min(0.4vw, 4px) #f48fb1,
+               max(-0.6vw, -6px) min(0.6vw, 6px) #7e57c2,
+               max(-0.8vw, -8px) min(0.8vw, 8px) #2196f3,
+               max(-1vw, -10px) min(1vw, 10px) #26c6da,
+               max(-1.2vw, -12px) min(1.2vw, 12px) #43a047,
+               max(-1.4vw, -14px) min(1.4vw, 14px) #eeff41,
+               max(-1.6vw, -16px) min(1.6vw, 16px) #f9a825,
+               max(-1.8vw, -18px) min(1.8vw, 18px) #ff5722;
 }
 
 #org {
@@ -153,3 +141,4 @@ hr {
       background-position: 0 0;
     }
   }
+    

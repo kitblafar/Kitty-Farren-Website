@@ -1,0 +1,185 @@
+{
+    "$schema": "https://raw.githubusercontent.com/jsonresume/resume-schema/v1.0.0/schema.json",
+    "basics": {
+        "name": "Kitty Farren",
+        "label": "Development Engineer",
+        "image": "images/me.jpg",
+        "email": "farren.kitty@gmail.com",
+        "url": "https://kittyfarren.dev",
+        "summary": "Development engineer primarily interested in software/firmware and electronic engineering and currently working towards chartership. Working predominantly on electronic and power electronic circuit design and layout, applications software and EMC testing and design. Skilled in electronics and electrical engineering, and software development.",
+        "location": {
+            "countryCode": "GB",
+            "region": "Mid-Wales"
+        },
+        "profiles": [
+            {
+                "network": "GitHub",
+                "username": "kitblafar",
+                "url": "https://github.com/kitblafar"
+            },
+            {
+                "network": "LinkedIn",
+                "username": "kitty-farren",
+                "url": "https://www.linkedin.com/in/kitty-farren/"
+            }
+        ]
+    },
+    "work": [
+        {
+            "name": "Control Techniques",
+            "location": "Mid-Wales",
+            "description": "Research and development of Variable-Frequency-Drives (VFDs)",
+            "position": "Development Engineer",
+            "url": "https://controltechniques.com",
+            "startDate": "2024-10-03",
+            "summary": "Gained further experience in power electronics design and layout including advanced power electronics simulation and digital twin development.",
+            "highlights": [
+                "insert"
+            ]
+        },
+        {
+            "name": "Control Techniques",
+            "description": "Research and development of Variable-Speed-Drives (VSDs) and supporting industrial automation devices including PLCs.",
+            "position": "Graduate Engineer",
+            "url": "https://controltechniques.com",
+            "startDate": "2022-10-03",
+            "endDate": "2024-10-03",
+            "summary": "Gained experience in a wide range of technical fields, and skills in communicating complex systems to multidisciplinary teams, management, and end users.",
+            "highlights": [
+                "Simulated  and costed various components using PLECS and Simetrix for a new product including IGBTs, PTCs and safe rated capacitors. Created a Python tool to aid others in simulation work.",
+                "Supported customers in multiple countries, communicated complex industrial automation solutions to end users and solved field failures under time pressure.",
+                "Created a data processing tool to collate user data collected from servers providing documentation",
+                "Upgraded an internal thermal modeling device, including BOM costing, thermal and performance testing, circuit prototyping and layout, document creation including a DDP and user guide.",
+                "\"ECPE: Power Electronic Design for Electromagnetic Compatibility\" attended in 2023 and principles applied to laying out a production level family of board (FOB) for the power stage of a drive using DxDesigner.",
+                "Wrote a specification for an app using Figma design tools and SQL databases.",
+                "Setting up the WiE (Women in Engineering) group at work and attending events that encourage women to enter technical fields"
+            ]
+        },
+        {
+            "name": "Control Techniques",
+            "description": "Research and development of Variable-Speed-Drives (VSDs)",
+            "position": "Undergraduate Engineer",
+            "url": "https://controltechniques.com",
+            "summary": "Summer work placements between university terms, focusing on digital design and power electronics, putting university learning into practice.",
+            "startDate": "2019-06-01",
+            "endDate": "2022-10-03",
+            "highlights": [
+                "Worked on circuit prototyping, simulation and EMC testing for VSDs.",
+                "Created an automated test suite for VSDs written in StructuredText."
+            ]
+        }
+    ],
+    "volunteer": [
+        {
+            "organization": "STEM Learning",
+            "position": "STEM Ambassador",
+            "url": "https://www.stem.org.uk/",
+            "startDate": "2022-12-01",
+            "summary": "Working to inspire young people's interest in and understanding of STEM subjects and assist local schools with STEM education, as part of a team.",
+            "highlights": [
+                "Promoting STEM for young women and being visible as a women in the field.",
+                "Running classroom workshops giving students hands-on experience prototyping circuits and making links to real-world applications.",
+                "Running and developing interactive demonstrations of electronics and control systems at careers fairs.",
+                "Giving presentations and Q&A sessions to help de-mystify the field and careers in STEM subjects.",
+                "Improving my communication skills with those not in technical roles."
+            ]
+        }
+    ],
+    "education": [
+        {
+            "institution": "University of Nottingham",
+            "url": "https://nottingham.ac.uk",
+            "area": "Electrical and Electronic Engineering",
+            "studyType": "MEng - Master in Engineering - IET Accredited",
+            "startDate": "2018-09-01",
+            "endDate": "2022-06-01",
+            "score": "First class (Hons)",
+            "courses": [
+                "Individual project: \"A Framework for Plenoptic HDR Imaging using Metasurfaces\" which included developing a MATLAB program that generated meta-lenses to control the phase and amplitude of light concurrently and a Python program to apply High Dynamic Range (HDR) imaging techniques to image sets.",
+                "Computer Aided Engineering",
+                "Power and Energy",
+                "Information and Systems",
+                "Electronic Processing and Communication",
+                "Electrical Energy Conditioning and Control",
+                "Contemporary Engineering Themes",
+                "Modelling Methods and Tools",
+                "Electrical Machines, Drive Systems and Applications",
+                "IT infrastructure and cybersecurity",
+                "Analogue Electronics",
+                "Sensing Systems",
+                "Professional Studies",
+                "Digital Signal Processing",
+                "Instrumentation and Measurement",
+                "Advanced AC Drives",
+                "HDL for Programmable Devices",
+                "Group Projects: Autonomous RC Car (incl line following), SMPS design and creation, Doppler radar gun design and creation, Car telemetry system- full stack JavaScript web-application created",
+            ]
+        }
+    ],
+    "skills": [
+        {
+            "name": "Software Engineering",
+            "keywords": [
+                "Python",
+                "C++",
+                "C",
+                "C#",
+                "Javascript",
+                "IEC Structured Text"
+            ]
+        },
+        {
+            "name": "Electronic Engineering",
+            "keywords": [
+                "Digital design (VHDL)",
+                "Signal processing",
+                "Analogue electronics",
+                "Power electronics",
+                "EMC",
+                "PCB Layout",
+                "Circuit simulation",
+                "CAD (FreeCAD and Blender)"
+            ]
+        },
+        {
+            "name": "Documentation / Written Communication",
+            "keywords": [
+                "Microsoft Office Suite",
+                "LaTeX",
+                "HTML"
+            ]
+        },
+        {
+            "name": "Industrial Automation",
+            "keywords": [
+                "PLCs",
+                "Variable Speed Drives",
+                "Customer Support"
+            ]
+        }
+    ],
+    "projects": [
+        {
+            "name": "Personal Website",
+            "url": "https://kittyfarren.dev",
+            "description": "Website used for write-ups of personal projects."
+        }
+    ],
+    "interests": [
+        {
+            "name": "Crochet and Needlework"
+        },
+        {
+            "name": "3D modelling (Blender)"
+        },
+        {
+            "name": "Electronics and Programming"
+        },
+        {
+            "name": "Painting"
+        },
+        {
+            "name": "Running"
+        }
+    ]
+}
