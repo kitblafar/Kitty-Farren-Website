@@ -22,9 +22,30 @@
                       :header "header.html"
                       :footer "footer.html"
                       :style "style.css"
-                      :pages [{:title "Example"
-                               :date "2024-03-14"
-                               :file "example.html"
+                      :pages [{:title "BLE Earrings"
+                               :date "2024-03-23"
+                               :file "BLEEarrings.html"
                                :summary
-                               "An example to fill in"}
-                              ]}}}
+                               "Bladerunner inspired BLE Earrings"}
+                               {:title "Previous Crochet"
+                               :date "2024-03-23"
+                               :file "CrochetPrev.html"
+                               :summary
+                               "A collection of previous crochet projects"}
+                               {:title "Maxi Skirt"
+                               :date "2024-03-23"
+                               :file "CrochetSkirt.html"
+                               :summary
+                               "A crochet maxi-skirt made from recycled yarn."}
+                               {:title "Stegosaurus"
+                               :date "2024-03-23"
+                               :file "CrochetStegosaurus.html"
+                               :summary
+                               "A crochet covered lampshade"}
+                               {:title "Stegosaurus"
+                               :date "2024-03-23"
+                               :file "CrochetLampShade.html"
+                               :summary
+                               "A crochet stegosaurus from an African Flower motif"}
+                              ]}}
+                              }

@@ -29,6 +29,7 @@ html{
 
 body{
     margin: 0 auto;
+    max-width: 800px;
     color:#ffffff;
     font-family: Poppins;
     background-color: #360051;
@@ -40,6 +41,23 @@ body{
   font-size: 1.25rem;
   font-weight: 600;
   text-transform: uppercase;
+}
+
+.captioncenter{
+  font-size: 10px;
+  font-style: italic;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+
+
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
 }
 
 .small {
@@ -68,12 +86,12 @@ h2 {
 
 /* unvisited link */
 a:link {
-    color: pink;
+    color: palegoldenrod;
   }
   
   /* visited link */
   a:visited {
-    color: palegoldenrod;
+    color: pink;
   }
 
 .text{
@@ -84,8 +102,7 @@ a:link {
 }
 
 #maintitle {
-  margin-top: 0px;
-  margin-bottom: 50px;
+  margin: 0rem 5rem 0 0;
   text-align: center;
   font-family: sans-serif;
   font-size: min(5vw, 50px);
@@ -106,8 +123,8 @@ a:link {
 #org {
   display:block;
   clear:both;
-  font-size: 108px;
-  margin: 5rem 0 0 0;
+  font-size: min(5vw, 50px);
+  margin: 0rem 0 0 0;
   line-height: 6rem;
   span{
     display:inline-block;
@@ -120,12 +137,12 @@ a:link {
 
 hr {
     border: 0;
-    width: 100%;
+    width: min(100%, 800px);
     height: 0;
     border-top: 0.3rem dotted yellow;
     position: relative;
     overflow: visible;
-    margin: 2rem 0;
+    margin: 3rem 0;
   }
   hr:before {
     animation: move 10s infinite linear;
@@ -169,7 +186,6 @@ hr {
 
     <div class="header">
     <h1><span class="title" id="maintitle"><a href="/">👩‍💻 kittyfarren.dev</a></span></h1>
-<p><h3> <a href="/">Kitty's Website</a> </h3> </p>
 <hr />
 
         
@@ -179,31 +195,30 @@ hr {
     <main>
     <article>
 
-    <h2>Project: {Project Name}</h2>
+    <h2>Project: BLE Earrings</h2>
 
-    <p> {Short Desc}</p>
+    <p>This is a set of earrings that flash when a message is sent from a phone/computer.</p>
 
-    <p> {Desc Cont}</p>
+    <p>When I watched Bladerunner 2049 I saw Sylvia Hoeks playing Luv and in particular I saw her serving looks in this cool earring set. Whenever Jared Leto wanted to get her attention he blinked her earrings and she knew she had to go and do something dastardly. This spoke to me as someone who often stuggles to drink water... what if I managed to make myself a futuristic bad bitch set of earrings that would remind me to carry out basic tasks? It can be done. The future is now.</p>
 
     <figure>
         <picture>
-            <source srcset="{Img src}"/>
-            <img src="{Image location}"
-                class="halfwidth"
-                alt="{img alt text}"
-                width="480"
-                height="280"/>
+            <source srcset="/assets/images/BLEEarrings/BladeRunner.avif"/>
+            <img src="/assets/images/BLEEarrings/BladeRunner.png"
+                class="center"
+                alt="Sylvia Hoeks wearring the original BLE Earrings"
+                width="480"/>
         </picture>
-        <figcaption>
-            {Image caption}
+        <figcaption class="captioncenter">
+            Sylvia Hoeks leaving no crumbs. The earrings flash blue when a message is recieved.
         </figcaption>
     </figure>
 
-    <h3>Why would you do that?</h3>
+    <h3>Initial Design</h3>
 
     <p> {Why desc}</p>
 
-    <h3>The Hardware Design</h3>
+    <h3>Layout</h3>
 
     <p>{design desc}</p>
 

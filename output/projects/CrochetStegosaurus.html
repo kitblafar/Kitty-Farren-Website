@@ -1,0 +1,256 @@
+<!doctype html>
+<html lang="en-GB">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="color-scheme" content="dark light">
+
+    <link rel="icon"
+          href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 x=%22-0.2em%22 font-size=%22100%22>👩‍💻</text></svg>"
+    >
+    <link rel="alternate" type="application/atom+xml" title="ATOM Feed" href="/atom.xml">
+    <link rel="alternate" type="application/feed+json" title="JSON Feed" href="/feed.json">
+
+    <meta name="theme-color" content="#fafafa">
+
+    <title>Kitty Farren</title>
+
+    <style>
+    @import url('https://fonts.googleapis.com/css2?family=Cabin:wght@600&family=Lato:wght@700&family=Poppins:wght@200;400;600&display=swap');
+:root {
+  --blue-one-hex: 93,203,215;
+}
+
+html{
+  background: #360051;
+  padding: 10vw;
+}
+
+body{
+    margin: 0 auto;
+    max-width: 800px;
+    color:#ffffff;
+    font-family: Poppins;
+    background-color: #360051;
+    font-size: 16px;
+  }
+
+.size {
+  margin:0;
+  font-size: 1.25rem;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.captioncenter{
+  font-size: 10px;
+  font-style: italic;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+
+.imageContainer{
+  display: inline-block;
+}
+
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+
+.small {
+  font-size: 1.2rem;
+  line-height: 1.2rem;
+  font-weight: 600;
+}
+
+h2 {
+  font-weight: 600;
+  margin: 0;
+  font-size: 38px;
+  text-transform: uppercase;
+  line-height: 2.5rem;
+}
+
+.right {
+  text-align:right;
+}
+
+.center {
+  text-align: center;
+  line-height: 1.75rem;
+}
+
+
+/* unvisited link */
+a:link {
+    color: palegoldenrod;
+  }
+  
+  /* visited link */
+  a:visited {
+    color: pink;
+  }
+
+.text{
+  background: #000000;
+  color:#ffffff;
+  font-family: arial;
+  font-weight: 600;
+}
+
+#maintitle {
+  margin: 0rem 5rem 0 0;
+  text-align: center;
+  font-family: sans-serif;
+  font-size: min(5vw, 50px);
+  letter-spacing: 0.15rem;
+  text-transform: uppercase;
+  color: #fff;
+  text-shadow: max(-0.2vw, -2px) min(0.2vw, 2px) #ef3550,
+               max(-0.4vw, -4px) min(0.4vw, 4px) #f48fb1,
+               max(-0.6vw, -6px) min(0.6vw, 6px) #7e57c2,
+               max(-0.8vw, -8px) min(0.8vw, 8px) #2196f3,
+               max(-1vw, -10px) min(1vw, 10px) #26c6da,
+               max(-1.2vw, -12px) min(1.2vw, 12px) #43a047,
+               max(-1.4vw, -14px) min(1.4vw, 14px) #eeff41,
+               max(-1.6vw, -16px) min(1.6vw, 16px) #f9a825,
+               max(-1.8vw, -18px) min(1.8vw, 18px) #ff5722;
+}
+
+#org {
+  display:block;
+  clear:both;
+  font-size: min(5vw, 50px);
+  margin: 0rem 0 0 0;
+  line-height: 6rem;
+  span{
+    display:inline-block;
+    margin:0;
+  }
+  @media only screen and (max-width: 800px){
+    font-size: 15vw;
+  }
+}
+
+hr {
+    border: 0;
+    width: min(100%, 800px);
+    height: 0;
+    border-top: 0.3rem dotted yellow;
+    position: relative;
+    overflow: visible;
+    margin: 3rem 0;
+  }
+  hr:before {
+    animation: move 10s infinite linear;
+    position: absolute;
+    top: -14px;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' height='571.11' width='541.6'%3E%3Cpath style='fill:%23ffcc00' d='M535.441,412.339A280.868,280.868 0 1,1 536.186,161.733L284.493,286.29Z'/%3E%3C/svg%3E");
+    background-size: 22px;
+    background-repeat: no-repeat;
+    background-position: 100% 0;
+    content: ' ';
+    height: 24px;
+  }
+  hr:after {
+    animation: move 10s 1s infinite linear;
+    position: absolute;
+    top: -14px;
+    left:0;
+    right: 0;
+    bottom: 0;
+    background-image: url("data:image/svg+xml,%3C%3Fxml version='1.0' encoding='UTF-8'%3F%3E%3Csvg version='1.1' viewBox='0 0 400 444.34' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill-rule='evenodd'%3E%3Cpath d='...");
+    background-size: 24px;
+    background-repeat: no-repeat;
+    background-position: 100% 0;
+    content: ' ';
+    height: 24px;
+  }
+  @keyframes move {
+    0% {
+      background-position: 0 0;
+    }
+  }
+    
+    </style>
+
+</head>
+
+<body>
+
+    <div class="header">
+    <h1><span class="title" id="maintitle"><a href="/">👩‍💻 kittyfarren.dev</a></span></h1>
+<hr />
+
+        
+
+    </div>
+
+    <main>
+    <article>
+
+    <h2>Project: BLE Earrings</h2>
+
+    <p>This is a set of earrings that flash when a message is sent from a phone/computer.</p>
+
+    <p>When I watched Bladerunner 2049 I saw Sylvia Hoeks playing Luv and in particular I saw her serving looks in this cool earring set. Whenever Jared Leto wanted to get her attention he blinked her earrings and she knew she had to go and do something dastardly. This spoke to me as someone who often stuggles to drink water... what if I managed to make myself a futuristic bad bitch set of earrings that would remind me to carry out basic tasks? It can be done. The future is now.</p>
+
+    <figure>
+        <picture>
+            <source srcset="/assets/images/BLEEarrings/BladeRunner.avif"/>
+            <img src="/assets/images/BLEEarrings/BladeRunner.png"
+                class="center"
+                alt="Sylvia Hoeks wearing the original BLE Earrings"
+                width="480"/>
+        </picture>
+        <figcaption class="captioncenter">
+            Sylvia Hoeks leaving no crumbs. The earrings flash blue when a message is received.
+        </figcaption>
+    </figure>
+
+    <h3>Design Requirements</h3>
+
+    <p>The key considerations for this project is that it must be small and pretty as in the BladeRunner film, have a BOM I can afford (under £60 for prototype), be manufacturable on the 10cm x 10cm hotplate I have at home (no BGAs) and have a battery life that lasts at least one full day at work or with preference a full week. These requirements guided all primary design decisions.</p>
+
+    <h3> Initial Hardware</h3>
+
+    <h4>Which Micro?</h4>
+
+    <p>The ESP32 (C3) and NRF52(832) were the two choices I picked between. Both are low cost, both have BLE, both have good BLE example documentation and layout examples and both had QFN package options. However, the ESP32 C3 had a much higher power consumption of 250mA when transmitting with BLE (due to its large functionality- dual bluetooth AND WiFi) than the NRF52832 which is 15mA and is targeted specifically at BLE applications. NRF52 boards also only consume 2.6uA with bluetooth off which is perfect for the earrings that wont transmit/ recieve very often. I require the earrings to be as small as possible and therefore have the smallest battery, so need the lowest power cosumption.</p>
+
+</article>
+
+    </main>
+
+    <div class="footer">
+    <hr>
+<p>
+    <a href="/projects/BLEEarrings.html" class="footlink">Project: BLE Earrings</a>
+    <a href="/projects/CrochetPrev.html" class="footlink">Project: Previous Crochet Projects</a>
+    <a href="/projects/CrochetLampShade.html" class="footlink">Project: Crochet Lampshade</a>
+    <a href="/projects/CrochetSkirt.html" class="footlink">Project: Crochet Maxi-Skirt</a>
+    <a href="/projects/CrochetStegosaurus.html" class="footlink">Project: Crochet Stegosaurus</a>
+    <a href="/projects/MosaicMirror.html" class="footlink">Project: Recycled Mosaic Mirror</a>
+    <a href="/projects/RecycledLampshades.html" class="footlink">Project: Recycled Glass Lampshades</a>
+</p>
+<p>
+    <a href="/" class="footlink">Home</a>
+    <a href="/twtxt.txt" class="footlink">TWTXT Feed</a>
+    <a href="/atom.xml" class="footlink">ATOM Feed</a>
+    <a href="/feed.json" class="footlink">JSON Feed</a>
+</p>
+
+    </div>
+
+</body>
+
+</html>

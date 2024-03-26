@@ -1,0 +1,382 @@
+<!doctype html>
+<html lang="en-GB">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="color-scheme" content="dark light">
+
+    <link rel="icon"
+          href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 x=%22-0.2em%22 font-size=%22100%22>👩‍💻</text></svg>"
+    >
+    <link rel="alternate" type="application/atom+xml" title="ATOM Feed" href="/atom.xml">
+    <link rel="alternate" type="application/feed+json" title="JSON Feed" href="/feed.json">
+
+    <meta name="theme-color" content="#fafafa">
+
+    <title>Kitty Farren</title>
+
+    <style>
+    @import url('https://fonts.googleapis.com/css2?family=Cabin:wght@600&family=Lato:wght@700&family=Poppins:wght@200;400;600&display=swap');
+:root {
+  --blue-one-hex: 93,203,215;
+}
+
+html{
+  background: #360051;
+  padding: 10vw;
+}
+
+body{
+    margin: 0 auto;
+    max-width: 800px;
+    color:#ffffff;
+    font-family: Poppins;
+    background-color: #360051;
+    font-size: 16px;
+  }
+
+.size {
+  margin:0;
+  font-size: 1.25rem;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.captioncenter{
+  font-size: 10px;
+  font-style: italic;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+
+.imageContainer{
+  display: inline-block;
+}
+
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+
+.small {
+  font-size: 1.2rem;
+  line-height: 1.2rem;
+  font-weight: 600;
+}
+
+h2 {
+  font-weight: 600;
+  margin: 0;
+  font-size: 38px;
+  text-transform: uppercase;
+  line-height: 2.5rem;
+}
+
+.right {
+  text-align:right;
+}
+
+.center {
+  text-align: center;
+  line-height: 1.75rem;
+}
+
+
+/* unvisited link */
+a:link {
+    color: palegoldenrod;
+  }
+  
+  /* visited link */
+  a:visited {
+    color: pink;
+  }
+
+.text{
+  background: #000000;
+  color:#ffffff;
+  font-family: arial;
+  font-weight: 600;
+}
+
+#maintitle {
+  margin: 0rem 5rem 0 0;
+  text-align: center;
+  font-family: sans-serif;
+  font-size: min(5vw, 50px);
+  letter-spacing: 0.15rem;
+  text-transform: uppercase;
+  color: #fff;
+  text-shadow: max(-0.2vw, -2px) min(0.2vw, 2px) #ef3550,
+               max(-0.4vw, -4px) min(0.4vw, 4px) #f48fb1,
+               max(-0.6vw, -6px) min(0.6vw, 6px) #7e57c2,
+               max(-0.8vw, -8px) min(0.8vw, 8px) #2196f3,
+               max(-1vw, -10px) min(1vw, 10px) #26c6da,
+               max(-1.2vw, -12px) min(1.2vw, 12px) #43a047,
+               max(-1.4vw, -14px) min(1.4vw, 14px) #eeff41,
+               max(-1.6vw, -16px) min(1.6vw, 16px) #f9a825,
+               max(-1.8vw, -18px) min(1.8vw, 18px) #ff5722;
+}
+
+#org {
+  display:block;
+  clear:both;
+  font-size: min(5vw, 50px);
+  margin: 0rem 0 0 0;
+  line-height: 6rem;
+  span{
+    display:inline-block;
+    margin:0;
+  }
+  @media only screen and (max-width: 800px){
+    font-size: 15vw;
+  }
+}
+
+hr {
+    border: 0;
+    width: min(100%, 800px);
+    height: 0;
+    border-top: 0.3rem dotted yellow;
+    position: relative;
+    overflow: visible;
+    margin: 3rem 0;
+  }
+  hr:before {
+    animation: move 10s infinite linear;
+    position: absolute;
+    top: -14px;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' height='571.11' width='541.6'%3E%3Cpath style='fill:%23ffcc00' d='M535.441,412.339A280.868,280.868 0 1,1 536.186,161.733L284.493,286.29Z'/%3E%3C/svg%3E");
+    background-size: 22px;
+    background-repeat: no-repeat;
+    background-position: 100% 0;
+    content: ' ';
+    height: 24px;
+  }
+  hr:after {
+    animation: move 10s 1s infinite linear;
+    position: absolute;
+    top: -14px;
+    left:0;
+    right: 0;
+    bottom: 0;
+    background-image: url("data:image/svg+xml,%3C%3Fxml version='1.0' encoding='UTF-8'%3F%3E%3Csvg version='1.1' viewBox='0 0 400 444.34' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill-rule='evenodd'%3E%3Cpath d='...");
+    background-size: 24px;
+    background-repeat: no-repeat;
+    background-position: 100% 0;
+    content: ' ';
+    height: 24px;
+  }
+  @keyframes move {
+    0% {
+      background-position: 0 0;
+    }
+  }
+    
+    </style>
+
+</head>
+
+<body>
+
+    <div class="header">
+    <h1><span class="title" id="maintitle"><a href="/">👩‍💻 kittyfarren.dev</a></span></h1>
+<hr />
+
+        
+
+    </div>
+
+    <main>
+    <article>
+
+    <h2>Project: Previous Crochet Projects</h2>
+
+    <p>This is a section for me to show off crochet projects Ive made in the past.</p>
+
+    <h3>Temperature Blanket (2022)</h3>
+    <p>This is a king size temperature blanket made from even moss stitch. I recorded to average temperature of the previous day and used that to determine the row of crochet for that day. I did a row of 400ish stitches everyday for a year. This was a test of my patience, finances and perseverance.</p>
+
+    <figure class="center">
+        <picture>
+            <source srcset="/assets/images/PreviousCrochet/Blanket/Blanket.avif"/>
+            <img src="/assets/images/PreviousCrochet/Blanket/Blanket.png"
+                alt="4 men holding the massive blanket"
+                width="480"/>
+        </picture>
+        <figcaption class="captioncenter">
+            The finshed blanket was so large it took 4 men to display it.
+        </figcaption>
+    </figure>
+
+    <h3>Dinosaur</h3>
+    <p>FILL IN</p>
+    <figure class="imageContainer">
+        <picture>
+            <source srcset="/assets/images/PreviousCrochet/Dinosaur/dino1.avif"/>
+            <img src="/assets/images/PreviousCrochet/Dinosaur/dino1.png"
+                alt="A crocheted dinosaur"
+                width="250"/>
+        </picture>
+        <picture>
+            <source srcset="/assets/images/PreviousCrochet/Dinosaur/dino2.avif"/>
+            <img src="/assets/images/PreviousCrochet/Dinosaur/dino2.png"
+                alt="A crocheted dinosaur"
+                width="175"/>
+        </picture>
+        <picture>
+            <source srcset="/assets/images/PreviousCrochet/Dinosaur/dino3.avif"/>
+            <img src="/assets/images/PreviousCrochet/Dinosaur/dino3.png"
+                alt="A crocheted dinosaur"
+                width="175"/>
+        </picture>
+        <figcaption class="captioncenter">
+            INSERT.
+        </figcaption>
+    </figure>
+
+    <h3>Jellyfish</h3>
+    <p>FILL IN</p>
+    <figure class="center">
+        <picture>
+            <source srcset="/assets/images/PreviousCrochet/Jelly/jelly.avif"/>
+            <img src="/assets/images/PreviousCrochet/Jelly/jelly.png"
+                alt="A crochet jellyfish"
+                width="200"/>
+        </picture>
+        <figcaption class="captioncenter">
+            INSERT.
+        </figcaption>
+    </figure>
+
+    <h3>Sun Vest</h3>
+    <p>FILL IN</p>
+    <figure class="center">
+        <picture>
+            <source srcset="/assets/images/PreviousCrochet/Vest/vest.avif"/>
+            <img src="/assets/images/PreviousCrochet/Vest/vest.png"
+                alt="A crochet sun motif vest"
+                width="480"/>
+        </picture>
+        <figcaption class="captioncenter">
+            INSERT.
+        </figcaption>
+    </figure>
+
+    <h3>Frog Hat</h3>
+    <p>FILL IN</p>
+    <figure class="center">
+        <picture>
+            <source srcset="/assets/images/PreviousCrochet/Frog/frog.avif"/>
+            <img src="/assets/images/PreviousCrochet/Frog/frog.png"
+                alt="A crochet frog bucket hat"
+                width="480"/>
+        </picture>
+        <figcaption class="captioncenter">
+            INSERT.
+        </figcaption>
+    </figure>
+
+    <h3>Money Plant</h3>
+    <p>FILL IN</p>
+    <figure class="center">
+        <picture>
+            <source srcset="/assets/images/PreviousCrochet/Money/money.avif"/>
+            <img src="/assets/images/PreviousCrochet/Money/money.png"
+                alt="A crochet money plant in a painted vase."
+                width="480"/>
+        </picture>
+        <figcaption class="captioncenter">
+            INSERT.
+        </figcaption>
+    </figure>
+
+    <h3>Cropped Sleeves</h3>
+    <p>FILL IN</p>
+    <figure class="imageContainer">
+        <picture>
+            <source srcset="/assets/images/PreviousCrochet/Sleeves/sleeves.avif"/>
+            <img src="/assets/images/PreviousCrochet/Sleeves/sleeves.png"
+                alt="The full crochet sleeves"
+                width="400"/>
+        </picture>
+        <picture>
+            <source srcset="/assets/images/PreviousCrochet/Sleeves/sleeves2.avif"/>
+            <img src="/assets/images/PreviousCrochet/Sleeves/sleeves2.png"
+                alt="crochet sleeves pattern"
+                width="100"/>
+        </picture>
+        <figcaption class="captioncenter">
+            INSERT.
+        </figcaption>
+    </figure>
+
+    <h3>Giant Spider</h3>
+    <p>FILL IN</p>
+    <figure class="imageContainer">
+        <picture>
+            <source srcset="/assets/images/PreviousCrochet/Spider/spider1.avif"/>
+            <img src="/assets/images/PreviousCrochet/Spider/spider1.png"
+                alt="A large crochet spider"
+                width="300"/>
+        </picture>
+        <picture>
+            <source srcset="/assets/images/PreviousCrochet/Spider/spider2.avif"/>
+            <img src="/assets/images/PreviousCrochet/Spider/spider2.png"
+                alt="A large crochet spider"
+                width="300"/>
+        </picture>
+        <figcaption class="captioncenter">
+            INSERT.
+        </figcaption>
+    </figure>
+    
+    <h3>Freeform Gloves</h3>
+    <p>FILL IN</p>
+    <figure class="center">
+        <picture>
+            <source srcset="/assets/images/PreviousCrochet/Gloves/gloves.avif"/>
+            <img src="/assets/images/PreviousCrochet//Gloves/gloves.png"
+                alt="A pair of crochet gloves"
+                width="480"/>
+        </picture>
+        <figcaption class="captioncenter">
+            INSERT.
+        </figcaption>
+    </figure>
+
+</article>
+
+    </main>
+
+    <div class="footer">
+    <hr>
+<p>
+    <a href="/projects/BLEEarrings.html" class="footlink">Project: BLE Earrings</a>
+    <a href="/projects/CrochetPrev.html" class="footlink">Project: Previous Crochet Projects</a>
+    <a href="/projects/CrochetLampShade.html" class="footlink">Project: Crochet Lampshade</a>
+    <a href="/projects/CrochetSkirt.html" class="footlink">Project: Crochet Maxi-Skirt</a>
+    <a href="/projects/CrochetStegosaurus.html" class="footlink">Project: Crochet Stegosaurus</a>
+    <a href="/projects/MosaicMirror.html" class="footlink">Project: Recycled Mosaic Mirror</a>
+    <a href="/projects/RecycledLampshades.html" class="footlink">Project: Recycled Glass Lampshades</a>
+</p>
+<p>
+    <a href="/" class="footlink">Home</a>
+    <a href="/twtxt.txt" class="footlink">TWTXT Feed</a>
+    <a href="/atom.xml" class="footlink">ATOM Feed</a>
+    <a href="/feed.json" class="footlink">JSON Feed</a>
+</p>
+
+    </div>
+
+</body>
+
+</html>

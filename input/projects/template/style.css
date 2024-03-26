@@ -10,6 +10,7 @@ html{
 
 body{
     margin: 0 auto;
+    max-width: 800px;
     color:#ffffff;
     font-family: Poppins;
     background-color: #360051;
@@ -21,6 +22,26 @@ body{
   font-size: 1.25rem;
   font-weight: 600;
   text-transform: uppercase;
+}
+
+.captioncenter{
+  font-size: 10px;
+  font-style: italic;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+
+.imageContainer{
+  display: inline-block;
+}
+
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
 }
 
 .small {
@@ -49,12 +70,12 @@ h2 {
 
 /* unvisited link */
 a:link {
-    color: pink;
+    color: palegoldenrod;
   }
   
   /* visited link */
   a:visited {
-    color: palegoldenrod;
+    color: pink;
   }
 
 .text{
@@ -65,8 +86,7 @@ a:link {
 }
 
 #maintitle {
-  margin-top: 0px;
-  margin-bottom: 50px;
+  margin: 0rem 5rem 0 0;
   text-align: center;
   font-family: sans-serif;
   font-size: min(5vw, 50px);
@@ -87,8 +107,8 @@ a:link {
 #org {
   display:block;
   clear:both;
-  font-size: 108px;
-  margin: 5rem 0 0 0;
+  font-size: min(5vw, 50px);
+  margin: 0rem 0 0 0;
   line-height: 6rem;
   span{
     display:inline-block;
@@ -101,12 +121,12 @@ a:link {
 
 hr {
     border: 0;
-    width: 100%;
+    width: min(100%, 800px);
     height: 0;
     border-top: 0.3rem dotted yellow;
     position: relative;
     overflow: visible;
-    margin: 2rem 0;
+    margin: 3rem 0;
   }
   hr:before {
     animation: move 10s infinite linear;
