@@ -33,9 +33,6 @@ body{
   width: 50%;
 }
 
-.imageContainer{
-  display: inline-block;
-}
 
 .center {
   display: block;
@@ -78,6 +75,9 @@ a:link {
     color: pink;
   }
 
+.footlink{
+  margin-right: 5%;
+}
 .text{
   background: #000000;
   color:#ffffff;

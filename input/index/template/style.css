@@ -75,6 +75,9 @@ a:link {
     color: pink;
   }
 
+.footlink{
+  margin-right: 5%;
+}
 .text{
   background: #000000;
   color:#ffffff;
