@@ -5,7 +5,7 @@
   <title>kittyfarren.dev</title>
   <link rel="alternate" href="https://kittyfarren.dev"/>
   <link rel="self" href="https://kittyfarren.dev//atom.xml"/>
-  <updated>2024-03-27T11:34:42.155Z</updated>
+  <updated>2024-04-06T19:03:09.971911565Z</updated>
   <author>
     <name>Kitty Farren</name>
   </author>
@@ -44,14 +44,21 @@
     <link href="https://kittyfarren.dev/projects/CrochetStegosaurus.html"/>
     <id>https://kittyfarren.dev/projects/CrochetStegosaurus.html</id>
     <updated>2024-03-23T00:00:00Z</updated>
-    <summary>A crochet covered lampshade</summary>
+    <summary>A crochet stegosaurus from an African Flower motif</summary>
   </entry>
   <entry>
     <title>Stegosaurus</title>
-    <link href="https://kittyfarren.dev/projects/CrochetLampShade.html"/>
-    <id>https://kittyfarren.dev/projects/CrochetLampShade.html</id>
+    <link href="https://kittyfarren.dev/projects/CrochetLampshade.html"/>
+    <id>https://kittyfarren.dev/projects/CrochetLampshade.html</id>
     <updated>2024-03-23T00:00:00Z</updated>
-    <summary>A crochet stegosaurus from an African Flower motif</summary>
+    <summary>A crochet covered lampshade</summary>
+  </entry>
+  <entry>
+    <title>Mirror</title>
+    <link href="https://kittyfarren.dev/projects/MosaicMirror.html"/>
+    <id>https://kittyfarren.dev/projects/MosaicMirror.html</id>
+    <updated>2024-04-06T00:00:00Z</updated>
+    <summary>A mirror mosaiced with recycled plates</summary>
   </entry>
 
 </feed>

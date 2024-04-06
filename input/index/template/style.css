@@ -8,6 +8,132 @@ html{
   padding: 10vw;
 }
 
+figure{
+  width:100%;
+  margin:auto;
+}
+
+.fourpics{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+
+    @media only screen and (max-width: 600px){
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+      text-align: center;
+      width: min(300px, 100%)
+    }
+    }
+    
+    .fourpics .div1 { grid-area: 1 / 1 / 2 / 5; }
+    .fourpics .div2 { grid-area: 2 / 1 / 3 / 3; }
+    .fourpics .div3 { grid-area: 2 / 3 / 3 / 5; } 
+
+.fivepics {
+align-items: center;
+display: grid;
+grid-template-columns: repeat(6, 1fr);
+grid-template-rows: repeat(2, 1fr);
+grid-column-gap: 0px;
+grid-row-gap: 0px;
+
+
+@media only screen and (max-width: 600px){
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  width: min(300px, 100%)
+}
+}
+
+.fivepics .div1 { grid-area: 1 / 1 / 2 / 3; }
+.fivepics .div2 { grid-area: 1 / 3 / 2 / 5; }
+.fivepics .div3 { grid-area: 1 / 5 / 2 / 7; }
+.fivepics .div4 { grid-area: 2 / 2 / 3 / 4; }
+.fivepics .div5 { grid-area: 2 / 4 / 3 / 6; }
+
+
+.onepic {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  width: 60%;
+
+  @media only screen and (max-width: 600px){
+    width:100%;
+  }
+}
+
+.twopics {
+  align-items: center;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: 1fr;
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
+
+
+  @media only screen and (max-width: 600px){
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    width: min(300px, 100%)
+  }
+}
+.twopics .div2{ grid-area: 1 / 2 / 2 / 3; }
+.twopics .div1 { grid-area: 1 / 1 / 2 / 2; }
+
+.twopicsalt {
+  align-items: center;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 1fr;
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
+
+
+  @media only screen and (max-width: 600px){
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    width: min(300px, 100%)
+  }
+  }
+  
+  .twopicsalt .div1 { grid-area: 1 / 1 / 2 / 3; }
+  .twopicsalt .div2 { grid-area: 1 / 3 / 2 / 4; } 
+
+
+.halfwidth{
+  width: 49%;
+}
+
+.thirdwidh{
+  width: 30%;
+}
+
+.row{
+  display: flex;
+  flex-direction: row;
+}
+
+img{
+  width: 100%;
+  margin: auto;
+}
+
+picture{
+  width: fit-content;
+}
+
 body{
     margin: 0 auto;
     max-width: 800px;
@@ -30,15 +156,8 @@ body{
   display: block;
   margin-left: auto;
   margin-right: auto;
-  width: 50%;
-}
-
-
-.center {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  width: 50%;
+  width: 100%;
+  text-align: center;
 }
 
 .small {
@@ -58,12 +177,6 @@ h2 {
 .right {
   text-align:right;
 }
-
-.center {
-  text-align: center;
-  line-height: 1.75rem;
-}
-
 
 /* unvisited link */
 a:link {

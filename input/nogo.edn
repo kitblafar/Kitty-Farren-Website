@@ -41,11 +41,17 @@
                                :date "2024-03-23"
                                :file "CrochetStegosaurus.html"
                                :summary
-                               "A crochet covered lampshade"}
+                               "A crochet stegosaurus from an African Flower motif"}
                                {:title "Stegosaurus"
                                :date "2024-03-23"
-                               :file "CrochetLampShade.html"
+                               :file "CrochetLampshade.html"
                                :summary
-                               "A crochet stegosaurus from an African Flower motif"}
+                               "A crochet covered lampshade"}
+                               {:title "Mirror"
+                               :date "2024-04-06"
+                               :file "MosaicMirror.html"
+                               :summary
+                               "A mirror mosaiced with recycled plates"}
+                               
                               ]}}
                               }

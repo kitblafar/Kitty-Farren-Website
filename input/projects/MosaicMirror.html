@@ -1,32 +1,82 @@
 <article>
 
-    <h2>Project: BLE Earrings</h2>
+    <h2>Project: Recycled Mosaic Mirror</h2>
 
-    <p>This is a set of earrings that flash when a message is sent from a phone/computer.</p>
+    <p>When going through charity shops, I always saw a lot a single pretty plates. I thought there's probably not many people out there buying one nice plate on its own but the collector ones are often the nicest. To that end, I descided to smash some up and put them on a mirror.</p>
+    <p>The first step was adding a frame of OSB to our old bedroom mirror. My bofriend kindly offered to make this but in a foul twist of fate he accidentally knicked the corner of the glass while drilling and it shattered. Oh dear. So instead I found a nice one on Facebook marketplace (still secondhand) which didn't need the frame and I set to work...</p>
+    <h3>Materials</h3>
+    <p>The following things are needed to complete a project similar to this. I suspect you could use a powdered grout but I got the adhesive premade kind to make sure the tiles really stuck on there.</p>
+    <ul>
+        <li>5 old plates (with pretty designs)</li>
+        <li>Mirror (or other object to mosaic)</li>
+        <li>Tile Nippers</li>
+        <li>Painters Masking Tape</li>
+        <li>Grout - a pot of premixed (wet) adhesive and grout combo</li>
+        <li>Hammer (Optional)</li>
+    </ul>
+    <h3>Preparing</h3>
+    <p>The first step was to prepare the tiles. First I picked different green plates from different charity shops and tried to pick 5 with all different kinds of designs on. One was a green willow pattern, some bird and plant collectors plates, a plain sage Ikea one and a glassy one with a green backing. Smashing the plates on the garage floor was extremely satifying. I just threw them on the floor (as did my friends and boyfriend) and then used the hammer to break them into smaller pieces. I then nipped them into small squares, removed any of uneven thickness and they were ready to use.</p>
 
-    <p>When I watched Bladerunner 2049 I saw Sylvia Hoeks playing Luv and in particular I saw her serving looks in this cool earring set. Whenever Jared Leto wanted to get her attention he blinked her earrings and she knew she had to go and do something dastardly. This spoke to me as someone who often stuggles to drink water... what if I managed to make myself a futuristic bad bitch set of earrings that would remind me to carry out basic tasks? It can be done. The future is now.</p>
+    <p>I then taped the mirror carefully so as to maintain the shape and keep it clean.</p>
 
     <figure>
-        <picture>
-            <source srcset="/assets/images/BLEEarrings/BladeRunner.avif"/>
-            <img src="/assets/images/BLEEarrings/BladeRunner.png"
-                class="center"
-                alt="Sylvia Hoeks wearing the original BLE Earrings"
-                width="480"/>
-        </picture>
+        <div class ="twopics"
+             style = "display: grid;">
+            <div class ="div1">
+                <picture>
+                    <source srcset="/assets/images/Mirror/mirror.avif"/>
+                    <img src="/assets/images/PreviousCrochet/Mirror/mirror.png"
+                        alt="The mirror without mosaic"
+                        width="100"/>
+                </picture>
+            </div>
+
+            <div class ="div2">
+                <picture>
+                    <source srcset="/assets/images/Mirror/tiles.avif"/>
+                    <img src="/assets/images/PreviousCrochet/Mirror/tiles.png"
+                        alt="A collection of tiles."
+                        width="300"/>
+                </picture>
+            </div>
+        </div>
         <figcaption class="captioncenter">
-            Sylvia Hoeks leaving no crumbs. The earrings flash blue when a message is received.
+            (left) All the prepped green tiles (right) The taped mirror
         </figcaption>
     </figure>
 
-    <h3>Design Requirements</h3>
+    <h3>Mosaic</h3>
+    <p>Day 1: I applied a thick coat of grout to the mirror including both sides. Then I placed tiles to cove the whole frame area and the edges. I tried to keep the tiles mostly clean (but found out this doesn't really matter later).I let it dry overnight</p>                                                                                                                                 
+    <p>Day 2: The next step was to over-grout this to fill in the gaps between the tiles. I put a large dollop of grout over the tiles and pushed it over (making sure to really apply some pressure in the gaps). I added a large amount of grout to the edge closest to the mirror to make a taper into the mirror. Then I wiped the majority of the grout of each tile to make it easier to clean after. Left it to dry again.</p>
+    <p>Day 3: Not quite dry yet. </p>
+    <p>Day 4: Final dry! I wiped each tile of painstakingly with a wet cloth and a BP loyalty card and it was done.</p>
 
-    <p>The key considerations for this project is that it must be small and pretty as in the BladeRunner film, have a BOM I can afford (under £60 for prototype), be manufacturable on the 10cm x 10cm hotplate I have at home (no BGAs) and have a battery life that lasts at least one full day at work or with preference a full week. These requirements guided all primary design decisions.</p>
+    <h3>Final Form</h3>
+    <p>This is the finished article from a few angles. He's as bit lumpy but very loveable. I really like the idea of looking at my reflection surrounded by shards of broken collectors plates which used to be so precious. </p>
+    <p> If this were in an art gallery here would be my little plaque: This is a commentary on the fleeting nature of life, everything that was once treasured soon will be smashed up and put on my mirror and all that. Or is it a reflection on generational differences, in the past an ornate collectors plate bought with money was treasured but now a mirror I made with my spare time is one of my most precious things. Or did I just want to smash plates in the garage without being wasteful.</p>
+    <figure>
+        <div class ="twopics"
+             style = "display: grid;">
+            <div class ="div1">
+                <picture>
+                    <source srcset="/assets/images/Mirror/finished.avif"/>
+                    <img src="/assets/images/PreviousCrochet/Mirror/finished.png"
+                        alt="The finished front of the mirror"
+                        width="100"/>
+                </picture>
+            </div>
 
-    <h3> Initial Hardware</h3>
+            <div class ="div2">
+                <picture>
+                    <source srcset="/assets/images/Mirror/side.avif"/>
+                    <img src="/assets/images/PreviousCrochet/Mirror/side.png"
+                        alt="A side view of the mirror"
+                        width="300"/>
+                </picture>
+            </div>
+        </div>
 
-    <h4>Which Micro?</h4>
-
-    <p>The ESP32 (C3) and NRF52(832) were the two choices I picked between. Both are low cost, both have BLE, both have good BLE example documentation and layout examples and both had QFN package options. However, the ESP32 C3 had a much higher power consumption of 250mA when transmitting with BLE (due to its large functionality- dual bluetooth AND WiFi) than the NRF52832 which is 15mA and is targeted specifically at BLE applications. NRF52 boards also only consume 2.6uA with bluetooth off which is perfect for the earrings that wont transmit/ recieve very often. I require the earrings to be as small as possible and therefore have the smallest battery, so need the lowest power cosumption.</p>
-
+        <figcaption class="captioncenter">
+            The finished mirror.
+        </figcaption>
 </article>
