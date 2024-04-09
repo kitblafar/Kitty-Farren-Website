@@ -52,6 +52,11 @@
                                :file "MosaicMirror.html"
                                :summary
                                "A mirror mosaiced with recycled plates"}
+                               {:title "Recycled glass lampshades"
+                               :date "2024-04-09"
+                               :file "GlassLampshade.html"
+                               :summary
+                               "A set of glass lampshades made from old bottles."}
                                
                               ]}}
                               }

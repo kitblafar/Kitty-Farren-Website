@@ -311,34 +311,34 @@ hr {
     <main>
     <article>
 
-    <h2>Project: BLE Earrings</h2>
+    <h2>Project: Glass Lampshades </h2>
+    <p>Following a dream I had where I was sleeping in a forest, I became possessed with a manic fever to turn my bedroom into a green paradise. I didn't want to just buy more stuff so instead I wanted to improve the stuff I already had. This was the motivation for the <a href="kittyfarren.dev/projects/CrochetLampshade.html">Crochet Lampshade</a> where I added crocheted plants and the <a href="kittyfarren.dev/projects/MosaicMirror.html">Mosiac Mirror</a> both of which where also in the green theme.</p>
+    <p>I saw a couple videos of people making their own stain glass projects and I thought it looked really cool. Also it would feel good to use the soldering skills I do everyday at work for practical reasons on something pretty. In the recycling/ upcycling theme I decided to use old green glass bottles and the existing lampshade fixings to make a pair of lampshades. The hope is that when the light shines through the lamp, different coloured green leaves will be projected onto the ceiling.</p>
 
-    <p>This is a set of earrings that flash when a message is sent from a phone/computer.</p>
+    <h3>Materials</h3>
+    <p>The following things are needed to complete a project similar to this. I should warn that I got multiple cuts on my hands despite the cut-proof gloves during the leaf making stage so undertake at your own risk.</p>
+    <ul>
+        <li>Old lampshade fixtures</li>
+        <li>12 bottles of variable green colour</li>
+        <li>Tile Nipper</li>
+        <li>Tile Cutter</li>
+        <li>Soldering Iron 60W</li>
+        <li>Solder</li>
+        <li>Wire</li>
+        <li>Copper Tape</li>
+        <li>Hammer (Optional)</li>
+    </ul>    
 
-    <p>When I watched Bladerunner 2049 I saw Sylvia Hoeks playing Luv and in particular I saw her serving looks in this cool earring set. Whenever Jared Leto wanted to get her attention he blinked her earrings and she knew she had to go and do something dastardly. This spoke to me as someone who often stuggles to drink water... what if I managed to make myself a futuristic bad bitch set of earrings that would remind me to carry out basic tasks? It can be done. The future is now.</p>
+    <h3>Preparing Leaves</h3>
+    <p>Soak the bottles in hot water and washing up liquid to remove the labels. I used an old membership card to scrape them off easily.</p>
+    <p>Roughly smash the bottle with a hammer or on the ground</p>
+    <p>Use the glass cutter to score little leaves out of the bottles. These where 5-10cm in length. I used the tile nippers to snap the scored glass more easily. This was the stage where my hands got a bit cut so approach with caution.</p>
+    <p>Line the pieces in copper tape</p>
 
-    <figure>
-        <picture>
-            <source srcset="/assets/images/BLEEarrings/BladeRunner.avif"/>
-            <img src="/assets/images/BLEEarrings/BladeRunner.png"
-                class="center"
-                alt="Sylvia Hoeks wearing the original BLE Earrings"
-                width="480"/>
-        </picture>
-        <figcaption class="captioncenter">
-            Sylvia Hoeks leaving no crumbs. The earrings flash blue when a message is received.
-        </figcaption>
-    </figure>
 
-    <h3>Design Requirements</h3>
-
-    <p>The key considerations for this project is that it must be small and pretty as in the BladeRunner film, have a BOM I can afford (under £60 for prototype), be manufacturable on the 10cm x 10cm hotplate I have at home (no BGAs) and have a battery life that lasts at least one full day at work or with preference a full week. These requirements guided all primary design decisions.</p>
-
-    <h3> Initial Hardware</h3>
-
-    <h4>Which Micro?</h4>
-
-    <p>The ESP32 (C3) and NRF52(832) were the two choices I picked between. Both are low cost, both have BLE, both have good BLE example documentation and layout examples and both had QFN package options. However, the ESP32 C3 had a much higher power consumption of 250mA when transmitting with BLE (due to its large functionality- dual bluetooth AND WiFi) than the NRF52832 which is 15mA and is targeted specifically at BLE applications. NRF52 boards also only consume 2.6uA with bluetooth off which is perfect for the earrings that wont transmit/ recieve very often. I require the earrings to be as small as possible and therefore have the smallest battery, so need the lowest power cosumption.</p>
+    <h3>Making the Shades</h3>
+    <p>I wrapped the upper circle of the lampshade fixture in the wire to allow for soldering directly onto. I then attached the leaves on by one to try and build up a canopy kind of shape. I wanted a dense covering near the top and fewer leaves towards the bottom.</p>
+    <p>I then cleaned off all the flux marks from the glass and added the shades back onto the lamp.</p>
 
 </article>
 
