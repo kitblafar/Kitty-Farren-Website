@@ -32,7 +32,7 @@ figure{
   margin:auto;
 }
 
-.fourpics{
+.threepics{
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: repeat(2, 1fr);
@@ -48,9 +48,31 @@ figure{
     }
     }
     
-    .fourpics .div1 { grid-area: 1 / 1 / 2 / 5; }
-    .fourpics .div2 { grid-area: 2 / 1 / 3 / 3; }
-    .fourpics .div3 { grid-area: 2 / 3 / 3 / 5; } 
+    .threepics .div1 { grid-area: 1 / 1 / 2 / 5; }
+    .threepics .div2 { grid-area: 2 / 1 / 3 / 3; }
+    .threepics .div3 { grid-area: 2 / 3 / 3 / 5; } 
+
+    .fivepicsalt {
+      display: grid;
+      grid-template-columns: repeat(5, 1fr);
+      grid-template-rows: repeat(2, 1fr);
+      grid-column-gap: 0px;
+      grid-row-gap: 0px;
+
+      @media only screen and (max-width: 600px){
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center;
+        width: min(300px, 100%)
+      }
+      }
+      
+      .fivepicsalt .div1 { grid-area: 1 / 1 / 3 / 2; }
+      .fivepicsalt .div2 { grid-area: 1 / 2 / 2 / 4; }
+      .fivepicsalt .div3 { grid-area: 1 / 4 / 2 / 6; }
+      .fivepicsalt .div4 { grid-area: 2 / 2 / 3 / 4; }
+      .fivepicsalt .div5 { grid-area: 2 / 4 / 3 / 6; } 
 
 .fivepics {
 align-items: center;
@@ -330,10 +352,62 @@ hr {
     </ul>    
 
     <h3>Preparing Leaves</h3>
-    <p>Soak the bottles in hot water and washing up liquid to remove the labels. I used an old membership card to scrape them off easily.</p>
-    <p>Roughly smash the bottle with a hammer or on the ground</p>
-    <p>Use the glass cutter to score little leaves out of the bottles. These where 5-10cm in length. I used the tile nippers to snap the scored glass more easily. This was the stage where my hands got a bit cut so approach with caution.</p>
-    <p>Line the pieces in copper tape</p>
+    <p>Step 1: Soak the bottles in hot water and washing up liquid to remove the labels. I used an old membership card to scrape them off easily.</p>
+    <p>Step 2: Roughly smash the bottle with a hammer or on the ground</p>
+    <p>Step 3: Use the glass cutter to score little leaves out of the bottles. These where 5-10cm in length. I used the tile nippers to snap the scored glass more easily. This was the stage where my hands got a bit cut so approach with caution.</p>
+    <p>Step 4: Line the pieces in copper tape</p>
+
+    <figure>
+        <div class = fivepicsalt>
+            <div class="div1">
+                <picture>
+                    <source srcset="/assets/images/GlassShades/bottle.avif"/>
+                    <img src="/assets/images/GlassShades/bottle.png"
+                        alt="Bottle with Label Soaked Off"
+                        width="100"/>
+                </picture>
+            </div>
+            <div class="div2">
+                <picture>
+                    <source srcset="/assets/images/GlassShades/broken.avif"/>
+                    <img src="/assets/images/GlassShades/broken.png"
+                        alt="All the broken bottles"
+                        width="175"
+                        />
+                </picture>
+            </div>
+            <div class = "div3">
+                <picture>
+                    <source srcset="/assets/images/GlassShades/tools.avif"/>
+                    <img src="/assets/images/GlassShades/tools.png"
+                        alt="Glass Cutting Tools"
+                        width="175"
+                        />
+                </picture>
+            </div>  
+            <div class = "div4">
+                <picture>
+                    <source srcset="/assets/images/GlassShades/leaves.avif"/>
+                    <img src="/assets/images/GlassShades/leaves.png"
+                        alt="Cut Out Leaves"
+                        width="175"
+                        />
+                </picture>
+            </div>  
+            <div class = "div5">
+                <picture>
+                    <source srcset="/assets/images/GlassShades/copperleaves.avif"/>
+                    <img src="/assets/images/GlassShades/copperleaves.png"
+                        alt="Cut Out Leaves with Copper Tape"
+                        width="175"
+                        />
+                </picture>
+            </div>  
+        </div>  
+        <figcaption class="captioncenter">
+            (left) The bottle with label soaked off, (top)[(middle) Broken glass bottles (right) Glass cutting tools], (bottom) Cut out leaves before and after copper tape.
+        </figcaption>
+    </figure>
 
 
     <h3>Making the Shades</h3>

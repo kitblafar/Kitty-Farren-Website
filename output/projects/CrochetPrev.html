@@ -32,7 +32,7 @@ figure{
   margin:auto;
 }
 
-.fourpics{
+.threepics{
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: repeat(2, 1fr);
@@ -48,9 +48,31 @@ figure{
     }
     }
     
-    .fourpics .div1 { grid-area: 1 / 1 / 2 / 5; }
-    .fourpics .div2 { grid-area: 2 / 1 / 3 / 3; }
-    .fourpics .div3 { grid-area: 2 / 3 / 3 / 5; } 
+    .threepics .div1 { grid-area: 1 / 1 / 2 / 5; }
+    .threepics .div2 { grid-area: 2 / 1 / 3 / 3; }
+    .threepics .div3 { grid-area: 2 / 3 / 3 / 5; } 
+
+    .fivepicsalt {
+      display: grid;
+      grid-template-columns: repeat(5, 1fr);
+      grid-template-rows: repeat(2, 1fr);
+      grid-column-gap: 0px;
+      grid-row-gap: 0px;
+
+      @media only screen and (max-width: 600px){
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center;
+        width: min(300px, 100%)
+      }
+      }
+      
+      .fivepicsalt .div1 { grid-area: 1 / 1 / 3 / 2; }
+      .fivepicsalt .div2 { grid-area: 1 / 2 / 2 / 4; }
+      .fivepicsalt .div3 { grid-area: 1 / 4 / 2 / 6; }
+      .fivepicsalt .div4 { grid-area: 2 / 2 / 3 / 4; }
+      .fivepicsalt .div5 { grid-area: 2 / 4 / 3 / 6; } 
 
 .fivepics {
 align-items: center;
@@ -412,7 +434,7 @@ hr {
     <p>This was my first african flower motif crochet project. I didn't use the pattern for this and instead I found reference pictures and drew out the dinosaur with where each motif should go. For a more detailed image of each motif see the  <a href="https://www.kittyfarren.dev/projects/CrochetStegosaurus.html">Crochet Stegosaurus project</a>. The pattern is also available at <a href="https://www.etsy.com/uk/listing/264397077/plod-the-african-flower-triceratops">Plod the African Flower Triceratops</a>.</p>
     <p>I then gave this giant dino to my newborn cousin. It was a real hit.</p>
     <figure>
-        <div class = fourpics>
+        <div class = threepics>
             <div class="div1">
                 <picture>
                     <source srcset="/assets/images/PreviousCrochet/Dinosaur/dino1.avif"/>

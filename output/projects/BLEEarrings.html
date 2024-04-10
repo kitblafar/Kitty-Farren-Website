@@ -32,7 +32,7 @@ figure{
   margin:auto;
 }
 
-.fourpics{
+.threepics{
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: repeat(2, 1fr);
@@ -48,9 +48,31 @@ figure{
     }
     }
     
-    .fourpics .div1 { grid-area: 1 / 1 / 2 / 5; }
-    .fourpics .div2 { grid-area: 2 / 1 / 3 / 3; }
-    .fourpics .div3 { grid-area: 2 / 3 / 3 / 5; } 
+    .threepics .div1 { grid-area: 1 / 1 / 2 / 5; }
+    .threepics .div2 { grid-area: 2 / 1 / 3 / 3; }
+    .threepics .div3 { grid-area: 2 / 3 / 3 / 5; } 
+
+    .fivepicsalt {
+      display: grid;
+      grid-template-columns: repeat(5, 1fr);
+      grid-template-rows: repeat(2, 1fr);
+      grid-column-gap: 0px;
+      grid-row-gap: 0px;
+
+      @media only screen and (max-width: 600px){
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center;
+        width: min(300px, 100%)
+      }
+      }
+      
+      .fivepicsalt .div1 { grid-area: 1 / 1 / 3 / 2; }
+      .fivepicsalt .div2 { grid-area: 1 / 2 / 2 / 4; }
+      .fivepicsalt .div3 { grid-area: 1 / 4 / 2 / 6; }
+      .fivepicsalt .div4 { grid-area: 2 / 2 / 3 / 4; }
+      .fivepicsalt .div5 { grid-area: 2 / 4 / 3 / 6; } 
 
 .fivepics {
 align-items: center;
