@@ -58,14 +58,6 @@ figure{
       grid-template-rows: repeat(2, 1fr);
       grid-column-gap: 0px;
       grid-row-gap: 0px;
-
-      @media only screen and (max-width: 600px){
-        display: block;
-        margin-left: auto;
-        margin-right: auto;
-        text-align: center;
-        width: min(300px, 100%)
-      }
       }
       
       .fivepicsalt .div1 { grid-area: 1 / 1 / 3 / 2; }
@@ -333,34 +325,46 @@ hr {
     <main>
     <article>
 
-    <h2>Project: BLE Earrings</h2>
+    <h2>Project: Crochet Skirt</h2>
 
-    <p>This is a set of earrings that flash when a message is sent from a phone/computer.</p>
+    <p>This is a maxi-skirt project made from <a href="">recycled blue yarn</a>. This is a bit of a boring one in that I am just copying a free pattern with a fair bit of adjustment but it does make a beautiful skirt.</p>
 
-    <p>When I watched Bladerunner 2049 I saw Sylvia Hoeks playing Luv and in particular I saw her serving looks in this cool earring set. Whenever Jared Leto wanted to get her attention he blinked her earrings and she knew she had to go and do something dastardly. This spoke to me as someone who often stuggles to drink water... what if I managed to make myself a futuristic bad bitch set of earrings that would remind me to carry out basic tasks? It can be done. The future is now.</p>
+    <h3>Crocheting the Skirt</h3>
+    <p> The pattern is <a></a> and uses [insert pack size - 1] balls of <a></a>. This is handy as you can buy a pack of this yarn in bulk. The pattern is slightly difficult to follow in that I wasn't always sure which section or pattern should follow which, so I really just used it for the pretty stitch and ruffle edge stitch diagrams.</p>
+
+    <p> Since the yarn I had wasn't the same gauge as the patterns suggested yarn (it was much thicker), I just sized the waistband correctly (measuring it on myself) and then carried on with as many of the repeating pattern as would fit in that space. The same for the ruffle between each section (I just fit in as many as I could). When it came to increases I increased by a proportion of the total number of patterns e.g. I fit 17 motifs into the first section of the skirt, the pattern fit [insert]. The pattern suggests an increase to [insert] motifs, so I increased to [insert]/[insert]*17 motifs. This gave the skirt a nice flair.</p>
+
+    <p>I kept going until the skirt reached the length I wanted. I blocked it very basically by leaving it to hang with its own weight on the clothes horse.</p>
+
+    <h3>Additions</h3>
+    <p>Since this dress is 90% holes, I'm not sure that I would get much wear out of it in the Welsh weather without a lining. I had some leftover blue satin from my COVID induced sewing experiments and this light blue produced a nice contrast with the dark blue yarn. I made a simple slip skirt, copying the bottom of a dress I already had.</p>
+    <p>The last step is to add a zip combining the skirt and the lining together. This is something I will probably have to do by hand to properly anchor it to the yarn.</p>
 
     <figure>
-        <picture>
-            <source srcset="/assets/images/BLEEarrings/BladeRunner.avif"/>
-            <img src="/assets/images/BLEEarrings/BladeRunner.png"
-                class="center"
-                alt="Sylvia Hoeks wearing the original BLE Earrings"
-                width="480"/>
-        </picture>
+        <div class = "twopics">
+            <div class="div1">
+                <picture>
+                    <source srcset="/assets/images/Skirt/skirt.avif"/>
+                    <img src="/assets/images/Skirt/skirt.png"
+                        alt="The crochet skirt without a lining."
+                        width="480"/>
+                </picture>
+            </div>
+            <div class="div2">
+                <picture>
+                    <source srcset="/assets/images/Skirt/lining.avif"/>
+                    <img src="/assets/images/Skirt/lining.png"
+                        alt="The crochet skirt lining."
+                        width="480"/>
+                </picture>
+            </div>
+
+        </div>
         <figcaption class="captioncenter">
-            Sylvia Hoeks leaving no crumbs. The earrings flash blue when a message is received.
+            (left) The crochet skirt without a lining after blocking. (right) 
         </figcaption>
-    </figure>
 
-    <h3>Design Requirements</h3>
-
-    <p>The key considerations for this project is that it must be small and pretty as in the BladeRunner film, have a BOM I can afford (under £60 for prototype), be manufacturable on the 10cm x 10cm hotplate I have at home (no BGAs) and have a battery life that lasts at least one full day at work or with preference a full week. These requirements guided all primary design decisions.</p>
-
-    <h3> Initial Hardware</h3>
-
-    <h4>Which Micro?</h4>
-
-    <p>The ESP32 (C3) and NRF52(832) were the two choices I picked between. Both are low cost, both have BLE, both have good BLE example documentation and layout examples and both had QFN package options. However, the ESP32 C3 had a much higher power consumption of 250mA when transmitting with BLE (due to its large functionality- dual bluetooth AND WiFi) than the NRF52832 which is 15mA and is targeted specifically at BLE applications. NRF52 boards also only consume 2.6uA with bluetooth off which is perfect for the earrings that wont transmit/ recieve very often. I require the earrings to be as small as possible and therefore have the smallest battery, so need the lowest power cosumption.</p>
+    <h3>Finished Article</h3>
 
 </article>
 

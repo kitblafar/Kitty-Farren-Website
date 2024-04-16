@@ -58,14 +58,6 @@ figure{
       grid-template-rows: repeat(2, 1fr);
       grid-column-gap: 0px;
       grid-row-gap: 0px;
-
-      @media only screen and (max-width: 600px){
-        display: block;
-        margin-left: auto;
-        margin-right: auto;
-        text-align: center;
-        width: min(300px, 100%)
-      }
       }
       
       .fivepicsalt .div1 { grid-area: 1 / 1 / 3 / 2; }
@@ -353,7 +345,7 @@ hr {
 
     <h3>Design Requirements</h3>
 
-    <p>The key considerations for this project is that it must be small and pretty as in the BladeRunner film, have a BOM I can afford (under £60 for prototype), be manufacturable on the 10cm x 10cm hotplate I have at home (no BGAs) and have a battery life that lasts at least one full day at work or with preference a full week. These requirements guided all primary design decisions.</p>
+    <p>The key considerations for this project are: that it must be small and pretty as in the BladeRunner film, have a <acronym title="Bill of Materials">BOM</acronym> I can afford (under £60 for prototype), be manufacturable on the 10cm x 10cm hotplate I have at home (no <acronym title="Ball Gate Arrays">BGAs</acronym>) and have a battery life that lasts at least one full day at work or with preference a full week. These requirements guided all primary design decisions.</p>
 
     <h3>Hardware</h3>
     <h4>Elements</h4>
@@ -366,12 +358,22 @@ hr {
     <h4>Which Micro?</h4>
 
     <p>The ESP32 (C3) and NRF52(833) were the two choices I picked between. Both are low cost, both have BLE, both have good BLE example documentation and layout examples and both had QFN package options. However, the ESP32 C3 had a much higher power consumption of 250mA when transmitting with BLE (due to its large functionality- dual bluetooth AND WiFi) than the NRF52833 which is 15mA and is targeted specifically at BLE applications. NRF52 boards also only consume 2.6uA with bluetooth off which is perfect for the earrings that wont transmit/ recieve very often. I require the earrings to be as small as possible and therefore have the smallest battery, so need the lowest power cosumption.</p>
+
     <h4>First Layouts and Panel</h4>
+
     <p>For the dock I followed the recommended layout (provided by the manufacturer) for the USB2422T-I/MJ chip I was using for the hub. This was used with the SIP32509DT-T1-GE3 power switch for the VBUS management. I used the recommendations provided in the BQ24073RGTR battery management IC for the battery management.</p>
-    <p>For the earrings I followed the NRF52833 layout recommendations for bluetooth applications. I also used the LiPo Amigo Pro for the battery management on the earrings. I used the TI 2.4GHz premade antenna and followed their layout recommendations (no components too close to the antenna, matched impedance tracks to the antenna and nice uninterrupted ground plane next to the antenna). I used matched impedance tracks for the USB connections. The size of the earring was controlled by the size of the battery.</p>
+
+    <p>For the earrings I followed the NRF52833 layout recommendations for bluetooth applications. I also used the LiPo Amigo Pro for the battery management on the earrings. I used the TI 2.4GHz premade antenna and followed their layout recommendations (no components placed too close to the antenna, matched impedance tracks to the antenna, nice uninterrupted ground plane next to the antenna) and  matched impedance tracks for the USB connections. The size of the earring was controlled by the size of the battery.</p>
+
     <p>The pendant is very simple but has no official terminal connection (only holes) to minimise size.</p>
+
     <h3>Software and Firmware</h3>
-    <p>I am yet to start on any firmware or software.</p>
+    
+    <p> Dom will predominantly be writing the firmware, but I will have a good go myself (which I will document here as well) and see if I can get anywhere. The firmware for the NRF52 needs to receive a colour command over bluetooth telling it to flash a certain colour. This will be my first step once I get around to writing an example and I will use the Nordic nRF Connect app to send custom signals (which I have previously done).
+    </p>
+    <p>
+        As for the software, Dom is already up and running with his web-based bluetooth app (very cool) and is sending signals successfully. The thought is to have a <acronym title = "Progressive Web App"> PWA</acronym>, so the earrings can pair to any device type (as long as it has a browser). This is essentially just a view of the Bluetooth page in the browser but with additional permissions and a custom render (like a webview).
+    </p>
     
 </article>
 
