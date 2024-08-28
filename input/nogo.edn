@@ -23,7 +23,7 @@
                       :footer "footer.html"
                       :style "style.css"
                       :pages [{:title "BLE Earrings"
-                               :date "2024-03-23"
+                               :date "2024-08-28"
                                :file "BLEEarrings.html"
                                :summary
                                "Bladerunner inspired BLE Earrings"}
@@ -42,8 +42,8 @@
                                :file "CrochetStegosaurus.html"
                                :summary
                                "A crochet stegosaurus from an African Flower motif"}
-                               {:title "Stegosaurus"
-                               :date "2024-03-23"
+                               {:title "Crochet Lampshade"
+                               :date "2024-08-28"
                                :file "CrochetLampshade.html"
                                :summary
                                "A crochet covered lampshade"}

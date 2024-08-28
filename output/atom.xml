@@ -4,8 +4,8 @@
 
   <title>kittyfarren.dev</title>
   <link rel="alternate" href="https://kittyfarren.dev"/>
-  <link rel="self" href="https://kittyfarren.dev//atom.xml"/>
-  <updated>2024-04-16T12:55:29.922Z</updated>
+  <link rel="self" href="https://kittyfarren.dev/atom.xml"/>
+  <updated>2024-08-28T18:57:10.233Z</updated>
   <author>
     <name>Kitty Farren</name>
   </author>
@@ -22,7 +22,7 @@
     <title>BLE Earrings</title>
     <link href="https://kittyfarren.dev/projects/BLEEarrings.html"/>
     <id>https://kittyfarren.dev/projects/BLEEarrings.html</id>
-    <updated>2024-03-23T00:00:00Z</updated>
+    <updated>2024-08-28T00:00:00Z</updated>
     <summary>Bladerunner inspired BLE Earrings</summary>
   </entry>
   <entry>
@@ -47,10 +47,10 @@
     <summary>A crochet stegosaurus from an African Flower motif</summary>
   </entry>
   <entry>
-    <title>Stegosaurus</title>
+    <title>Crochet Lampshade</title>
     <link href="https://kittyfarren.dev/projects/CrochetLampshade.html"/>
     <id>https://kittyfarren.dev/projects/CrochetLampshade.html</id>
-    <updated>2024-03-23T00:00:00Z</updated>
+    <updated>2024-08-28T00:00:00Z</updated>
     <summary>A crochet covered lampshade</summary>
   </entry>
   <entry>

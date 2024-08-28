@@ -329,14 +329,17 @@ hr {
 
     <p>This is a set of earrings that flash when a message is sent from a phone/computer.</p>
 
-    <p>When I watched Bladerunner 2049 I saw Sylvia Hoeks playing Luv and in particular I saw her serving looks in this cool earring set. Whenever Jared Leto wanted to get her attention he blinked her earrings and she knew she had to go and do something dastardly. This spoke to me as someone who often stuggles to drink water... what if I managed to make myself a futuristic bad bitch set of earrings that would remind me to carry out basic tasks? It can be done. The future is now.</p>
+    <p>When I watched Bladerunner 2049 I saw Sylvia Hoeks playing Luv and in particular I saw her serving looks in this
+        cool earring set. Whenever Jared Leto wanted to get her attention he blinked her earrings and she knew she had
+        to go and do something dastardly. This spoke to me as someone who often struggles to drink water... what if I
+        managed to make myself a futuristic bad bitch set of earrings that would remind me to carry out basic tasks? It
+        can be done. The future is now.</p>
 
     <figure class="onepic">
         <picture>
-            <source srcset="/assets/images/BLEEarrings/BladeRunner.avif"/>
-            <img src="/assets/images/BLEEarrings/BladeRunner.png"
-                alt="Sylvia Hoeks wearing the original BLE Earrings"
-                width="600"/>
+            <source srcset="/assets/images/BLEEarrings/BladeRunner.avif" />
+            <img src="/assets/images/BLEEarrings/BladeRunner.png" alt="Sylvia Hoeks wearing the original BLE Earrings"
+                width="600" />
         </picture>
         <figcaption class="captioncenter">
             Sylvia Hoeks leaving no crumbs. The earrings flash blue when a message is received.
@@ -345,38 +348,74 @@ hr {
 
     <h3>Design Requirements</h3>
 
-    <p>The key considerations for this project are: that it must be small and pretty as in the BladeRunner film, have a <acronym title="Bill of Materials">BOM</acronym> I can afford (under £60 for prototype), be manufacturable on the 10cm x 10cm hotplate I have at home (no <acronym title="Ball Gate Arrays">BGAs</acronym>) and have a battery life that lasts at least one full day at work or with preference a full week. These requirements guided all primary design decisions.</p>
+    <p>The key considerations for this project are: that it must be small and pretty as in the BladeRunner film, have a
+        <acronym title="Bill of Materials">BOM</acronym> I can afford (under £60 for prototype), be manufacturable on
+        the 10cm x 10cm hotplate I have at home (no <acronym title="Ball Gate Arrays">BGAs</acronym>) and have a battery
+        life that lasts at least one full day at work or with preference a full week. These requirements guided all
+        primary design decisions.
+    </p>
 
     <h3>Hardware</h3>
     <h4>Elements</h4>
     <h5>Earrings</h5>
-    <p> One for the right ear and a mirrored layout for the left ear (the mirror is necessary because you cant buy a mirrored verison of chips)- something obvious to others but not to me. Includes a battery and charge protections circuits, bluetooth antenna and connections to the neopixel pendant.</p>
+    <p> One for the right ear and a mirrored layout for the left ear (the mirror is necessary because you cant buy a
+        mirrored version of chips)- something obvious to others but not to me. Includes a battery and charge protections
+        circuits, bluetooth antenna and connections to the neo-pixel pendant.</p>
     <h5>Dock</h5>
-    <p>This is extra battery, a boost converter (to get from a 3V7 battery to 5V for USB) a hub to allow for USB comms with both earrings at once and serial comms broken out for flashing and debugging.</p>
+    <p>This is extra battery, a boost converter (to get from a 3V7 battery to 5V for USB) a hub to allow for USB
+        communication with both earrings at once and serial broken out for flashing and debugging.</p>
     <h5>Pendant</h5>
-    <p>This is the charm that hangs down from the earring. Basically just some connection points and a neopixel.</p>
+    <p>This is the charm that hangs down from the earring. Basically just some connection points and a neo-pixel.</p>
     <h4>Which Micro?</h4>
 
-    <p>The ESP32 (C3) and NRF52(833) were the two choices I picked between. Both are low cost, both have BLE, both have good BLE example documentation and layout examples and both had QFN package options. However, the ESP32 C3 had a much higher power consumption of 250mA when transmitting with BLE (due to its large functionality- dual bluetooth AND WiFi) than the NRF52833 which is 15mA and is targeted specifically at BLE applications. NRF52 boards also only consume 2.6uA with bluetooth off which is perfect for the earrings that wont transmit/ recieve very often. I require the earrings to be as small as possible and therefore have the smallest battery, so need the lowest power cosumption.</p>
+    <p>The ESP32 (C3) and NRF52(833) were the two choices I picked between. Both are low cost, both have BLE, both have
+        good BLE example documentation and layout examples and both had QFN package options. However, the ESP32 C3 had a
+        much higher power consumption of 250mA when transmitting with BLE (due to its large functionality- dual
+        bluetooth AND WiFi) than the NRF52833 which is 15mA and is targeted specifically at BLE applications. NRF52
+        boards also only consume 2.6uA with bluetooth off which is perfect for the earrings that wont transmit/ recieve
+        very often. I require the earrings to be as small as possible and therefore have the smallest battery, so need
+        the lowest power cosumption.</p>
 
     <h4>First Layouts and Panel</h4>
 
-    <p>For the dock I followed the recommended layout (provided by the manufacturer) for the USB2422T-I/MJ chip I was using for the hub. This was used with the SIP32509DT-T1-GE3 power switch for the VBUS management. I used the recommendations provided in the BQ24073RGTR battery management IC for the battery management.</p>
+    <p>For the dock I followed the recommended layout (provided by the manufacturer) for the USB2422T-I/MJ chip I was
+        using for the hub. This was used with the SIP32509DT-T1-GE3 power switch for the VBUS management. I used the
+        recommendations provided in the BQ24073RGTR battery management IC for the battery management.</p>
 
-    <p>For the earrings I followed the NRF52833 layout recommendations for bluetooth applications. I also used the LiPo Amigo Pro for the battery management on the earrings. I used the TI 2.4GHz premade antenna and followed their layout recommendations (no components placed too close to the antenna, matched impedance tracks to the antenna, nice uninterrupted ground plane next to the antenna) and  matched impedance tracks for the USB connections. The size of the earring was controlled by the size of the battery.</p>
+    <p>For the earrings I followed the NRF52833 layout recommendations for bluetooth applications. I also used the LiPo
+        Amigo Pro for the battery management on the earrings. I used the TI 2.4GHz pre-made antenna and followed their
+        layout recommendations (no components placed too close to the antenna, matched impedance tracks to the antenna,
+        nice uninterrupted ground plane next to the antenna) and matched impedance tracks for the USB connections. The
+        size of the earring was controlled by the size of the battery.
+    </p>
+    <p>An annoying thing about making the two earrings is that they need to be mirrored to wear on each ear BUT they
+        don't make mirrored micro packages. For this reason a separate layout is needed for the left and right earring.
+        I kept USB-C connector and the pendant connector in the same position but the entire layout is different
+        otherwise.
+    </p>
 
     <p>The pendant is very simple but has no official terminal connection (only holes) to minimise size.</p>
 
+    <p>I combined the all elements on to one 10cmx10cm PCB and added some awesome silkscreen of orangutans from this <a
+            href="https://www.youtube.com/shorts/EpDYTxXrzxc"> stylish brummy monkey</a> and this <a
+            href="https://www.youtube.com/watch?v=ZN_eesDyfRQ"> cool mother and baby monkey</a>. Although I don't
+        support keeping monkeys in captivity I do think they are SO cute! As all people know black and white is the most coquettish and y2k of all the soldermask-silkscreen combos so I got the boards in this.</p>
+
     <h3>Software and Firmware</h3>
-    
-    <p> Dom will predominantly be writing the firmware, but I will have a good go myself (which I will document here as well) and see if I can get anywhere. The firmware for the NRF52 needs to receive a colour command over bluetooth telling it to flash a certain colour. This will be my first step once I get around to writing an example and I will use the Nordic nRF Connect app to send custom signals (which I have previously done).
+
+    <p> Dom will predominantly be writing the firmware, but I will have a good go myself (which I will document here as
+        well) and see if I can get anywhere. The firmware for the NRF52 needs to receive a colour command over bluetooth
+        telling it to flash a certain colour. This will be my first step once I get around to writing an example and I
+        will use the Nordic nRF Connect app to send custom signals (which I have previously done).
     </p>
     <p>
-        As for the software, Dom is already up and running with his web-based bluetooth app (very cool) and is sending signals successfully. The thought is to have a <acronym title = "Progressive Web App"> PWA</acronym>, so the earrings can pair to any device type (as long as it has a browser). This is essentially just a view of the Bluetooth page in the browser but with additional permissions and a custom render (like a webview).
+        As for the software, Dom is already up and running with his web-based bluetooth app (very cool) and is sending
+        signals successfully. The thought is to have a <acronym title="Progressive Web App"> PWA</acronym>, so the
+        earrings can pair to any device type (as long as it has a browser). This is essentially just a view of the
+        Bluetooth page in the browser but with additional permissions and a custom render (like a webview).
     </p>
-    
-</article>
 
+</article>
     </main>
 
     <div class="footer">
