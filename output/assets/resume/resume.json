@@ -2,11 +2,11 @@
   "$schema": "https://raw.githubusercontent.com/jsonresume/resume-schema/v1.0.0/schema.json",
   "basics": {
     "name": "Kitty Farren",
-    "label": "Graduate Engineer at Nidec Control Techniques",
-    "image": "images/me.jpg",
+    "label": "Development Engineer at Nidec Drives",
+    "image": "me.png",
     "email": "farren.kitty@gmail.com",
     "website": "https://kittyfarren.dev",
-    "summary": "I am a Master of Electrical and Electronics Engineering graduate from the University of Nottingham with over 4 years experience as an engineer in the industrial automation sector working in various technical departments.",
+    "summary": "Development engineer working in industrial automation. Currently working on power electronic modelling including software; firmware and electronics development for thermal monitoring in AC drives. Working towards chartership as an electronics and electrical engineer. Skilled in software development, embedded development and power electronic design.",
     "location": {
       "countryCode": "GB",
       "address": "United Kingdom"
@@ -18,39 +18,53 @@
         "url": "https://www.linkedin.com/in/kitty-farren/"
       },
       {
-          "network": "GitHub",
-          "username": "kitblafar",
-          "url": "https://github.com/kitblafar"
+        "network": "GitHub",
+        "username": "kitblafar",
+        "url": "https://github.com/kitblafar"
       }
-
     ]
   },
   "work": [
     {
-      "name": "Control Techniques",
+      "name": "Nidec Drives (prev Control Techniques)",
+      "position": "Development Engineer",
+      "startDate": "2024-10-01",
+      "highlights": [
+        "Supported a junior engineer in carrying out thermal testing.",
+        "Constructed a panel for automated IGBT thermal data collection including a custom PCB, embedded solution and 3D models.",
+        "Wrote a C# program for processing large amount of IGBT thermal data into a VFD thermal model."
+      ],
+      "summary": "Developed a new thermal model generation process.",
+      "url": "https://www.linkedin.com/company/28614292",
+      "location": "Mid-Wales, UK"
+    },
+    {
+      "name": "Nidec Drives (prev Control Techniques)",
       "position": "Graduate Engineer",
       "startDate": "2022-07-31",
       "endDate": "2024-07-31",
       "highlights": [
-        "In Power electronics I designed and created an upgraded IGBT thermal testing device; created new python tools for digital twin development and research novel current sensing technology for next gen drives.",
-        "In the ECAD department I layed out a production quality family of boards (FOB); created an internal KiCAD set of standards and user guides; created a manufacturing board to test DFM processes and aided the India team in creating layouts.",
-        "In Tech Support I answered customer tickets; solved field failures;  created recruitment resources; wrote a Python dataprocessing tool to sort user data from a documentation site and wrote a specification for an app using Figma.",
-        "Finally in the Control department, I developed a C# program to process large amounts of data using a mesh algorithm."
+        "Power electronics: Created an upgraded IGBT thermal testing device; wrote a new python tools for digital twin development and research novel current sensing technology for next gen drives; conducted emission EMC testing.",
+        "ECAD: Competed a lay out a production quality family of boards (FOB); set up an internal KiCAD workflow; created a manufacturing board to test DFM processes and aided the India team in creating layouts and schematics.",
+        "Tech Support: Answered customer tickets; solved VFD field failures; created recruitment resources; produced a Python browsing data processing tool and wrote a specification for a set of Android setup wizards.",
+        "ECPE courses attended: Tutorial EMC in Power Electronics, Workshop Condition & Health Monitoring."
       ],
       "summary": "This role included rotations in different departments to broaden my engineering skill set",
       "url": "https://www.linkedin.com/company/28614292",
-      "location": "Powys, Wales, United Kingdom"
+      "location": "Mid-Wales, UK"
     },
     {
-      "name": "Control Techniques",
+      "name": "Nidec Drives (prev Control Techniques)",
       "position": "E3 Student Engineer",
       "startDate": "2019-07-31",
       "endDate": "2022-07-31",
-      "highlights": [],
-      "summary": "Summer placements at Nidec Control Techniques through the E3 Academy Scholarship Scheme:\n\n1st Placement (2019): EMC and efficiency testing prototype control boards. SIMetrix circuit design software, soldering and proto-board creation, EMC testing experience.\n\n2nd Placement (2020- COVID limited): Review of strings used in drives for easy of use. Attempting to simplify drive usage. Customer focus.\n\n2nd Placement (2021): Automatic elevator drive software testing suite. Software architecture and design, StructuredText, awareness of software development timeline.",
-      "url": "https://www.linkedin.com/company/28614292",
-      "link": "https://www.e3academy.org/index.php",
-      "location": "Powys, Wales, United Kingdom"
+      "highlights": ["Electronics (2019): EMC and efficiency testing prototype control boards including SIMetrix circuit design, soldering and proto-board creation and EMC testing.",
+      "Tech Support (2020): Review of strings used in drives to improve customer experience.",
+      "Elevator (2021): Specified and produced a suite of software tests for elevator drives written in Structured Text on a PLC."
+    ],
+      "summary": "Summer placements in different teams at Nidec Drives as part of the E3 Academy Scholarship Scheme",
+      "url": "https://www.e3academy.org/",
+      "location": "Mid-Wales, UK"
     }
   ],
   "volunteer": [
@@ -58,74 +72,134 @@
       "organization": "STEM Ambassadors",
       "position": "STEM Ambassador",
       "startDate": "2021-09-30",
-      "endDate": "2021-09-30",
-      "summary": "STEM ambassadors aims to raise the awareness and understanding of STEM careers. As a STEM ambassador I have attended careers events, done classroom showcases and lead computer workshops. I have created some cool STEM resources to go along with these classes like the \"build a pepper colour detecting circuit\" and the \"pneumatic conveyor belt controller\". I hope that by being a visible woman in the field I can encourage young women to consider STEM careers.",
+      "url": "https://www.stem.org.uk/stem-ambassadors",
+      "summary": "STEM ambassadors aims to raise the awareness and understanding of STEM careers. This includes attending careers fairs and events; creating classroom showcases and leading computer workshops with the STEM ambassadors and careers teams.",
       "highlights": [
-        "Promoting STEM for young women and being visible as a women in the field.",
-        "Running classroom workshops giving students hands-on experience prototyping circuits and making links to real-world applications.",
-        "Running and developing interactive demonstrations of electronics and control systems at careers fairs.",
-        "Giving presentations and Q&A sessions to help de-mystify the field and careers in STEM subjects.",
+        "Promoting STEM to young women and being visible as a women in engineering.",
+        "Managing and running workshops to give students hands-on experience and making links to real-world applications.",
+        "Developing interactive demonstrations of software writing, electronics and control systems.",
+        "Giving presentations and Q&A sessions to help de-mystify STEM.",
         "Improving my communication skills with those not in technical roles."
-    ],
-      "url": "https://www.linkedin.com/company/562727"
+      ]
     }
   ],
   "education": [
     {
       "institution": "University of Nottingham",
       "area": "Electrical and Electronics Engineering",
-      "studyType": "Master of Engineering - MEng IET Accredited",
+      "studyType": "MEng IET Accredited",
       "startDate": "2018-12-31",
       "endDate": "2022-12-31",
-      "score": "1st (Hons)",
+      "score": "1st Hons",
       "courses": [
-          "Individual project: \"A Framework for Plenoptic HDR Imaging using Metasurfaces\"",
-          "Computer Aided Engineering",
-          "Power and Energy",
-          "Information and Systems",
-          "Electronic Processing and Communication",
-          "Electrical Energy Conditioning and Control",
-          "Contemporary Engineering Themes",
-          "Modelling Methods and Tools",
-          "Electrical Machines, Drive Systems and Applications",
-          "IT infrastructure and cybersecurity",
-          "Analogue Electronics",
-          "Sensing Systems",
-          "Professional Studies",
-          "Digital Signal Processing",
-          "Instrumentation and Measurement",
-          "Advanced AC Drives",
-          "HDL for Programmable Devices",
-          "Group Projects: Autonomous RC Car (incl line following), SMPS design and creation, Doppler radar gun, Car telemetry system- full stack JavaScript web-application created"
+        "Individual project: \"A Framework for Plenoptic HDR Imaging using Metasurfaces\"",
+        "Computer Aided Engineering",
+        "Power and Energy",
+        "Information and Systems",
+        "Electronic Processing and Communication",
+        "Electrical Energy Conditioning and Control",
+        "Contemporary Engineering Themes",
+        "Modelling Methods and Tools",
+        "Electrical Machines, Drive Systems and Applications",
+        "IT infrastructure and cybersecurity",
+        "Analogue Electronics",
+        "Sensing Systems",
+        "Professional Studies",
+        "Digital Signal Processing",
+        "Instrumentation and Measurement",
+        "Advanced AC Drives",
+        "HDL for Programmable Devices",
+        "Group Projects: Autonomous RC Car (incl line following), SMPS design and creation, Doppler radar gun, Car telemetry system- full stack JavaScript web-application created"
       ]
     }
   ],
-  "awards": [{
-    "title": "Peter John's Award for Outstanding Final Year Student",
-    "awarder": "The University of Nottingham"},
+  "awards": [
     {
-        "title": "Michael Bromwich Award for the Two Highest Achieving Home Students",
-        "awarder": "The University of Nottingham"}],
+      "title": "Peter John's Award for Outstanding Final Year Student",
+      "awarder": "The University of Nottingham"
+    },
+    {
+      "title": "Michael Bromwich Award for the Two Highest Achieving Home Students",
+      "awarder": "The University of Nottingham"
+    }
+  ],
   "certificates": [],
   "publications": [],
   "skills": [
     {
-      "name": "Engineering",
-      "keywords": ["Variable Speed Drives (VSDs)", "EMC Design and Testing", "Power Electronic Design", "Digital and Analogue Electronic Design"]
+      "name": "Electrical and Electronics Engineering",
+      "keywords": [
+        "Thermal Modelling",
+        "VHDL",
+        "EMC Design and Testing",
+        "Power Electronic Design",
+        "Digital and Analogue Electronic Design"
+      ]
     },
     {
-      "name": "PCB Layout and CAD",
-      "keywords": ["KiCAD", "DxDesigner", "Blender", "FreeCAD"]
+      "name": "Industrial Automation",
+      "keywords": [
+        "Variable Speed Drives (VSDs, VFDs)",
+        "IEC Structured Text",
+        "PLCs",
+        "Panel Design"
+      ]
+    },
+    {
+      "name": "CAD",
+      "keywords": [
+        "CST Microwave Studio",
+        "Simetrix",
+        "PLECs",
+        "LTSpice",
+        "KiCAD",
+        "DxDesigner",
+        "Blender",
+        "FreeCAD"
+      ]
     },
     {
       "name": "Software Development",
       "level": "",
-      "keywords": ["C", "C++", "Python", "IEC StructuredText", "VBA", "SQL", "VHDL","JavaScript", "Figma"]
+      "keywords": [
+        "Python",
+        "C",
+        "C++",
+        "C#",
+        "VBA",
+        "Databases/ SQL",
+        "JavaScript"
+      ]
     },
     {
-      "name": "Simulation",
+      "name": "UI Frameworks",
       "level": "",
-      "keywords": ["CST Microwave Studio", "Simetrix", "PLECs", "LTSpice"]
+      "keywords": [
+        "Vue.js",
+        "WPF",
+        "WinForms",
+        "Qt",
+        "PyQt"
+      ]
+    },
+    {
+      "name": "Embedded Development",
+      "level": "",
+      "keywords": [
+        "C",
+        "Automated Testing",
+        "Digital Signal Processing"
+      ]
+    },
+    {
+      "name": "Written Communication and Documentation",
+      "level": "",
+      "keywords": [
+        "Microsoft 365",
+        "LaTex",
+        "Markup",
+        "HTML"
+      ]
     }
   ],
   "languages": [
@@ -140,30 +214,47 @@
   ],
   "interests": [
     {
-        "name": "Crochet and Needlework"
+      "name": "Crochet and Needlework"
     },
     {
-        "name": "3D modelling (Blender)"
+      "name": "3D modelling (Blender)"
     },
     {
-        "name": "Electronics and Programming"
+      "name": "Hobbyist Electronics"
     },
     {
-        "name": "Painting"
+      "name": "Rock Climbing"
     },
     {
-        "name": "Running"
+      "name": "Painting"
+    },
+    {
+      "name": "Running"
+    },
+    {
+      "name": "Singing and Guitar"
     }
-],
+  ],
   "references": [
     {
-        "name": "Ed Peate",
-        "summary": "She is good"
+      "name": "Lead Power Electronics Engineer: Ed Peate",
+      "reference": "Company: Nidec Drives, Email: ed.peate@mail.nidec.com"
+    },
+    {
+      "name": "Director of Control Systems: Mike Cade",
+      "reference": "Company: Nidec Drives, Email: mike.cade@mail.nidec.com"
     }
-],
-  "projects": [],
-  "meta": {
-    "version": "v1.0.0",
-    "canonical": "https://github.com/jsonresume/resume-schema/blob/v1.0.0/schema.json"
-  }
+  ],
+  "projects": [
+    {
+      "name": "Personal Website",
+      "url": "https://kittyfarren.dev",
+      "description": "A static website for writing up personal projects"
+    },
+    {
+      "name": "Bluetooth Earrings",
+      "url": "https://kittyfarren.dev/projects/BLEEarrings.html",
+      "description": "A set of bluetooth earrings that blink different colours dependant on bluetooth messages. Still in development."
+    }
+  ]
 }

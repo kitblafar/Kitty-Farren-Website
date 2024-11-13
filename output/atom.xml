@@ -5,7 +5,7 @@
   <title>kittyfarren.dev</title>
   <link rel="alternate" href="https://kittyfarren.dev"/>
   <link rel="self" href="https://kittyfarren.dev/atom.xml"/>
-  <updated>2024-09-11T18:17:53.686Z</updated>
+  <updated>2024-11-13T11:14:56.409Z</updated>
   <author>
     <name>Kitty Farren</name>
   </author>
@@ -17,13 +17,6 @@
     <id>https://kittyfarren.dev/index.html</id>
     <updated>2024-03-14T00:00:00Z</updated>
     <summary>Homepage</summary>
-  </entry>
-  <entry>
-    <title>BLE Earrings</title>
-    <link href="https://kittyfarren.dev/projects/BLEEarrings.html"/>
-    <id>https://kittyfarren.dev/projects/BLEEarrings.html</id>
-    <updated>2024-08-28T00:00:00Z</updated>
-    <summary>Bladerunner inspired BLE Earrings</summary>
   </entry>
   <entry>
     <title>Previous Crochet</title>
@@ -47,13 +40,6 @@
     <summary>A crochet stegosaurus from an African Flower motif</summary>
   </entry>
   <entry>
-    <title>Crochet Lampshade</title>
-    <link href="https://kittyfarren.dev/projects/CrochetLampshade.html"/>
-    <id>https://kittyfarren.dev/projects/CrochetLampshade.html</id>
-    <updated>2024-08-28T00:00:00Z</updated>
-    <summary>A crochet covered lampshade</summary>
-  </entry>
-  <entry>
     <title>Mirror</title>
     <link href="https://kittyfarren.dev/projects/MosaicMirror.html"/>
     <id>https://kittyfarren.dev/projects/MosaicMirror.html</id>
@@ -66,6 +52,20 @@
     <id>https://kittyfarren.dev/projects/GlassLampshade.html</id>
     <updated>2024-04-09T00:00:00Z</updated>
     <summary>A set of glass lampshades made from old bottles.</summary>
+  </entry>
+  <entry>
+    <title>BLE Earrings</title>
+    <link href="https://kittyfarren.dev/projects/BLEEarrings.html"/>
+    <id>https://kittyfarren.dev/projects/BLEEarrings.html</id>
+    <updated>2024-08-28T00:00:00Z</updated>
+    <summary>Bladerunner inspired BLE Earrings</summary>
+  </entry>
+  <entry>
+    <title>Crochet Lampshade</title>
+    <link href="https://kittyfarren.dev/projects/CrochetLampshade.html"/>
+    <id>https://kittyfarren.dev/projects/CrochetLampshade.html</id>
+    <updated>2024-08-28T00:00:00Z</updated>
+    <summary>A crochet covered lampshade</summary>
   </entry>
 
 </feed>

@@ -1,0 +1,1045 @@
+<!doctype html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, user-scalable=no, minimal-ui">
+  <title>Kitty Farren</title>
+  <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+  <style>/* Variables */
+
+:root {
+  --color-bg-primary: rgb(57, 39, 66);
+  --color-bg-secondary: darkorchid;
+  --color-bg-tertiary: rgb(96, 32, 128);
+  --color-primary: white;
+  --color-secondary: blue;
+  --gap-micro: .1em;
+  --gap-tiny: .165em;
+  --gap-small: .25em;
+  --gap-medium: .5em;
+  --gap-large: .75em;
+  --gap-xlarge: 1em;
+  --color-link: rgb(185, 185, 185);
+}
+
+html {
+  background: var(--color-bg-primary);
+  border-top: 30px solid var(--color-bg-secondary);
+  font-family: Helvetica, Arial, sans-serif;
+}
+
+
+body {
+  font-weight: 300;
+  background: --color-bg-primary;
+  letter-spacing: .3px;
+  color: var(--color-primary);
+  margin: 0px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  text-transform: none;
+  margin: 0;
+}
+
+h1 {
+  font-weight: 700;
+  font-size: 2em;
+  letter-spacing: 1px;
+}
+
+h2 {
+  font-weight: 300;
+  font-size: 1.7;
+  letter-spacing: .5px;
+}
+
+h3 {
+  font-weight: 300;
+  font-size: 1.5em;
+  letter-spacing: .4px;
+}
+
+h3.bold {
+  font-weight: 700;
+}
+
+h4 {
+  font-weight: 300;
+  font-size: 1.3em;
+}
+
+h4.bold {
+  font-weight: 700;
+}
+
+h5 {
+  font-weight: 300;
+  font-size: 1.2em;
+}
+
+h5.italic {
+  font-style: italic;
+}
+
+h6 {
+  font-weight: 300;
+  font-size: 1em;
+  color: var(--color-link);
+}
+
+a {
+  color: inherit;
+  text-decoration: inherit;
+  align-content: center;
+}
+
+a:hover {
+  color: var(--color-bg-secondary);
+}
+
+a .fa-external-link {
+  font-size: 1em;
+  vertical-align: text-top;
+}
+
+p,
+li {
+  font-size: 1em;
+  text-align: justify;
+}
+
+blockquote {
+  font-size: 11px;
+  font-weight: 400;
+  font-style: italic;
+  margin: 0;
+  text-align: justify;
+}
+
+em {
+  color: var(--color-link);
+}
+
+ul {
+  margin: 0 0 0 1em;
+  padding: 0em;
+}
+
+ul li {
+  padding-left: var(--gap-small);
+}
+
+ul.minimal {
+  list-style: none;
+  padding: 0;
+}
+
+ul.minimal li {
+  margin-bottom: 3px;
+  padding-left: 0;
+}
+
+i {
+  margin-right: var(--gap-small);
+  color: var(--color-primary);
+}
+
+@page {
+  size: A4;
+}
+
+/* General */
+section {
+  margin-top: 2em;
+}
+
+.mainPageContainer {
+  width: 70%;
+  align-self: center;
+}
+
+header {
+  background-color: var(--color-bg-tertiary);
+  display: inline-grid;
+  align-items: center;
+  justify-items: center;
+}
+
+.headerRow {
+  display: flex;
+  align-self: center;
+  margin-top: var(--gap-large);
+  margin-bottom: 0.4em;
+}
+
+.logo{
+visibility: hidden;
+}
+
+.keyline {
+  width: 100%;
+  margin: var(--gap-tiny) 0 var(--gap-medium);
+  border-top: solid var(--color-bg-secondary) var(--gap-micro);
+}
+
+.sublink {
+  font-size: 70%;
+  font-weight: 200;
+  color: var(--color-link);
+}
+
+.uppercase {
+  text-transform: uppercase;
+}
+
+.capitalize {
+  text-transform: capitalize;
+}
+
+.chip {
+  padding: var(--gap-small);
+  background: var(--color-bg-tertiary);
+  border-radius: 5px;
+  color: var(--color-primary);
+}
+
+.bullet {
+  width: var(--gap-medium);
+  height: var(--gap-medium);
+  border-radius: 50%;
+  background: var(--color-bg-secondary);
+  align-self: center;
+  justify-self: center;
+}
+
+.line {
+  width: var(--gap-micro);
+  height: 100%;
+  background: var(--color-bg-secondary);
+  align-self: center;
+  justify-self: center;
+}
+
+/* Common */
+.row {
+  display: flex;
+  flex-direction: row;
+  align-items: baseline;
+  gap: var(--gap-small);
+  grid-column-start: 1;
+}
+
+.start {
+  grid-column-start: 1;
+}
+
+
+.column {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  gap: var(--gap-large);
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: auto auto;
+  grid-template-rows: auto;
+  column-gap: var(--gap-medium);
+  row-gap: var(--gap-medium);
+  justify-content: start;
+  row-gap: 1.5em;
+}
+
+.threecolumns {
+  grid-template-columns: auto auto auto;
+}
+
+.top {
+  align-items: first baseline;
+}
+
+.fill {
+  flex-grow: 1;
+}
+
+.fit {
+  width: fit-content;
+}
+
+.centre {
+  justify-content: center;
+}
+
+.align-center {
+  align-items: center;
+}
+
+.narrow {
+  margin-top: var(--gap-small);
+}
+
+.wide {
+  gap: var(--gap-large);
+}
+
+.between {
+  justify-content: space-between;
+}
+
+.wrap {
+  flex-wrap: wrap;
+}
+
+
+.inherit-height {
+  min-height: inherit;
+}
+
+/* FIX: rows within columns don't span the full width */
+.column .row {
+  width: 100%;
+}
+
+/* Section Overrides */
+.profiles+section {
+  margin-top: 0;
+}
+
+.twocolumns{
+  column-count: 2;
+}
+
+/* FIX: First section within a section needs no margin */
+section>section:first-of-type {
+  margin-top: 0;
+}
+
+.company+.position {
+  margin-top: var(--gap-large);
+}
+
+.position {
+  margin-top: var(--gap-medium);
+  margin-left: calc(2.1em - calc(var(--gap-medium) / 2));
+}
+
+.position>.grid {
+  row-gap: 10px;
+}
+
+/* Header Section */
+.avatar {
+  align-self: center;
+  margin-right: var(--gap-medium);
+}
+
+/* Company Section */
+.company {
+  min-height: 4em;
+}
+
+.logo {
+  width: 8em;
+  border: 2px solid var(--color-bg-secondary);
+  border-radius: 50%;
+  visibility: visible;
+}
+
+/* Position Section */
+.space {
+  margin-top: var(--gap-medium);
+}
+
+/* Reference Section */
+.left {
+  align-self: flex-start;
+}
+
+.right {
+  align-self: flex-end;
+}
+
+/* Layouts */
+.page {
+  background: var(--color-bg-primary);
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+}
+
+/* Adjustments for Printing */
+@media print {
+  :root {
+    --color-bg-primary: white;
+    --color-bg-secondary: darkorchid;
+    --color-bg-tertiary: rgb(241, 222, 250);
+    --color-primary: black;
+    --gap-micro: .1em;
+    --gap-tiny: .165em;
+    --gap-small: .25em;
+    --gap-medium: .5em;
+    --gap-large: .75em;
+    --gap-xlarge: 1em;
+    --color-link: rgb(81, 42, 101);
+  }
+
+  body {
+    margin: 0;
+  }
+  
+  html {
+    border-top: 0px;
+  }
+
+  .page {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    box-shadow: none;
+    border: none;
+  }
+
+  .mainPageContainer{
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    height: 100%;
+  }
+
+  p{
+    padding: 0;
+    margin:0;
+  }
+  
+  .headerRow{
+    width: 100%;
+  }
+
+  header{
+    background-color: white;
+  }
+
+  .logo{
+    visibility: collapse;
+  }
+  section :not(.work) {
+    page-break-inside: avoid;
+  }
+
+
+  .no-print {
+    display: none;
+  }
+
+  .fa-external-link {
+    display: none;
+  }
+}</style>
+</head>
+
+<body>
+  <main id="resume" class="page">
+    <header>
+        <div class="headerRow">
+                <img class="logo avatar" src=me.png />
+    
+            <div class="column fill">
+                <h1>Kitty Farren</h1>
+                <h2>Development Engineer at Nidec Drives</h2>
+    
+                    <div class="row align-center">
+                        <h6 class="large">
+                            <i class="fa fa-envelope-o"></i>
+                    
+                                <a href="mailto:farren.kitty@gmail.com" target="_blank">
+                                    farren.kitty@gmail.com
+                                </a>
+                        </h6>
+                    </div>
+    
+    
+    
+                    <div class="row align-center">
+                        <h6 class="large">
+                            <i class="fa fa-map-marker"></i>
+                    
+                                United Kingdom    GB
+                        </h6>
+                    </div>
+        </div>
+    </header>
+    <div class="mainPageContainer">
+    <section class="profiles">
+        <div class="row centre wide no-print">
+                        <div class="url">
+                            <a href="https://www.linkedin.com/in/kitty-farren/">
+                                <div class="row align-center">
+        <h6 class="large">
+            <i class="fa fa-linkedin"></i>
+    
+                <a href="https://www.linkedin.com/in/kitty-farren/" target="_blank">
+                    kitty-farren
+                </a>
+        </h6>
+    </div>
+    </a>
+                        </div>
+                        <div class="url">
+                            <a href="https://github.com/kitblafar">
+                                <div class="row align-center">
+        <h6 class="large">
+            <i class="fa fa-github"></i>
+    
+                <a href="https://github.com/kitblafar" target="_blank">
+                    kitblafar
+                </a>
+        </h6>
+    </div>
+    </a>
+                        </div>
+        </div>
+    </section>
+        <section class="about">
+            <div class="column">
+                <h2 class="uppercase">
+                        <i class="fa fa-user" aria-hidden="true"></i>
+                    About
+                </h2>
+                <div class="keyline"></div>
+            </div>            <div class="column">
+                    <p class="summary">Development engineer working in industrial automation. Currently working on power electronic modelling including software; firmware and electronics development for thermal monitoring in AC drives. Working towards chartership as an electronics and electrical engineer. Skilled in software development, embedded development and power electronic design.</p>
+                </div>
+        </section>
+    <section class="work">
+        <div class="column">
+            <h2 class="uppercase">
+                    <i class="fa fa-building" aria-hidden="true"></i>
+                Work
+            </h2>
+            <div class="keyline"></div>
+        </div>        <section class="company">
+              <div class="row wide inherit-height">
+                  <div class="column fill between inherit-height">
+                          <h3 class="bold">
+                                  <a href="https://www.linkedin.com/company/28614292" target="_blank">Nidec Drives (prev Control Techniques)</a>
+                          </h3>
+                          <h6>
+                              <i class="fa fa-map-marker"></i>
+                              <span>Mid-Wales, UK</span>
+                          </h6>
+                      
+                  </div>
+                  <div class="column end fit">
+                          <h6>
+                              <i class="fa fa-calendar"></i>
+                              <span>Jul 2019</span>
+                              <span> - Nov 2024</span>
+                          </h6>
+            
+                          <h6>
+                              <i class="fa fa-clock-o"></i>
+                              <span>5 yrs 4 mos</span>
+                          </h6>
+            
+                  </div>
+              </div>
+            </section>            
+                <section class="position">
+                  <div class="grid">
+                    <div class="bullet"></div>
+                    <h4 class="bold">Development Engineer</h4>
+                
+                    <div class="line"></div>
+                    <div class="column">
+                      <div class="row end">
+                          <h6 class="space">
+                            <i class="fa fa-calendar"></i>
+                            <span>Oct 2024</span>
+                              <span> - Present</span>
+                          </h6>
+                
+                          <h6>
+                            <i class="fa fa-clock-o"></i>
+                            <span>0 yrs 1 mos</span>
+                          </h6>
+                      </div>
+                
+                          <p>Developed a new thermal model generation process.</p>
+                
+                      <ul>
+                          <li>Supported a junior engineer in carrying out thermal testing.</li>
+                          <li>Constructed a panel for automated IGBT thermal data collection including a custom PCB, embedded solution and 3D models.</li>
+                          <li>Wrote a C# program for processing large amount of IGBT thermal data into a VFD thermal model.</li>
+                      </ul>
+                    </div>
+                  </div>
+                </section>
+                
+                <section class="position">
+                  <div class="grid">
+                    <div class="bullet"></div>
+                    <h4 class="bold">Graduate Engineer</h4>
+                
+                    <div class="line"></div>
+                    <div class="column">
+                      <div class="row end">
+                          <h6 class="space">
+                            <i class="fa fa-calendar"></i>
+                            <span>Jul 2022</span>
+                              <span> - Jul 2024</span>
+                          </h6>
+                
+                          <h6>
+                            <i class="fa fa-clock-o"></i>
+                            <span>2 yrs 0 mos</span>
+                          </h6>
+                      </div>
+                
+                          <p>This role included rotations in different departments to broaden my engineering skill set</p>
+                
+                      <ul>
+                          <li>Power electronics: Created an upgraded IGBT thermal testing device; wrote a new python tools for digital twin development and research novel current sensing technology for next gen drives; conducted emission EMC testing.</li>
+                          <li>ECAD: Competed a lay out a production quality family of boards (FOB); set up an internal KiCAD workflow; created a manufacturing board to test DFM processes and aided the India team in creating layouts and schematics.</li>
+                          <li>Tech Support: Answered customer tickets; solved VFD field failures; created recruitment resources; produced a Python browsing data processing tool and wrote a specification for a set of Android setup wizards.</li>
+                          <li>ECPE courses attended: Tutorial EMC in Power Electronics, Workshop Condition &amp; Health Monitoring.</li>
+                      </ul>
+                    </div>
+                  </div>
+                </section>
+                
+                <section class="position">
+                  <div class="grid">
+                    <div class="bullet"></div>
+                    <h4 class="bold">E3 Student Engineer</h4>
+                
+                    <div class="line"></div>
+                    <div class="column">
+                      <div class="row end">
+                          <h6 class="space">
+                            <i class="fa fa-calendar"></i>
+                            <span>Jul 2019</span>
+                              <span> - Jul 2022</span>
+                          </h6>
+                
+                          <h6>
+                            <i class="fa fa-clock-o"></i>
+                            <span>3 yrs 0 mos</span>
+                          </h6>
+                      </div>
+                
+                          <p>Summer placements in different teams at Nidec Drives as part of the E3 Academy Scholarship Scheme</p>
+                
+                      <ul>
+                          <li>Electronics (2019): EMC and efficiency testing prototype control boards including SIMetrix circuit design, soldering and proto-board creation and EMC testing.</li>
+                          <li>Tech Support (2020): Review of strings used in drives to improve customer experience.</li>
+                          <li>Elevator (2021): Specified and produced a suite of software tests for elevator drives written in Structured Text on a PLC.</li>
+                      </ul>
+                    </div>
+                  </div>
+                </section>
+    </section>
+    <section class="volunteer">
+        <div class="column">
+            <h2 class="uppercase">
+                    <i class="fa fa-gift" aria-hidden="true"></i>
+                Volunteer Experience
+            </h2>
+            <div class="keyline"></div>
+        </div>        <section class="organization">
+                <div class="row wide">
+                    <div class="column fill between">
+                            <h3 class="bold">
+                                STEM Ambassadors
+                            </h3>
+            
+                            <h6><a href=https://www.stem.org.uk/stem-ambassadors target="_blank">https://www.stem.org.uk/stem-ambassadors</a></h6>
+                        
+                    </div>
+                    <div class="column end fit">
+                            <h6>
+                                <i class="fa fa-calendar"></i>
+                                <span>Sep 2021</span>
+                                <span> - Present</span>
+                            </h6>
+            
+                            <h6>
+                                <i class="fa fa-clock-o"></i>
+                                <span>3 yrs 2 mos</span>
+                            </h6>
+            
+                    </div>
+                </div>
+            </section>            
+                <section class="position">
+                  <div class="grid">
+                    <div class="bullet"></div>
+                    <h4 class="bold">STEM Ambassador</h4>
+                
+                    <div class="line"></div>
+                    <div class="column">
+                      <div class="row end">
+                          <h6 class="space">
+                            <i class="fa fa-calendar"></i>
+                            <span>Sep 2021</span>
+                              <span> - Present</span>
+                          </h6>
+                
+                          <h6>
+                            <i class="fa fa-clock-o"></i>
+                            <span>3 yrs 1 mos</span>
+                          </h6>
+                      </div>
+                
+                          <p>STEM ambassadors aims to raise the awareness and understanding of STEM careers. This includes attending careers fairs and events; creating classroom showcases and leading computer workshops with the STEM ambassadors and careers teams.</p>
+                
+                      <ul>
+                          <li>Promoting STEM to young women and being visible as a women in engineering.</li>
+                          <li>Managing and running workshops to give students hands-on experience and making links to real-world applications.</li>
+                          <li>Developing interactive demonstrations of software writing, electronics and control systems.</li>
+                          <li>Giving presentations and Q&amp;A sessions to help de-mystify STEM.</li>
+                          <li>Improving my communication skills with those not in technical roles.</li>
+                      </ul>
+                    </div>
+                  </div>
+                </section>
+    </section>
+    
+    <section class="projects">
+        <div class="column">
+            <h2 class="uppercase">
+                    <i class="fa fa-code" aria-hidden="true"></i>
+                Projects
+            </h2>
+            <div class="keyline"></div>
+        </div>
+        <div class="grid threecolumns">
+    
+                <div class="column fit start">
+                <div class="line"></div>
+                </div>
+    
+                <div class="column">
+    
+    
+                    <div class="column inherit-height">
+                        <h4 class="bold">
+                            <a href="https://kittyfarren.dev" target="_blank">Personal Website</a>
+                        </h4>
+    
+                    </div>
+                </div>
+                <div class="column end">
+    
+    
+                    <p>A static website for writing up personal projects</p>
+    
+                </div>
+    
+                <div class="column fit start">
+                <div class="line"></div>
+                </div>
+    
+                <div class="column">
+    
+    
+                    <div class="column inherit-height">
+                        <h4 class="bold">
+                            <a href="https://kittyfarren.dev/projects/BLEEarrings.html" target="_blank">Bluetooth Earrings</a>
+                        </h4>
+    
+                    </div>
+                </div>
+                <div class="column end">
+    
+    
+                    <p>A set of bluetooth earrings that blink different colours dependant on bluetooth messages. Still in development.</p>
+    
+                </div>
+        </div>
+    </section>
+    <section class="awards">
+        <div class="column">
+            <h2 class="uppercase">
+                    <i class="fa fa-trophy" aria-hidden="true"></i>
+                Awards
+            </h2>
+            <div class="keyline"></div>
+        </div>
+            <section class="award">
+                <div class="column">
+                    <div class="line"></div>
+                    <div class="row wide inherit-height">
+                        <div class="column fill between inherit-height">
+                                <h4 class="bold">
+                                        Peter John&#x27;s Award for Outstanding Final Year Student
+                                </h4>
+    
+                                <h5>The University of Nottingham</h5>
+    
+                        </div>
+    
+                        <div class="column end fit">
+                        </div>
+                    </div>
+    
+                </div>
+            </section>
+            <section class="award">
+                <div class="column">
+                    <div class="line"></div>
+                    <div class="row wide inherit-height">
+                        <div class="column fill between inherit-height">
+                                <h4 class="bold">
+                                        Michael Bromwich Award for the Two Highest Achieving Home Students
+                                </h4>
+    
+                                <h5>The University of Nottingham</h5>
+    
+                        </div>
+    
+                        <div class="column end fit">
+                        </div>
+                    </div>
+    
+                </div>
+            </section>
+    </section>
+    <section class="education">
+        <div class="column">
+            <h2 class="uppercase">
+                    <i class="fa fa-graduation-cap" aria-hidden="true"></i>
+                Education
+            </h2>
+            <div class="keyline"></div>
+        </div>
+        <section class="institution">
+            <div class="column">
+                <div class="row stretch">
+                    <div class="column fill">
+                        <h3 class="bold">
+                            University of Nottingham
+                        </h3>
+    
+                        <h4>Electrical and Electronics Engineering</h4>
+                        <h4>
+                            MEng IET Accredited
+                                (1st Hons)
+                        </h4>
+                    </div>
+    
+                    <div class="column end">
+                        <h6>
+                            <i class="fa fa-calendar"></i>
+                            <span class="startDate">Dec 2018</span>
+                            <span class="endDate"> - Dec 2022</span>
+                        </h6>
+    
+    
+                    </div>
+                </div>
+    
+                <ul>
+                    <li>Individual project: &quot;A Framework for Plenoptic HDR Imaging using Metasurfaces&quot;</li>
+                    <li>Computer Aided Engineering</li>
+                    <li>Power and Energy</li>
+                    <li>Information and Systems</li>
+                    <li>Electronic Processing and Communication</li>
+                    <li>Electrical Energy Conditioning and Control</li>
+                    <li>Contemporary Engineering Themes</li>
+                    <li>Modelling Methods and Tools</li>
+                    <li>Electrical Machines, Drive Systems and Applications</li>
+                    <li>IT infrastructure and cybersecurity</li>
+                    <li>Analogue Electronics</li>
+                    <li>Sensing Systems</li>
+                    <li>Professional Studies</li>
+                    <li>Digital Signal Processing</li>
+                    <li>Instrumentation and Measurement</li>
+                    <li>Advanced AC Drives</li>
+                    <li>HDL for Programmable Devices</li>
+                    <li>Group Projects: Autonomous RC Car (incl line following), SMPS design and creation, Doppler radar gun, Car telemetry system- full stack JavaScript web-application created</li>
+                </ul>
+            </div>
+        </section>
+    </section>
+    <section class="references">
+        <div class="column">
+            <h2 class="uppercase">
+                    <i class="fa fa-quote-left" aria-hidden="true"></i>
+                References
+            </h2>
+            <div class="keyline"></div>
+        </div>
+        <div class="grid">
+            <div class="column fit">
+                <div class="line"></div>
+            </div>
+            <div class="column ">
+                <h4 class="bold capitalizess">Lead Power Electronics Engineer: Ed Peate</h4>
+            </div>
+        </div>
+        <p>
+            Company: Nidec Drives, Email: ed.peate@mail.nidec.com
+        </p>
+        <div class="grid">
+            <div class="column fit">
+                <div class="line"></div>
+            </div>
+            <div class="column ">
+                <h4 class="bold capitalizess">Director of Control Systems: Mike Cade</h4>
+            </div>
+        </div>
+        <p>
+            Company: Nidec Drives, Email: mike.cade@mail.nidec.com
+        </p>
+    </section>
+        <section class="skills">
+            <div class="column">
+                <h2 class="uppercase">
+                        <i class="fa fa-wrench" aria-hidden="true"></i>
+                    Skills
+                </h2>
+                <div class="keyline"></div>
+            </div>        <div class="grid">
+                    <div class="column fit">
+                            <h4 class="bold capitalize">Electrical and Electronics Engineering</h4>
+                    </div>
+                        <div class="column">
+                            <div class="row wrap">
+                                <h6 class="chip">Thermal Modelling</h6>
+                                <h6 class="chip">VHDL</h6>
+                                <h6 class="chip">EMC Design and Testing</h6>
+                                <h6 class="chip">Power Electronic Design</h6>
+                                <h6 class="chip">Digital and Analogue Electronic Design</h6>
+                            </div>  
+                        </div>
+                    <div class="column fit">
+                            <h4 class="bold capitalize">Industrial Automation</h4>
+                    </div>
+                        <div class="column">
+                            <div class="row wrap">
+                                <h6 class="chip">Variable Speed Drives (VSDs, VFDs)</h6>
+                                <h6 class="chip">IEC Structured Text</h6>
+                                <h6 class="chip">PLCs</h6>
+                                <h6 class="chip">Panel Design</h6>
+                            </div>  
+                        </div>
+                    <div class="column fit">
+                            <h4 class="bold capitalize">CAD</h4>
+                    </div>
+                        <div class="column">
+                            <div class="row wrap">
+                                <h6 class="chip">CST Microwave Studio</h6>
+                                <h6 class="chip">Simetrix</h6>
+                                <h6 class="chip">PLECs</h6>
+                                <h6 class="chip">LTSpice</h6>
+                                <h6 class="chip">KiCAD</h6>
+                                <h6 class="chip">DxDesigner</h6>
+                                <h6 class="chip">Blender</h6>
+                                <h6 class="chip">FreeCAD</h6>
+                            </div>  
+                        </div>
+                    <div class="column fit">
+                            <h4 class="bold capitalize">Software Development</h4>
+                    </div>
+                        <div class="column">
+                            <div class="row wrap">
+                                <h6 class="chip">Python</h6>
+                                <h6 class="chip">C</h6>
+                                <h6 class="chip">C++</h6>
+                                <h6 class="chip">C#</h6>
+                                <h6 class="chip">VBA</h6>
+                                <h6 class="chip">Databases/ SQL</h6>
+                                <h6 class="chip">JavaScript</h6>
+                            </div>  
+                        </div>
+                    <div class="column fit">
+                            <h4 class="bold capitalize">UI Frameworks</h4>
+                    </div>
+                        <div class="column">
+                            <div class="row wrap">
+                                <h6 class="chip">Vue.js</h6>
+                                <h6 class="chip">WPF</h6>
+                                <h6 class="chip">WinForms</h6>
+                                <h6 class="chip">Qt</h6>
+                                <h6 class="chip">PyQt</h6>
+                            </div>  
+                        </div>
+                    <div class="column fit">
+                            <h4 class="bold capitalize">Embedded Development</h4>
+                    </div>
+                        <div class="column">
+                            <div class="row wrap">
+                                <h6 class="chip">C</h6>
+                                <h6 class="chip">Automated Testing</h6>
+                                <h6 class="chip">Digital Signal Processing</h6>
+                            </div>  
+                        </div>
+                    <div class="column fit">
+                            <h4 class="bold capitalize">Written Communication and Documentation</h4>
+                    </div>
+                        <div class="column">
+                            <div class="row wrap">
+                                <h6 class="chip">Microsoft 365</h6>
+                                <h6 class="chip">LaTex</h6>
+                                <h6 class="chip">Markup</h6>
+                                <h6 class="chip">HTML</h6>
+                            </div>  
+                        </div>
+            </div>
+        </section>
+    <section class="meta">
+        <div class="column">
+            <h2 class="uppercase">
+                    <i class="fa fa-asterisk" aria-hidden="true"></i>
+                Other
+            </h2>
+            <div class="keyline"></div>
+        </div>    <div class="grid">
+    
+                <div class="column end">
+                    <h4 class="bold capitalize">Languages</h4>
+                </div>
+                <div class="column">
+                <div class="row wrap minimal">
+                        <h6 class="chip">
+                            English
+                                (Native Speaker)
+                        </h6>
+                        <h6 class="chip">
+                            German
+                                (Limited Working)
+                        </h6>
+                </div>
+                </div>
+    
+                <div class="column end">
+                    <h4 class="bold capitalize">Interests</h4>
+                </div>
+                <div class="column">
+                <div class="row wrap minimal">
+                        <h6 class="chip">Crochet and Needlework</h6>
+                        <h6 class="chip">3D modelling (Blender)</h6>
+                        <h6 class="chip">Hobbyist Electronics</h6>
+                        <h6 class="chip">Rock Climbing</h6>
+                        <h6 class="chip">Painting</h6>
+                        <h6 class="chip">Running</h6>
+                        <h6 class="chip">Singing and Guitar</h6>
+                </div>
+                </div>
+        </div>
+    </section>
+    </div>
+  </main>
+</body>
+
+</html>
