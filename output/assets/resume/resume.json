@@ -32,7 +32,7 @@
       "highlights": [
         "Supported a junior engineer in carrying out thermal testing.",
         "Constructed a panel for automated IGBT thermal data collection including a custom PCB, embedded solution and 3D models.",
-        "Wrote a C# program for processing large amount of IGBT thermal data into a VFD thermal model including custom UI."
+        "Wrote a C# program for processing large amounts of IGBT thermal data into a VFD thermal model including custom UI."
       ],
       "summary": "Developed a new thermal model generation process.",
       "url": "https://www.linkedin.com/company/28614292",
@@ -44,8 +44,8 @@
       "startDate": "2022-07-31",
       "endDate": "2024-07-31",
       "highlights": [
-        "Power electronics: Created an upgraded IGBT thermal testing device; wrote a new python tools for digital twin development and research novel current sensing technology for next gen drives; conducted emission EMC testing; underwent production quality soldering training.",
-        "ECAD: Competed a lay out a production quality family of boards (FOB); set up an internal KiCAD workflow; created a manufacturing board to test DFM processes and aided the India team in creating layouts and schematics.",
+        "Power electronics: Created an upgraded IGBT thermal testing device; wrote new python tools for digital twin development and researched novel current sensing technology for next gen drives; conducted emission EMC testing; underwent production quality soldering training.",
+        "ECAD: Completed a lay out of a family of boards (FOB); set up an internal KiCAD workflow; created a manufacturing board to test DFM processes and aided the India team in creating layouts and schematics.",
         "Tech Support: Answered customer tickets; solved VFD field failures; created recruitment resources; produced a Python data processing tool and wrote a specification for a set of Android setup wizards.",
         "Attended ECPE courses for EMC in Power Electronics and Condition and Health Monitoring in Power Electronics."
       ],
@@ -62,7 +62,7 @@
       "Reviewed strings in drives to improve customer experience.",
       "Specified and produced a suite of software tests for elevator drives written in Structured Text on a PLC."
     ],
-      "summary": "Summer placements in the Electronics (2019), Tech Support (2020) and Embedded Elevator (2021) teams as part of the E3 Academy Scholarship Scheme",
+      "summary": "Summer placements in the Electronics (2019), Tech Support (2020) and Embedded Elevator (2021) teams as part of the E3 Academy scholarship scheme.",
       "url": "https://www.e3academy.org/",
       "location": "Powys"
     }
@@ -75,10 +75,10 @@
       "url": "https://www.stem.org.uk/stem-ambassadors",
       "summary": "STEM ambassadors aims to raise the awareness and understanding of STEM careers. This includes attending careers fairs and events; creating classroom showcases and leading computer workshops with the STEM ambassadors and careers teams.",
       "highlights": [
-        "Promote STEM to young women and being visible as a women in engineering.",
+        "Promote STEM to young women and being visible as a woman in engineering.",
         "Manage and running workshops to give students hands-on experience and making links to real-world applications.",
         "Develop interactive demonstrations of software writing, electronics and control systems.",
-        "Give presentations and Q&A sessions to help de-mystify STEM.",
+        "Give presentations and Q&A sessions to help demystify STEM.",
         "Demonstrate presentation skills explaining technical information to a non-technical audience."
       ]
     },
@@ -91,7 +91,7 @@
       "highlights": [
         "Organised company engagement with the \"Lottie Tour\" for Tomorrow's Engineers Week 2023 to show different sectors of engineering to young women.",
         "Founded the Women in Engineering group at Nidec Drives which now includes all women in STEM roles at Nidec Drives.",
-        "Took part in Women in Tech promotional events including chairing a Women in Engineering round-table video and attending international women's day events."
+        "Took part in Women in Tech promotional events including chairing a Women in Engineering round-table video and attending International Women's Day events."
       ]
     }
   ],
@@ -104,7 +104,7 @@
       "endDate": "2022-12-31",
       "score": "1st Class Hons. IET Accredited.",
       "individualProject": "A Framework for Plenoptic HDR Imaging using Metasurfaces",
-      "groupProjects": ["Autonomous RC Car (including line following)", "SMPS design and creation", "Doppler radar gun", "Car telemetry system including full stack JavaScript web application"],
+      "groupProjects": ["Autonomous line following and RC Car", "SMPS design and creation", "Doppler radar gun", "Car telemetry system including full stack JavaScript web application"],
       "awards": ["Peter John's Award for an Outstanding Final Year Student",
       "Michael Bromwich Award for the Two Highest Achieving Home Students"],
       "courses": [
@@ -259,7 +259,7 @@
     {
       "name": "Bluetooth Earrings",
       "url": "https://kittyfarren.dev/projects/BLEEarrings.html",
-      "description": "A set of bluetooth earrings that blink different colours dependant on bluetooth messages. Still in development."
+      "description": "A set of Bluetooth earrings that blink different colours dependent on Bluetooth messages. Still in development."
     }
   ]
 }
