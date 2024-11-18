@@ -172,6 +172,7 @@ header {
   justify-items: center;
 }
 
+
 .headerRow {
   display: flex;
   align-self: center;
@@ -299,6 +300,13 @@ visibility: hidden;
   flex-wrap: wrap;
 }
 
+.inline{
+  display: inline;
+}
+
+.no-top-margin{
+  margin-top: 0px;
+}
 
 .inherit-height {
   min-height: inherit;
@@ -376,6 +384,14 @@ section>section:first-of-type {
   margin: 0 auto;
 }
 
+.no-show {
+  visibility: collapse;
+}
+
+.no-print {
+  visibility: visible;
+}
+
 /* Adjustments for Printing */
 @media print {
   :root {
@@ -436,9 +452,22 @@ section>section:first-of-type {
     page-break-inside: avoid;
   }
 
+  .volunteer{
+    page-break-before: always;
+  }
+
+.projects{
+  visibility: collapse;
+  margin: 0px;
+  height: 0px;
+}
 
   .no-print {
-    display: none;
+    visibility: collapse;
+  }
+
+  .no-show {
+    visibility: visible;
   }
 
   .fa-external-link {
@@ -467,46 +496,95 @@ section>section:first-of-type {
                         </h6>
                     </div>
     
-    
+                    <div class="row align-center">
+                        <h6 class="large">
+                            <i class="fa fa-phone"></i>
+                    
+                                07538096370
+                        </h6>
+                    </div>
     
                     <div class="row align-center">
                         <h6 class="large">
                             <i class="fa fa-map-marker"></i>
                     
-                                United Kingdom    GB
+                                UK    
                         </h6>
                     </div>
         </div>
     </header>
     <div class="mainPageContainer">
     <section class="profiles">
-        <div class="row centre wide no-print">
-                        <div class="url">
-                            <a href="https://www.linkedin.com/in/kitty-farren/">
-                                <div class="row align-center">
-        <h6 class="large">
-            <i class="fa fa-linkedin"></i>
-    
-                <a href="https://www.linkedin.com/in/kitty-farren/" target="_blank">
-                    kitty-farren
+        <div class="row centre wide">
+            <div class="url no-print">
+                <a href=https://www.linkedin.com/in/kitty-farren>
+                    <div class="row align-center">
+                        <h6 class="large">
+                            <i class="fa fa-linkedin"></i>
+                    
+                                <a href="https://www.linkedin.com/in/kitty-farren" target="_blank">
+                                    kitty-farren
+                                </a>
+                        </h6>
+                    </div>
                 </a>
-        </h6>
-    </div>
-    </a>
-                        </div>
-                        <div class="url">
-                            <a href="https://github.com/kitblafar">
-                                <div class="row align-center">
-        <h6 class="large">
-            <i class="fa fa-github"></i>
+            </div>
     
-                <a href="https://github.com/kitblafar" target="_blank">
-                    kitblafar
+            <div class="url no-show">
+                <a href=https://www.linkedin.com/in/kitty-farren>
+                    <div class="row align-center">
+                        <h6 class="large">
+                            <i class="fa fa-linkedin"></i>
+                    
+                                <a href="https://www.linkedin.com/in/kitty-farren" target="_blank">
+                                    www.linkedin.com/in/kitty-farren
+                                </a>
+                        </h6>
+                    </div>
                 </a>
-        </h6>
-    </div>
-    </a>
-                        </div>
+            </div>
+    
+            <div class="url no-print">
+                <a href=https://github.com/kitblafar>
+                    <div class="row align-center">
+                        <h6 class="large">
+                            <i class="fa fa-github"></i>
+                    
+                                <a href="https://github.com/kitblafar" target="_blank">
+                                    kitblafar
+                                </a>
+                        </h6>
+                    </div>
+                </a>
+            </div>
+    
+            <div class="url no-show">
+                <a href=https://github.com/kitblafar>
+                    <div class="row align-center">
+                        <h6 class="large">
+                            <i class="fa fa-github"></i>
+                    
+                                <a href="https://github.com/kitblafar" target="_blank">
+                                    github.com/kitblafar
+                                </a>
+                        </h6>
+                    </div>
+                </a>
+            </div>
+    
+            <div class="url">
+                <a href=https://kittyfarren.dev>
+                    <div class="row align-center">
+                        <h6 class="large">
+                            <i class="fa fa-globe"></i>
+                    
+                                <a href="https://kittyfarren.dev" target="_blank">
+                                    kittyfarren.dev
+                                </a>
+                        </h6>
+                    </div>
+                </a>
+            </div>
         </div>
     </section>
         <section class="about">
@@ -517,7 +595,7 @@ section>section:first-of-type {
                 </h2>
                 <div class="keyline"></div>
             </div>            <div class="column">
-                    <p class="summary">Development engineer working in industrial automation. Currently working on power electronic modelling including software; firmware and electronics development for thermal monitoring in AC drives. Working towards chartership as an electronics and electrical engineer. Skilled in software development, embedded development and power electronic design.</p>
+                    <p class="summary">Development engineer with a master’s degree in electrical and electronics engineering, working in industrial automation. Currently working on creating a power electronic fault detection system for AC drives including software; firmware and electronics development. Working towards chartership as an Electronics and Electrical Engineer. Skilled in software development, embedded development and power electronic design.</p>
                 </div>
         </section>
     <section class="work">
@@ -535,7 +613,7 @@ section>section:first-of-type {
                           </h3>
                           <h6>
                               <i class="fa fa-map-marker"></i>
-                              <span>Mid-Wales, UK</span>
+                              <span>Powys</span>
                           </h6>
                       
                   </div>
@@ -579,7 +657,7 @@ section>section:first-of-type {
                       <ul>
                           <li>Supported a junior engineer in carrying out thermal testing.</li>
                           <li>Constructed a panel for automated IGBT thermal data collection including a custom PCB, embedded solution and 3D models.</li>
-                          <li>Wrote a C# program for processing large amount of IGBT thermal data into a VFD thermal model.</li>
+                          <li>Wrote a C# program for processing large amount of IGBT thermal data into a VFD thermal model including custom UI.</li>
                       </ul>
                     </div>
                   </div>
@@ -605,13 +683,13 @@ section>section:first-of-type {
                           </h6>
                       </div>
                 
-                          <p>This role included rotations in different departments to broaden my engineering skill set</p>
+                          <p>This role included rotations in the Power Electronics, ECAD and Tech Support departments to broaden my engineering skill set</p>
                 
                       <ul>
-                          <li>Power electronics: Created an upgraded IGBT thermal testing device; wrote a new python tools for digital twin development and research novel current sensing technology for next gen drives; conducted emission EMC testing.</li>
+                          <li>Power electronics: Created an upgraded IGBT thermal testing device; wrote a new python tools for digital twin development and research novel current sensing technology for next gen drives; conducted emission EMC testing; underwent production quality soldering training.</li>
                           <li>ECAD: Competed a lay out a production quality family of boards (FOB); set up an internal KiCAD workflow; created a manufacturing board to test DFM processes and aided the India team in creating layouts and schematics.</li>
-                          <li>Tech Support: Answered customer tickets; solved VFD field failures; created recruitment resources; produced a Python browsing data processing tool and wrote a specification for a set of Android setup wizards.</li>
-                          <li>ECPE courses attended: Tutorial EMC in Power Electronics, Workshop Condition &amp; Health Monitoring.</li>
+                          <li>Tech Support: Answered customer tickets; solved VFD field failures; created recruitment resources; produced a Python data processing tool and wrote a specification for a set of Android setup wizards.</li>
+                          <li>Attended ECPE courses for EMC in Power Electronics and Condition and Health Monitoring in Power Electronics.</li>
                       </ul>
                     </div>
                   </div>
@@ -637,182 +715,16 @@ section>section:first-of-type {
                           </h6>
                       </div>
                 
-                          <p>Summer placements in different teams at Nidec Drives as part of the E3 Academy Scholarship Scheme</p>
+                          <p>Summer placements in the Electronics (2019), Tech Support (2020) and Embedded Elevator (2021) teams as part of the E3 Academy Scholarship Scheme</p>
                 
                       <ul>
-                          <li>Electronics (2019): EMC and efficiency testing prototype control boards including SIMetrix circuit design, soldering and proto-board creation and EMC testing.</li>
-                          <li>Tech Support (2020): Review of strings used in drives to improve customer experience.</li>
-                          <li>Elevator (2021): Specified and produced a suite of software tests for elevator drives written in Structured Text on a PLC.</li>
+                          <li>Created prototype control boards and conducted EMC efficiency testing using SIMetrix for circuit design.</li>
+                          <li>Reviewed strings in drives to improve customer experience.</li>
+                          <li>Specified and produced a suite of software tests for elevator drives written in Structured Text on a PLC.</li>
                       </ul>
                     </div>
                   </div>
                 </section>
-    </section>
-    <section class="volunteer">
-        <div class="column">
-            <h2 class="uppercase">
-                    <i class="fa fa-gift" aria-hidden="true"></i>
-                Volunteer Experience
-            </h2>
-            <div class="keyline"></div>
-        </div>        <section class="organization">
-                <div class="row wide">
-                    <div class="column fill between">
-                            <h3 class="bold">
-                                STEM Ambassadors
-                            </h3>
-            
-                            <h6><a href=https://www.stem.org.uk/stem-ambassadors target="_blank">https://www.stem.org.uk/stem-ambassadors</a></h6>
-                        
-                    </div>
-                    <div class="column end fit">
-                            <h6>
-                                <i class="fa fa-calendar"></i>
-                                <span>Sep 2021</span>
-                                <span> - Present</span>
-                            </h6>
-            
-                            <h6>
-                                <i class="fa fa-clock-o"></i>
-                                <span>3 yrs 2 mos</span>
-                            </h6>
-            
-                    </div>
-                </div>
-            </section>            
-                <section class="position">
-                  <div class="grid">
-                    <div class="bullet"></div>
-                    <h4 class="bold">STEM Ambassador</h4>
-                
-                    <div class="line"></div>
-                    <div class="column">
-                      <div class="row end">
-                          <h6 class="space">
-                            <i class="fa fa-calendar"></i>
-                            <span>Sep 2021</span>
-                              <span> - Present</span>
-                          </h6>
-                
-                          <h6>
-                            <i class="fa fa-clock-o"></i>
-                            <span>3 yrs 1 mos</span>
-                          </h6>
-                      </div>
-                
-                          <p>STEM ambassadors aims to raise the awareness and understanding of STEM careers. This includes attending careers fairs and events; creating classroom showcases and leading computer workshops with the STEM ambassadors and careers teams.</p>
-                
-                      <ul>
-                          <li>Promoting STEM to young women and being visible as a women in engineering.</li>
-                          <li>Managing and running workshops to give students hands-on experience and making links to real-world applications.</li>
-                          <li>Developing interactive demonstrations of software writing, electronics and control systems.</li>
-                          <li>Giving presentations and Q&amp;A sessions to help de-mystify STEM.</li>
-                          <li>Improving my communication skills with those not in technical roles.</li>
-                      </ul>
-                    </div>
-                  </div>
-                </section>
-    </section>
-    
-    <section class="projects">
-        <div class="column">
-            <h2 class="uppercase">
-                    <i class="fa fa-code" aria-hidden="true"></i>
-                Projects
-            </h2>
-            <div class="keyline"></div>
-        </div>
-        <div class="grid threecolumns">
-    
-                <div class="column fit start">
-                <div class="line"></div>
-                </div>
-    
-                <div class="column">
-    
-    
-                    <div class="column inherit-height">
-                        <h4 class="bold">
-                            <a href="https://kittyfarren.dev" target="_blank">Personal Website</a>
-                        </h4>
-    
-                    </div>
-                </div>
-                <div class="column end">
-    
-    
-                    <p>A static website for writing up personal projects</p>
-    
-                </div>
-    
-                <div class="column fit start">
-                <div class="line"></div>
-                </div>
-    
-                <div class="column">
-    
-    
-                    <div class="column inherit-height">
-                        <h4 class="bold">
-                            <a href="https://kittyfarren.dev/projects/BLEEarrings.html" target="_blank">Bluetooth Earrings</a>
-                        </h4>
-    
-                    </div>
-                </div>
-                <div class="column end">
-    
-    
-                    <p>A set of bluetooth earrings that blink different colours dependant on bluetooth messages. Still in development.</p>
-    
-                </div>
-        </div>
-    </section>
-    <section class="awards">
-        <div class="column">
-            <h2 class="uppercase">
-                    <i class="fa fa-trophy" aria-hidden="true"></i>
-                Awards
-            </h2>
-            <div class="keyline"></div>
-        </div>
-            <section class="award">
-                <div class="column">
-                    <div class="line"></div>
-                    <div class="row wide inherit-height">
-                        <div class="column fill between inherit-height">
-                                <h4 class="bold">
-                                        Peter John&#x27;s Award for Outstanding Final Year Student
-                                </h4>
-    
-                                <h5>The University of Nottingham</h5>
-    
-                        </div>
-    
-                        <div class="column end fit">
-                        </div>
-                    </div>
-    
-                </div>
-            </section>
-            <section class="award">
-                <div class="column">
-                    <div class="line"></div>
-                    <div class="row wide inherit-height">
-                        <div class="column fill between inherit-height">
-                                <h4 class="bold">
-                                        Michael Bromwich Award for the Two Highest Achieving Home Students
-                                </h4>
-    
-                                <h5>The University of Nottingham</h5>
-    
-                        </div>
-    
-                        <div class="column end fit">
-                        </div>
-                    </div>
-    
-                </div>
-            </section>
     </section>
     <section class="education">
         <div class="column">
@@ -826,14 +738,16 @@ section>section:first-of-type {
             <div class="column">
                 <div class="row stretch">
                     <div class="column fill">
-                        <h3 class="bold">
-                            University of Nottingham
-                        </h3>
-    
-                        <h4>Electrical and Electronics Engineering</h4>
                         <h4>
-                            MEng IET Accredited
-                                (1st Hons)
+                            MEng
+                            Electrical and Electronics Engineering
+                        </h4>
+                        <h4>
+                            University of Nottingham
+                            </h4>
+    
+                        <h4>
+                            1st Class Hons. IET Accredited.
                         </h4>
                     </div>
     
@@ -848,60 +762,139 @@ section>section:first-of-type {
                     </div>
                 </div>
     
-                <ul>
-                    <li>Individual project: &quot;A Framework for Plenoptic HDR Imaging using Metasurfaces&quot;</li>
-                    <li>Computer Aided Engineering</li>
-                    <li>Power and Energy</li>
-                    <li>Information and Systems</li>
-                    <li>Electronic Processing and Communication</li>
-                    <li>Electrical Energy Conditioning and Control</li>
-                    <li>Contemporary Engineering Themes</li>
-                    <li>Modelling Methods and Tools</li>
-                    <li>Electrical Machines, Drive Systems and Applications</li>
-                    <li>IT infrastructure and cybersecurity</li>
-                    <li>Analogue Electronics</li>
-                    <li>Sensing Systems</li>
-                    <li>Professional Studies</li>
-                    <li>Digital Signal Processing</li>
-                    <li>Instrumentation and Measurement</li>
-                    <li>Advanced AC Drives</li>
-                    <li>HDL for Programmable Devices</li>
-                    <li>Group Projects: Autonomous RC Car (incl line following), SMPS design and creation, Doppler radar gun, Car telemetry system- full stack JavaScript web-application created</li>
-                </ul>
+                <div >
+                    <h5>Individual Project:</h5>
+                    <p class="no-top-margin">
+                        A Framework for Plenoptic HDR Imaging using Metasurfaces
+                    </p>
+                </div>
+    
+                <div>
+                    <h5>Modules:</h5>
+                    <p class="no-top-margin">
+                        Computer Aided Engineering;
+                        Power and Energy;
+                        Information and Systems;
+                        Electronic Processing and Communication;
+                        Electrical Energy Conditioning and Control;
+                        Contemporary Engineering Themes;
+                        Modelling Methods and Tools;
+                        Electrical Machines, Drive Systems and Applications;
+                        IT infrastructure and cybersecurity;
+                        Analogue Electronics;
+                        Sensing Systems;
+                        Professional Studies;
+                        Digital Signal Processing;
+                        Instrumentation and Measurement;
+                        Advanced AC Drives;
+                        and HDL for Programmable Devices.
+                    </p>
+                </div>
+    
+                <div>
+                    <h5 >Group Projects:</h5>
+                    <p class="no-top-margin">
+                        Autonomous RC Car (including line following);
+                        SMPS design and creation;
+                        Doppler radar gun;
+                        and Car telemetry system including full stack JavaScript web application.
+                    </p>
+                </div>
+    
+                <div>
+                    <h5 >Awards:</h5>
+                    <p class="no-top-margin">
+                        Peter John&#x27;s Award for an Outstanding Final Year Student
+                        and Michael Bromwich Award for the Two Highest Achieving Home Students.
+                    </p>
+                </div>
+    
             </div>
         </section>
     </section>
-    <section class="references">
+    <section class="volunteer">
         <div class="column">
             <h2 class="uppercase">
-                    <i class="fa fa-quote-left" aria-hidden="true"></i>
-                References
+                    <i class="fa fa-gift" aria-hidden="true"></i>
+                Volunteering
             </h2>
             <div class="keyline"></div>
-        </div>
-        <div class="grid">
-            <div class="column fit">
-                <div class="line"></div>
+        </div>    <h3>
+        <a href="https://www.stem.org.uk/stem-ambassadors" target="_blank">STEM Ambassadors</a>
+        </h3>
+        <p></p>
+        
+        <section class="position">
+          <div class="grid">
+            <div class="bullet"></div>
+            <h4 class="bold">STEM Ambassador</h4>
+        
+            <div class="line"></div>
+            <div class="column">
+              <div class="row end">
+                  <h6 class="space">
+                    <i class="fa fa-calendar"></i>
+                    <span>Sep 2021</span>
+                      <span> - Present</span>
+                  </h6>
+        
+                  <h6>
+                    <i class="fa fa-clock-o"></i>
+                    <span>3 yrs 1 mos</span>
+                  </h6>
+              </div>
+        
+                  <p>STEM ambassadors aims to raise the awareness and understanding of STEM careers. This includes attending careers fairs and events; creating classroom showcases and leading computer workshops with the STEM ambassadors and careers teams.</p>
+        
+              <ul>
+                  <li>Promote STEM to young women and being visible as a women in engineering.</li>
+                  <li>Manage and running workshops to give students hands-on experience and making links to real-world applications.</li>
+                  <li>Develop interactive demonstrations of software writing, electronics and control systems.</li>
+                  <li>Give presentations and Q&amp;A sessions to help de-mystify STEM.</li>
+                  <li>Demonstrate presentation skills explaining technical information to a non-technical audience.</li>
+              </ul>
             </div>
-            <div class="column ">
-                <h4 class="bold capitalizess">Lead Power Electronics Engineer: Ed Peate</h4>
+          </div>
+        </section>
+        <p></p>
+        <h3>
+        <a href="https://www.wes.org.uk/" target="_blank">Women in Engineering Society (WES)</a>
+        </h3>
+        <p></p>
+        
+        <section class="position">
+          <div class="grid">
+            <div class="bullet"></div>
+            <h4 class="bold">Member (MWES)</h4>
+        
+            <div class="line"></div>
+            <div class="column">
+              <div class="row end">
+                  <h6 class="space">
+                    <i class="fa fa-calendar"></i>
+                    <span>Jan 2022</span>
+                      <span> - Present</span>
+                  </h6>
+        
+                  <h6>
+                    <i class="fa fa-clock-o"></i>
+                    <span>2 yrs 10 mos</span>
+                  </h6>
+              </div>
+        
+                  <p>This is a group to support and increase the visibility of women in engineering.</p>
+        
+              <ul>
+                  <li>Organised company engagement with the &quot;Lottie Tour&quot; for Tomorrow&#x27;s Engineers Week 2023 to show different sectors of engineering to young women.</li>
+                  <li>Founded the Women in Engineering group at Nidec Drives which now includes all women in STEM roles at Nidec Drives.</li>
+                  <li>Took part in Women in Tech promotional events including chairing a Women in Engineering round-table video and attending international women&#x27;s day events.</li>
+              </ul>
             </div>
-        </div>
-        <p>
-            Company: Nidec Drives, Email: ed.peate@mail.nidec.com
-        </p>
-        <div class="grid">
-            <div class="column fit">
-                <div class="line"></div>
-            </div>
-            <div class="column ">
-                <h4 class="bold capitalizess">Director of Control Systems: Mike Cade</h4>
-            </div>
-        </div>
-        <p>
-            Company: Nidec Drives, Email: mike.cade@mail.nidec.com
-        </p>
+          </div>
+        </section>
+        <p></p>
     </section>
+    
         <section class="skills">
             <div class="column">
                 <h2 class="uppercase">
@@ -997,6 +990,59 @@ section>section:first-of-type {
                         </div>
             </div>
         </section>
+    <section class="projects">
+        <div class="column">
+            <h2 class="uppercase">
+                    <i class="fa fa-code" aria-hidden="true"></i>
+                Projects
+            </h2>
+            <div class="keyline"></div>
+        </div>
+        <div class="grid threecolumns">
+    
+                <div class="column fit start">
+                <div class="line"></div>
+                </div>
+    
+                <div class="column">
+    
+    
+                    <div class="column inherit-height">
+                        <h4 class="bold">
+                            <a href="https://kittyfarren.dev" target="_blank">Personal Website</a>
+                        </h4>
+    
+                    </div>
+                </div>
+                <div class="column end">
+    
+    
+                    <p>A static website for writing up personal projects</p>
+    
+                </div>
+    
+                <div class="column fit start">
+                <div class="line"></div>
+                </div>
+    
+                <div class="column">
+    
+    
+                    <div class="column inherit-height">
+                        <h4 class="bold">
+                            <a href="https://kittyfarren.dev/projects/BLEEarrings.html" target="_blank">Bluetooth Earrings</a>
+                        </h4>
+    
+                    </div>
+                </div>
+                <div class="column end">
+    
+    
+                    <p>A set of bluetooth earrings that blink different colours dependant on bluetooth messages. Still in development.</p>
+    
+                </div>
+        </div>
+    </section>
     <section class="meta">
         <div class="column">
             <h2 class="uppercase">
@@ -1037,6 +1083,37 @@ section>section:first-of-type {
                 </div>
                 </div>
         </div>
+    </section>
+    <section class="references">
+        <div class="column">
+            <h2 class="uppercase">
+                    <i class="fa fa-quote-left" aria-hidden="true"></i>
+                References
+            </h2>
+            <div class="keyline"></div>
+        </div>
+        <div class="grid">
+            <div class="column fit">
+                <div class="line"></div>
+            </div>
+            <div class="column ">
+                <h4 class="bold capitalizess">Lead Power Electronics Engineer: Ed Peate</h4>
+            </div>
+        </div>
+        <p>
+            Company: Nidec Drives, Email: ed.peate@mail.nidec.com
+        </p>
+        <div class="grid">
+            <div class="column fit">
+                <div class="line"></div>
+            </div>
+            <div class="column ">
+                <h4 class="bold capitalizess">Director of Control Systems: Mike Cade</h4>
+            </div>
+        </div>
+        <p>
+            Company: Nidec Drives, Email: mike.cade@mail.nidec.com
+        </p>
     </section>
     </div>
   </main>

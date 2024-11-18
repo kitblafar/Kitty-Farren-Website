@@ -6,16 +6,16 @@
     "image": "me.png",
     "email": "farren.kitty@gmail.com",
     "website": "https://kittyfarren.dev",
-    "summary": "Development engineer working in industrial automation. Currently working on power electronic modelling including software; firmware and electronics development for thermal monitoring in AC drives. Working towards chartership as an electronics and electrical engineer. Skilled in software development, embedded development and power electronic design.",
+    "phone": "07538096370",
+    "summary": "Development engineer with a master’s degree in electrical and electronics engineering, working in industrial automation. Currently working on creating a power electronic fault detection system for AC drives including software; firmware and electronics development. Working towards chartership as an Electronics and Electrical Engineer. Skilled in software development, embedded development and power electronic design.",
     "location": {
-      "countryCode": "GB",
-      "address": "United Kingdom"
+      "address": "UK"
     },
     "profiles": [
       {
         "network": "LinkedIn",
         "username": "kitty-farren",
-        "url": "https://www.linkedin.com/in/kitty-farren/"
+        "url": "https://www.linkedin.com/in/kitty-farren"
       },
       {
         "network": "GitHub",
@@ -32,11 +32,11 @@
       "highlights": [
         "Supported a junior engineer in carrying out thermal testing.",
         "Constructed a panel for automated IGBT thermal data collection including a custom PCB, embedded solution and 3D models.",
-        "Wrote a C# program for processing large amount of IGBT thermal data into a VFD thermal model."
+        "Wrote a C# program for processing large amount of IGBT thermal data into a VFD thermal model including custom UI."
       ],
       "summary": "Developed a new thermal model generation process.",
       "url": "https://www.linkedin.com/company/28614292",
-      "location": "Mid-Wales, UK"
+      "location": "Powys"
     },
     {
       "name": "Nidec Drives (prev Control Techniques)",
@@ -44,27 +44,27 @@
       "startDate": "2022-07-31",
       "endDate": "2024-07-31",
       "highlights": [
-        "Power electronics: Created an upgraded IGBT thermal testing device; wrote a new python tools for digital twin development and research novel current sensing technology for next gen drives; conducted emission EMC testing.",
+        "Power electronics: Created an upgraded IGBT thermal testing device; wrote a new python tools for digital twin development and research novel current sensing technology for next gen drives; conducted emission EMC testing; underwent production quality soldering training.",
         "ECAD: Competed a lay out a production quality family of boards (FOB); set up an internal KiCAD workflow; created a manufacturing board to test DFM processes and aided the India team in creating layouts and schematics.",
-        "Tech Support: Answered customer tickets; solved VFD field failures; created recruitment resources; produced a Python browsing data processing tool and wrote a specification for a set of Android setup wizards.",
-        "ECPE courses attended: Tutorial EMC in Power Electronics, Workshop Condition & Health Monitoring."
+        "Tech Support: Answered customer tickets; solved VFD field failures; created recruitment resources; produced a Python data processing tool and wrote a specification for a set of Android setup wizards.",
+        "Attended ECPE courses for EMC in Power Electronics and Condition and Health Monitoring in Power Electronics."
       ],
-      "summary": "This role included rotations in different departments to broaden my engineering skill set",
+      "summary": "This role included rotations in the Power Electronics, ECAD and Tech Support departments to broaden my engineering skill set",
       "url": "https://www.linkedin.com/company/28614292",
-      "location": "Mid-Wales, UK"
+      "location": "Powys"
     },
     {
       "name": "Nidec Drives (prev Control Techniques)",
       "position": "E3 Student Engineer",
       "startDate": "2019-07-31",
       "endDate": "2022-07-31",
-      "highlights": ["Electronics (2019): EMC and efficiency testing prototype control boards including SIMetrix circuit design, soldering and proto-board creation and EMC testing.",
-      "Tech Support (2020): Review of strings used in drives to improve customer experience.",
-      "Elevator (2021): Specified and produced a suite of software tests for elevator drives written in Structured Text on a PLC."
+      "highlights": ["Created prototype control boards and conducted EMC efficiency testing using SIMetrix for circuit design.",
+      "Reviewed strings in drives to improve customer experience.",
+      "Specified and produced a suite of software tests for elevator drives written in Structured Text on a PLC."
     ],
-      "summary": "Summer placements in different teams at Nidec Drives as part of the E3 Academy Scholarship Scheme",
+      "summary": "Summer placements in the Electronics (2019), Tech Support (2020) and Embedded Elevator (2021) teams as part of the E3 Academy Scholarship Scheme",
       "url": "https://www.e3academy.org/",
-      "location": "Mid-Wales, UK"
+      "location": "Powys"
     }
   ],
   "volunteer": [
@@ -75,11 +75,23 @@
       "url": "https://www.stem.org.uk/stem-ambassadors",
       "summary": "STEM ambassadors aims to raise the awareness and understanding of STEM careers. This includes attending careers fairs and events; creating classroom showcases and leading computer workshops with the STEM ambassadors and careers teams.",
       "highlights": [
-        "Promoting STEM to young women and being visible as a women in engineering.",
-        "Managing and running workshops to give students hands-on experience and making links to real-world applications.",
-        "Developing interactive demonstrations of software writing, electronics and control systems.",
-        "Giving presentations and Q&A sessions to help de-mystify STEM.",
-        "Improving my communication skills with those not in technical roles."
+        "Promote STEM to young women and being visible as a women in engineering.",
+        "Manage and running workshops to give students hands-on experience and making links to real-world applications.",
+        "Develop interactive demonstrations of software writing, electronics and control systems.",
+        "Give presentations and Q&A sessions to help de-mystify STEM.",
+        "Demonstrate presentation skills explaining technical information to a non-technical audience."
+      ]
+    },
+    {
+      "organization": "Women in Engineering Society (WES)",
+      "position": "Member (MWES)",
+      "startDate": "2022-01-01",
+      "url": "https://www.wes.org.uk/",
+      "summary": "This is a group to support and increase the visibility of women in engineering.",
+      "highlights": [
+        "Organised company engagement with the \"Lottie Tour\" for Tomorrow's Engineers Week 2023 to show different sectors of engineering to young women.",
+        "Founded the Women in Engineering group at Nidec Drives which now includes all women in STEM roles at Nidec Drives.",
+        "Took part in Women in Tech promotional events including chairing a Women in Engineering round-table video and attending international women's day events."
       ]
     }
   ],
@@ -87,12 +99,15 @@
     {
       "institution": "University of Nottingham",
       "area": "Electrical and Electronics Engineering",
-      "studyType": "MEng IET Accredited",
+      "studyType": "MEng",
       "startDate": "2018-12-31",
       "endDate": "2022-12-31",
-      "score": "1st Hons",
+      "score": "1st Class Hons. IET Accredited.",
+      "individualProject": "A Framework for Plenoptic HDR Imaging using Metasurfaces",
+      "groupProjects": ["Autonomous RC Car (including line following)", "SMPS design and creation", "Doppler radar gun", "Car telemetry system including full stack JavaScript web application"],
+      "awards": ["Peter John's Award for an Outstanding Final Year Student",
+      "Michael Bromwich Award for the Two Highest Achieving Home Students"],
       "courses": [
-        "Individual project: \"A Framework for Plenoptic HDR Imaging using Metasurfaces\"",
         "Computer Aided Engineering",
         "Power and Energy",
         "Information and Systems",
@@ -108,21 +123,11 @@
         "Digital Signal Processing",
         "Instrumentation and Measurement",
         "Advanced AC Drives",
-        "HDL for Programmable Devices",
-        "Group Projects: Autonomous RC Car (incl line following), SMPS design and creation, Doppler radar gun, Car telemetry system- full stack JavaScript web-application created"
+        "HDL for Programmable Devices"
       ]
     }
   ],
-  "awards": [
-    {
-      "title": "Peter John's Award for Outstanding Final Year Student",
-      "awarder": "The University of Nottingham"
-    },
-    {
-      "title": "Michael Bromwich Award for the Two Highest Achieving Home Students",
-      "awarder": "The University of Nottingham"
-    }
-  ],
+  "awards": [],
   "certificates": [],
   "publications": [],
   "skills": [
