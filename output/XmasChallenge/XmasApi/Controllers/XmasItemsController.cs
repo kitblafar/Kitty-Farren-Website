@@ -85,16 +85,24 @@ namespace XmasApi.Controllers
 
             await _context.SaveChangesAsync();
 
-            var filePath = Directory.GetCurrentDirectory()+ "\\Photos\\" +xmasItem.Name+"\\";
+            var filePath = Path.Combine(Directory.GetCurrentDirectory(), "Photos", xmasItem.Name);
 
             bool exists = Directory.Exists(filePath);
 
+            Console.WriteLine("FILE");
+
+            Console.WriteLine(filePath);
+
             if (!exists)
                 Directory.CreateDirectory(filePath);
+            
+            var itemFilePath = Path.Combine(filePath,xmasItem.Challenge.ToString())+Path.GetExtension(xmasItem.File.FileName);
+
+            Console.WriteLine(itemFilePath);
 
             if (xmasItem.File.Length > 0)
             {
-                using (var stream = System.IO.File.Create(filePath + xmasItem.Challenge + Path.GetExtension(xmasItem.File.FileName)))
+                using (var stream = System.IO.File.Create(itemFilePath))
                 {
                     await xmasItem.File.CopyToAsync(stream);
                 }
