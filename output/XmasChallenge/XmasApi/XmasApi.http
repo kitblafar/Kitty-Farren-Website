@@ -1,0 +1,6 @@
+@XmasApi_HostAddress = http://localhost:5223
+
+GET {{XmasApi_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
