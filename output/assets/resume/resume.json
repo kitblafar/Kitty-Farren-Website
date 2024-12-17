@@ -7,7 +7,7 @@
     "email": "farren.kitty@gmail.com",
     "website": "https://kittyfarren.dev",
     "phone": "07538096370",
-    "summary": "Development engineer with a master’s degree in electrical and electronics engineering, working in industrial automation. Currently working on creating a power electronic fault detection system for AC drives including software; firmware and electronics development. Working towards chartership as an Electronics and Electrical Engineer. Skilled in software development, embedded development and power electronic design.",
+    "summary": "Development engineer with a master’s degree in electrical and electronics engineering currently working in internal tool development for an industrial automation company but looking to move into a software development role. Developing for the past year, a power electronic thermal model generation system for AC drives including an MVVM C# .NET application; SQL database (SQL Server) and electronics and firmware for custom panel.",
     "location": {
       "address": "UK"
     },
@@ -30,9 +30,9 @@
       "position": "Development Engineer",
       "startDate": "2024-10-01",
       "highlights": [
+        "Wrote a C# .NET program for processing large amounts of IGBT thermal data into a VFD thermal model including WPF UI and SQL server database.",
         "Supported a junior engineer in carrying out thermal testing.",
-        "Constructed a panel for automated IGBT thermal data collection including a custom PCB, embedded solution and 3D models.",
-        "Wrote a C# program for processing large amounts of IGBT thermal data into a VFD thermal model including custom UI."
+        "Constructed a panel for automated IGBT thermal data collection including a custom PCB, Arduino solution and 3D models."
       ],
       "summary": "Developed a new thermal model generation process.",
       "url": "https://www.linkedin.com/company/28614292",
@@ -44,9 +44,9 @@
       "startDate": "2022-07-31",
       "endDate": "2024-07-31",
       "highlights": [
-        "Power electronics: Created an upgraded IGBT thermal testing device; wrote new python tools for digital twin development and researched novel current sensing technology for next gen drives; conducted emission EMC testing; underwent production quality soldering training.",
-        "ECAD: Completed a lay out of a family of boards (FOB); set up an internal KiCAD workflow; created a manufacturing board to test DFM processes and aided the India team in creating layouts and schematics.",
-        "Tech Support: Answered customer tickets; solved VFD field failures; created recruitment resources; produced a Python data processing tool and wrote a specification for a set of Android setup wizards.",
+        "Power electronics: Wrote Python and VBA tools for automated power electronics simulation and data processing; Created an upgraded IGBT thermal testing device; wrote a more efficient C# algorithm for processing thermal data that reduced run time by 8 hours and researched novel current sensing technology for next gen drives.",
+        "ECAD: Completed a lay out of a family of boards (FOB); demonstrated company use of distributed version control on DevOps for PCB designs; set up an internal KiCAD workflow; created a manufacturing board to test DFM processes and aided the India team in creating layouts and schematics.",
+        "Tech Support: produced a Python data processing tool with Qt framework UI; wrote a specification for a set of Android setup wizards using Figma; answered customer tickets; solved VFD field failures.",
         "Attended ECPE courses for EMC in Power Electronics and Condition and Health Monitoring in Power Electronics."
       ],
       "summary": "This role included rotations in the Power Electronics, ECAD and Tech Support departments to broaden my engineering skill set",
@@ -58,10 +58,11 @@
       "position": "E3 Student Engineer",
       "startDate": "2019-07-31",
       "endDate": "2022-07-31",
-      "highlights": ["Created prototype control boards and conducted EMC efficiency testing using SIMetrix for circuit design.",
-      "Reviewed strings in drives to improve customer experience.",
-      "Specified and produced a suite of software tests for elevator drives written in Structured Text on a PLC."
-    ],
+      "highlights": [
+        "Created prototype control boards and conducted EMC efficiency testing using SIMetrix for circuit design.",
+        "Reviewed strings in drives to improve customer experience.",
+        "Specified and produced a suite of automated tests for elevator drives written in Structured Text on a PLC."
+      ],
       "summary": "Summer placements in the Electronics (2019), Tech Support (2020) and Embedded Elevator (2021) teams as part of the E3 Academy scholarship scheme.",
       "url": "https://www.e3academy.org/",
       "location": "Powys"
@@ -79,7 +80,7 @@
         "Manage and running workshops to give students hands-on experience and making links to real-world applications.",
         "Develop interactive demonstrations of software writing, electronics and control systems.",
         "Give presentations and Q&A sessions to help demystify STEM.",
-        "Demonstrate presentation skills explaining technical information to a non-technical audience."
+        "Developed presentation skills explaining technical information to a non-technical audience."
       ]
     },
     {
@@ -104,26 +105,33 @@
       "endDate": "2022-12-31",
       "score": "1st Class Hons. IET Accredited.",
       "individualProject": "A Framework for Plenoptic HDR Imaging using Metasurfaces",
-      "groupProjects": ["Autonomous line following and RC Car", "SMPS design and creation", "Doppler radar gun", "Car telemetry system including full stack JavaScript web application"],
-      "awards": ["Peter John's Award for an Outstanding Final Year Student",
-      "Michael Bromwich Award for the Two Highest Achieving Home Students"],
+      "groupProjects": [
+        "Car telemetry system including JavaScript web application to plot streamed and saved data",
+        "Autonomous line following and RC Car using C++ OpenCV on Raspberry Pi",
+        "SMPS design and creation",
+        "Doppler radar gun"
+      ],
+      "awards": [
+        "Peter John's Award for an Outstanding Final Year Student",
+        "Michael Bromwich Award for the Two Highest Achieving Home Students"
+      ],
       "courses": [
         "Computer Aided Engineering",
-        "Power and Energy",
         "Information and Systems",
         "Electronic Processing and Communication",
+        "Modelling Methods and Tools",
+        "HDL for Programmable Devices",
+        "IT infrastructure and cybersecurity",
+        "Digital Signal Processing",
+        "Sensing Systems",
+        "Instrumentation and Measurement",
+        "Power and Energy",
         "Electrical Energy Conditioning and Control",
         "Contemporary Engineering Themes",
-        "Modelling Methods and Tools",
         "Electrical Machines, Drive Systems and Applications",
-        "IT infrastructure and cybersecurity",
         "Analogue Electronics",
-        "Sensing Systems",
         "Professional Studies",
-        "Digital Signal Processing",
-        "Instrumentation and Measurement",
-        "Advanced AC Drives",
-        "HDL for Programmable Devices"
+        "Advanced AC Drives"
       ]
     }
   ],
@@ -132,10 +140,50 @@
   "publications": [],
   "skills": [
     {
+      "name": "Software Development",
+      "level": "",
+      "keywords": [
+        "Python",
+        "C#",
+        "Databases/ SQL",
+        "JavaScript",
+        "VBA",
+        "Git"
+      ]
+    },
+    {
+      "name": "Frameworks",
+      "level": "",
+      "keywords": [
+        "Vue.js",
+        "ASP.NET",
+        "WPF",
+        "Bulma",
+        "WinForms",
+        ".NET Framework",
+        ".NET Core",
+        "Qt",
+        "Tkinter"
+      ]
+    },
+    {
+      "name": "Embedded Development",
+      "level": "",
+      "keywords": [
+        "C++",
+        "C",
+        "Arduino",
+        "Automated Testing",
+        "Digital Signal Processing"
+      ]
+    },
+    {
       "name": "Electrical and Electronics Engineering",
       "keywords": [
         "Thermal Modelling",
         "VHDL",
+        "PCB and ECAD",
+        "Circuit Simulation",
         "EMC Design and Testing",
         "Power Electronic Design",
         "Digital and Analogue Electronic Design"
@@ -164,46 +212,17 @@
       ]
     },
     {
-      "name": "Software Development",
-      "level": "",
-      "keywords": [
-        "Python",
-        "C",
-        "C++",
-        "C#",
-        "VBA",
-        "Databases/ SQL",
-        "JavaScript"
-      ]
-    },
-    {
-      "name": "UI Frameworks",
-      "level": "",
-      "keywords": [
-        "Vue.js",
-        "WPF",
-        "WinForms",
-        "Qt",
-        "PyQt"
-      ]
-    },
-    {
-      "name": "Embedded Development",
-      "level": "",
-      "keywords": [
-        "C",
-        "Automated Testing",
-        "Digital Signal Processing"
-      ]
-    },
-    {
       "name": "Written Communication and Documentation",
       "level": "",
       "keywords": [
+        "GitHub",
+        "DevOps",
+        "TFS",
         "Microsoft 365",
         "LaTex",
         "Markup",
-        "HTML"
+        "HTML",
+        "CSS"
       ]
     }
   ],
@@ -243,23 +262,34 @@
   "references": [
     {
       "name": "Lead Power Electronics Engineer: Ed Peate",
-      "reference": "Company: Nidec Drives, Email: ed.peate@mail.nidec.com"
-    },
-    {
-      "name": "Director of Control Systems: Mike Cade",
-      "reference": "Company: Nidec Drives, Email: mike.cade@mail.nidec.com"
+      "reference": "Company: Nidec Drives, Email: available on request"
     }
   ],
   "projects": [
     {
       "name": "Personal Website",
       "url": "https://kittyfarren.dev",
-      "description": "A static website for writing up personal projects"
+      "description": "A static website for writing up personal projects written in vanilla html and css (apart from the confetti)."
+    },
+    {
+      "name": "Xmas Photo Game",
+      "url": "https://github.com/kitblafar/Xmas-Photo-Challenge",
+      "description": "An game were the player tries to get photos of themselves doing certain challenges. A full-stack web-application with REST ASP.NET MVC API, Vue.js frontend and SQLliteDB. The API runs using Docker on my website server."
     },
     {
       "name": "Bluetooth Earrings",
       "url": "https://kittyfarren.dev/projects/BLEEarrings.html",
-      "description": "A set of Bluetooth earrings that blink different colours dependent on Bluetooth messages. Still in development."
+      "description": "A set of Bluetooth earrings that blink different colours dependent on BLE messages using NRF52833, custom PCB and enclosure. Still in development, also available on my GitHub."
+    },
+    {
+      "name": "Meta-surfaces for HDR, Plenoptic Imaging",
+      "url": "https://github.com/kitblafar/Meta-Surfaces-Project",
+      "description": "My dissertation project on designing metasurfaces for plenoptic, HDR imaging. Includes MATLAB generation program, from CST simulation results and Python image reconstruction program."
+    },
+    {
+      "name": "Road Range",
+      "url": "https://github.com/kitblafar/Road-Range",
+      "description": "A web-app to stream car telemetry data to the browser. Node.js backend with Vue.js frontend."
     }
   ]
 }
