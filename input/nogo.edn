@@ -23,7 +23,7 @@
                       :footer "footer.html"
                       :style "style.css"
                       :pages [{:title "BLE Earrings"
-                               :date "2024-08-28"
+                               :date "2024-12-27"
                                :file "BLEEarrings.html"
                                :summary
                                "Bladerunner inspired BLE Earrings"}
