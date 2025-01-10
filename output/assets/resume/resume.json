@@ -108,7 +108,7 @@
       "groupProjects": [
         "Car telemetry: JavaScript web application in Vue with Node backend to plot, stream and save car data",
         "Autonomous line following and RC Car using C++ and OpenCV on embedded Linux (Raspberry Pi)",
-        "Doppler radar gun using STM32Cube to develop a C to turn analogue wave input into binary encoded decimal output",
+        "Doppler radar gun using STM32Cube to develop a C program to turn analogue wave input into a binary encoded decimal output",
         "Buck-Boost SMPS design and creation"
       ],
       "awards": [
