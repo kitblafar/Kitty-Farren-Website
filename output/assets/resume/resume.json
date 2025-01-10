@@ -7,7 +7,7 @@
     "email": "farren.kitty@gmail.com",
     "website": "https://kittyfarren.dev",
     "phone": "07538096370",
-    "summary": "Development engineer with a master’s degree in electrical and electronics engineering currently working in internal tool development for an industrial automation company but looking to move into a software development role. Developing for the past year, a power electronic thermal model generation system for AC drives including an MVVM C# .NET application; SQL database (SQL Server) and electronics and firmware for custom panel.",
+    "summary": "Development engineer with a 1st class master’s degree in electrical and electronics engineering. Currently working in internal tool development for an industrial automation company but looking to move into a software development role. For the past year, have been developing a power electronic thermal model generation system for AC drives including an MVVM C# .NET application; SQL database (Microsoft SQL Server) and electronics. Skilled in full-stack development, .NET and Python tooling.",
     "location": {
       "address": "UK"
     },
@@ -30,9 +30,10 @@
       "position": "Development Engineer",
       "startDate": "2024-10-01",
       "highlights": [
-        "Wrote a C# .NET program for processing large amounts of IGBT thermal data into a VFD thermal model including WPF UI and SQL server database.",
-        "Supported a junior engineer in carrying out thermal testing.",
-        "Constructed a panel for automated IGBT thermal data collection including a custom PCB, Arduino solution and 3D models."
+        "Wrote a C# .NET program for processing large amounts of IGBT thermal data into a VFD thermal model including ML algorithm, WPF UI and SQL server database.",
+        "Constructed a panel for automated IGBT thermal data collection including a custom PCB, embedded C++ solution and 3D models.",
+        "Supported a junior engineer in using the developed program and test procedure",
+        "Practiced test driven development for data processing tasks by writing equivalent verbose functions in Python to test the C# equivalent with."
       ],
       "summary": "Developed a new thermal model generation process.",
       "url": "https://www.linkedin.com/company/28614292",
@@ -44,10 +45,9 @@
       "startDate": "2022-07-31",
       "endDate": "2024-07-31",
       "highlights": [
-        "Power electronics: Wrote Python and VBA tools for automated power electronics simulation and data processing; Created an upgraded IGBT thermal testing device; wrote a more efficient C# algorithm for processing thermal data that reduced run time by 8 hours and researched novel current sensing technology for next gen drives.",
-        "ECAD: Completed a lay out of a family of boards (FOB); demonstrated company use of distributed version control on DevOps for PCB designs; set up an internal KiCAD workflow; created a manufacturing board to test DFM processes and aided the India team in creating layouts and schematics.",
-        "Tech Support: produced a Python data processing tool with Qt framework UI; wrote a specification for a set of Android setup wizards using Figma; answered customer tickets; solved VFD field failures.",
-        "Attended ECPE courses for EMC in Power Electronics and Condition and Health Monitoring in Power Electronics."
+        "Power electronics: Developed a suite of .NET programs to control a test panel and the process the data collected; wrote a more efficient C# algorithm for processing thermal data that reduced test run time by 8 hours; Designed Python and VBA tools for automated power electronics simulation and data processing; researched novel current sensing technology for next gen drives.",
+        "ECAD: Completed a lay out of a family of boards (FOB); demonstrated and presented use of distributed version control using Git on DevOps for PCB designs; set up an internal KiCAD workflow; and aided the India team in creating layouts and schematics.",
+        "Tech Support: Produced a Python web-scraping and data processing tool with Qt framework and Selenium; wrote a specification for a set of Android setup wizards using Figma; answered customer tickets."
       ],
       "summary": "This role included rotations in the Power Electronics, ECAD and Tech Support departments to broaden my engineering skill set",
       "url": "https://www.linkedin.com/company/28614292",
@@ -59,7 +59,7 @@
       "startDate": "2019-07-31",
       "endDate": "2022-07-31",
       "highlights": [
-        "Created prototype control boards and conducted EMC efficiency testing using SIMetrix for circuit design.",
+        "Simulated control circuits in SIMetrix and carried out EMC testing.",
         "Reviewed strings in drives to improve customer experience.",
         "Specified and produced a suite of automated tests for elevator drives written in Structured Text on a PLC."
       ],
@@ -106,10 +106,10 @@
       "score": "1st Class Hons. IET Accredited.",
       "individualProject": "A Framework for Plenoptic HDR Imaging using Metasurfaces",
       "groupProjects": [
-        "Car telemetry system including JavaScript web application to plot streamed and saved data",
-        "Autonomous line following and RC Car using C++ OpenCV on Raspberry Pi",
-        "SMPS design and creation",
-        "Doppler radar gun"
+        "Car telemetry: JavaScript web application in Vue with Node backend to plot, stream and save car data",
+        "Autonomous line following and RC Car using C++ and OpenCV on embedded Linux (Raspberry Pi)",
+        "Doppler radar gun using STM32Cube to develop a C to turn analogue wave input into binary encoded decimal output",
+        "Buck-Boost SMPS design and creation"
       ],
       "awards": [
         "Peter John's Award for an Outstanding Final Year Student",
@@ -145,25 +145,25 @@
       "keywords": [
         "Python",
         "C#",
-        "Databases/ SQL",
-        "JavaScript",
-        "VBA",
-        "Git"
-      ]
-    },
-    {
-      "name": "Frameworks",
-      "level": "",
-      "keywords": [
-        "Vue.js",
-        "ASP.NET",
-        "WPF",
-        "Bulma",
-        "WinForms",
         ".NET Framework",
         ".NET Core",
+        "WPF",
+        "WinForms",
+        "Databases and SQL",
+        "JavaScript",
+        "Vue Framework",
+        "Node",
+        "ASP.NET",
+        "HTML",
+        "CSS",
+        "Bulma Framework",
+        "Linux",
+        "Windows",
         "Qt",
-        "Tkinter"
+        "Tkinter",
+        "VBA",
+        "Docker",
+        "Golang"
       ]
     },
     {
@@ -173,6 +173,7 @@
         "C++",
         "C",
         "Arduino",
+        "Raspberry Pi",
         "Automated Testing",
         "Digital Signal Processing"
       ]
@@ -218,6 +219,8 @@
         "GitHub",
         "DevOps",
         "TFS",
+        "Git",
+        "Figma",
         "Microsoft 365",
         "LaTex",
         "Markup",
@@ -269,27 +272,27 @@
     {
       "name": "Personal Website",
       "url": "https://kittyfarren.dev",
-      "description": "A static website for writing up personal projects written in vanilla html and css (apart from the confetti)."
+      "description": "A static website for writing up personal projects written in vanilla HTMl and CSS (apart from the confetti)."
     },
     {
-      "name": "Xmas Photo Game",
-      "url": "https://github.com/kitblafar/Xmas-Photo-Challenge",
-      "description": "An game were the player tries to get photos of themselves doing certain challenges. A full-stack web-application with REST ASP.NET MVC API, Vue.js frontend and SQLliteDB. The API runs using Docker on my website server."
+      "name": "Photo Game",
+      "url": "https://kittyfarren.dev/Photo-Challenge/",
+      "description": "A game were the player tries to get photos of themselves doing certain challenges. A full-stack web-application with Vue.js frontend, REST ASP.NET MVC API backend and SQLite database. The backed is deployed using Docker on my web server."
     },
     {
       "name": "Bluetooth Earrings",
-      "url": "https://kittyfarren.dev/projects/BLEEarrings.html",
-      "description": "A set of Bluetooth earrings that blink different colours dependent on BLE messages using NRF52833, custom PCB and enclosure. Still in development, also available on my GitHub."
+      "url": "https://github.com/BLEarrings",
+      "description": "A set of earrings that blink different colours over BLE. Includes PCB panel design, NRF52833 embedded solution and MAUI app. The app uses a CI/CD pipeline to auto build the main branch (GitHub actions)."
     },
     {
       "name": "Meta-surfaces for HDR, Plenoptic Imaging",
       "url": "https://github.com/kitblafar/Meta-Surfaces-Project",
-      "description": "My dissertation project on designing metasurfaces for plenoptic, HDR imaging. Includes MATLAB generation program, from CST simulation results and Python image reconstruction program."
+      "description": "My dissertation project on designing metasurfaces for plenoptic, HDR imaging. Includes MATLAB lens generation program, from CST simulation results and Python image reconstruction program using Tkinter."
     },
     {
       "name": "Road Range",
       "url": "https://github.com/kitblafar/Road-Range",
-      "description": "A web-app to stream car telemetry data to the browser. Node.js backend with Vue.js frontend."
+      "description": "A web-app to stream car telemetry data to the browser over WebSocket. Node backend with Vue frontend."
     }
   ]
 }
