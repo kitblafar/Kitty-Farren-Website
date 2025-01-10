@@ -107,9 +107,9 @@
       "individualProject": "A Framework for Plenoptic HDR Imaging using Metasurfaces",
       "groupProjects": [
         "Car telemetry: JavaScript web application in Vue with Node backend to plot, stream and save car data",
-        "Autonomous line following and RC Car using C++ and OpenCV on embedded Linux (Raspberry Pi)",
+        "Autonomous line following and RC Car: C++ and OpenCV on embedded Linux (Raspberry Pi)",
         "Doppler radar speed sensor: embedded C solution on STM32 for real-time signal acquisition, processing, and display",
-        "Buck-Boost SMPS design and creation"
+        "Buck-Boost SMPS: design and creation"
       ],
       "awards": [
         "Peter John's Award for an Outstanding Final Year Student",
