@@ -180,8 +180,8 @@ header {
   margin-bottom: 0.4em;
 }
 
-.logo{
-visibility: hidden;
+.logo {
+  visibility: hidden;
 }
 
 .keyline {
@@ -300,11 +300,11 @@ visibility: hidden;
   flex-wrap: wrap;
 }
 
-.inline{
+.inline {
   display: inline;
 }
 
-.no-top-margin{
+.no-top-margin {
   margin-top: 0px;
 }
 
@@ -322,7 +322,7 @@ visibility: hidden;
   margin-top: 0;
 }
 
-.twocolumns{
+.twocolumns {
   column-count: 2;
 }
 
@@ -411,7 +411,7 @@ section>section:first-of-type {
   body {
     margin: 0;
   }
-  
+
   html {
     border-top: 0px;
   }
@@ -425,35 +425,49 @@ section>section:first-of-type {
     border: none;
   }
 
-  .mainPageContainer{
+  .mainPageContainer {
     width: 100%;
     margin: 0;
     padding: 0;
     height: 100%;
   }
 
-  p{
+  p {
     padding: 0;
-    margin:0;
+    margin: 0;
   }
-  
-  .headerRow{
+
+  .headerRow {
     width: 100%;
   }
 
-  header{
+  header {
     background-color: white;
   }
 
-  .logo{
+  .logo {
     visibility: collapse;
   }
+
+
   section :not(.work) {
     page-break-inside: avoid;
   }
 
-  .volunteer{
+  /* .volunteer{
     page-break-before: always;
+  } */
+
+  .projects {
+    visibility: collapse;
+    margin: 0px;
+    height: 0px;
+  }
+
+  .skills {
+    visibility: collapse;
+    margin: 0px;
+    height: 0px;
   }
 
   .no-print {
@@ -478,7 +492,7 @@ section>section:first-of-type {
     
             <div class="column fill">
                 <h1>Kitty Farren</h1>
-                <h2>Development Engineer at Nidec Drives</h2>
+                <h2>Software Engineer at Atlas Endoscopy</h2>
     
                     <div class="row align-center">
                         <h6 class="large">
@@ -502,7 +516,7 @@ section>section:first-of-type {
                         <h6 class="large">
                             <i class="fa fa-map-marker"></i>
                     
-                                UK    
+                                Manchester, UK    
                         </h6>
                     </div>
         </div>
@@ -589,7 +603,7 @@ section>section:first-of-type {
                 </h2>
                 <div class="keyline"></div>
             </div>            <div class="column">
-                    <p class="summary">Development engineer with a 1st class master’s degree in electrical and electronics engineering. Currently working in internal tool development for an industrial automation company but looking to move into a software development role. For the past year, have been developing a power electronic thermal model generation system for AC drives including an MVVM C# .NET application; SQL database (Microsoft SQL Server) and electronics. Skilled in full-stack development, .NET and Python tooling.</p>
+                    <p class="summary">Software engineer with a 1st class master’s degree in electrical and electronics engineering. Currently working as a software engineer at a medical robotics startup, writing embedded C++ on an FreeRTOS MPSoC and modern C++ on a custom Linux system deployed with Docker. In previous roles has worked with C# .NET; Microsoft SQL Server and electronics including PCB design. Skilled in C++, Docker, embedded architecture, Linux systems, Python and bash scripting and electronics.</p>
                 </div>
         </section>
     <section class="work">
@@ -600,6 +614,69 @@ section>section:first-of-type {
             </h2>
             <div class="keyline"></div>
         </div>        <section class="company">
+              <div class="row wide inherit-height">
+                  <div class="column fill between inherit-height">
+                          <h3 class="bold">
+                                  <a href="https://www.linkedin.com/company/atlas-endoscopy" target="_blank">Atlas Endoscopy</a>
+                          </h3>
+                          <h6>
+                              <i class="fa fa-map-marker"></i>
+                              <span>Leeds</span>
+                          </h6>
+                      
+                  </div>
+                  <div class="column end fit">
+                          <h6>
+                              <i class="fa fa-calendar"></i>
+                              <span>Mar 2025</span>
+                              <span> - Present</span>
+                          </h6>
+            
+                          <h6>
+                              <i class="fa fa-clock-o"></i>
+                              <span>0 yrs 6 mos</span>
+                          </h6>
+            
+                  </div>
+              </div>
+            </section>            
+                <section class="position">
+                  <div class="grid">
+                    <div class="bullet"></div>
+                    <h4 class="bold">Software Engineer</h4>
+                
+                    <div class="line"></div>
+                    <div class="column">
+                      <div class="row end">
+                          <h6 class="space">
+                            <i class="fa fa-calendar"></i>
+                            <span>Mar 2025</span>
+                              <span> - Present</span>
+                          </h6>
+                
+                          <h6>
+                            <i class="fa fa-clock-o"></i>
+                            <span>0 yrs 6 mos</span>
+                          </h6>
+                      </div>
+                
+                          <p>Embedded systems development and high-level user interface design for medical devices</p>
+                
+                      <ul>
+                          <li>Designed and implemented MISRA C++ compliant communications firmware on a Zynq Utrascale+ running FreeRTOS.</li>
+                          <li>Developed an immediate mode user interface in modern C++ using Dear ImGui to run on Nvidia Jetson.</li>
+                          <li>As a proof of concept, rewrote existing Python PyQt user interface to work with a new robotics system.</li>
+                          <li>Built C++ software to stream high-frame-rate video from a Blackmagic capture card in an Nvidia Jetson.</li>
+                          <li>Introduced best practices for version control.</li>
+                          <li>Created a build process for a modified Linux image based on Jetson Linux.</li>
+                          <li>Deployed containerised software on an Nvidia Jetson using Docker and Docker Compose.</li>
+                          <li>Produced documentation in compliance with IEC 62304 (software development process for medical devices) and IEC 60601 (basic electrical safety and essential performance requirements for medical devices).</li>
+                          <li>Implemented unit testing with Unity for embedded code and GTest for software running on the NVIDIA Jetson.</li>
+                      </ul>
+                    </div>
+                  </div>
+                </section>
+            <section class="company">
               <div class="row wide inherit-height">
                   <div class="column fill between inherit-height">
                           <h3 class="bold">
@@ -615,12 +692,12 @@ section>section:first-of-type {
                           <h6>
                               <i class="fa fa-calendar"></i>
                               <span>Jul 2019</span>
-                              <span> - Present</span>
+                              <span> - Mar 2025</span>
                           </h6>
             
                           <h6>
                               <i class="fa fa-clock-o"></i>
-                              <span>5 yrs 6 mos</span>
+                              <span>5 yrs 8 mos</span>
                           </h6>
             
                   </div>
@@ -637,12 +714,12 @@ section>section:first-of-type {
                           <h6 class="space">
                             <i class="fa fa-calendar"></i>
                             <span>Oct 2024</span>
-                              <span> - Present</span>
+                              <span> - Mar 2025</span>
                           </h6>
                 
                           <h6>
                             <i class="fa fa-clock-o"></i>
-                            <span>0 yrs 3 mos</span>
+                            <span>0 yrs 5 mos</span>
                           </h6>
                       </div>
                 
@@ -652,7 +729,6 @@ section>section:first-of-type {
                           <li>Wrote a C# .NET program for processing large amounts of IGBT thermal data into a VFD thermal model including ML algorithm, WPF UI and SQL server database.</li>
                           <li>Constructed a panel for automated IGBT thermal data collection including a custom PCB, embedded C++ solution and 3D models.</li>
                           <li>Supported a junior engineer in using the developed program and test procedure</li>
-                          <li>Practiced test driven development (TDD) for data processing tasks by writing Python test data generation functions before the final C# program.</li>
                       </ul>
                     </div>
                   </div>
@@ -681,7 +757,7 @@ section>section:first-of-type {
                           <p>This role included rotations in the Power Electronics, ECAD and Tech Support departments to broaden my engineering skill set</p>
                 
                       <ul>
-                          <li>Power electronics: Developed a suite of .NET programs to control a test panel and the process the data collected; wrote a more efficient C# algorithm for processing thermal data that reduced test run time by 8 hours; Designed Python and VBA tools for automated power electronics simulation and data processing; researched novel current sensing technology for next gen drives.</li>
+                          <li>Power electronics: Developed a suite of .NET programs to control a test panel and process the data collected; wrote a more efficient C# algorithm for processing thermal data that reduced run time by 8 hours; Refactored and further developed existing VBA tools for power electronic simulation and data processing; researched novel current sensing technology; Wrote documentation to comply with IEC 61800 (standard for Adjustable Speed Electrical Drive Systems)</li>
                           <li>ECAD: Completed a lay out of a family of boards (FOB); demonstrated and presented use of distributed version control using Git on DevOps for PCB designs; set up an internal KiCAD workflow; and aided the India team in creating layouts and schematics.</li>
                           <li>Tech Support: Produced a Python web-scraping and data processing tool with Qt framework and Selenium; wrote a specification for a set of Android setup wizards using Figma; answered customer tickets.</li>
                       </ul>
@@ -713,8 +789,7 @@ section>section:first-of-type {
                 
                       <ul>
                           <li>Simulated control circuits in SIMetrix and carried out EMC testing.</li>
-                          <li>Reviewed strings in drives to improve customer experience.</li>
-                          <li>Specified and produced a suite of automated tests for elevator drives written in Structured Text on a PLC.</li>
+                          <li>Specified and produced a suite of automated tests for elevator drives written in IEC 61131-3 Structured Text on a PLC.</li>
                       </ul>
                     </div>
                   </div>
@@ -834,7 +909,7 @@ section>section:first-of-type {
         
                   <h6>
                     <i class="fa fa-clock-o"></i>
-                    <span>3 yrs 3 mos</span>
+                    <span>3 yrs 11 mos</span>
                   </h6>
               </div>
         
@@ -846,42 +921,6 @@ section>section:first-of-type {
                   <li>Develop interactive demonstrations of software writing, electronics and control systems.</li>
                   <li>Give presentations and Q&amp;A sessions to help demystify STEM.</li>
                   <li>Developed presentation skills explaining technical information to a non-technical audience.</li>
-              </ul>
-            </div>
-          </div>
-        </section>
-        <p></p>
-        <h3>
-        <a href="https://www.wes.org.uk/" target="_blank">Women in Engineering Society (WES)</a>
-        </h3>
-        <p></p>
-        
-        <section class="position">
-          <div class="grid">
-            <div class="bullet"></div>
-            <h4 class="bold">Member (MWES)</h4>
-        
-            <div class="line"></div>
-            <div class="column">
-              <div class="row end">
-                  <h6 class="space">
-                    <i class="fa fa-calendar"></i>
-                    <span>Jan 2022</span>
-                      <span> - Present</span>
-                  </h6>
-        
-                  <h6>
-                    <i class="fa fa-clock-o"></i>
-                    <span>3 yrs 0 mos</span>
-                  </h6>
-              </div>
-        
-                  <p>This is a group to support and increase the visibility of women in engineering.</p>
-        
-              <ul>
-                  <li>Organised company engagement with the &quot;Lottie Tour&quot; for Tomorrow&#x27;s Engineers Week 2023 to show different sectors of engineering to young women.</li>
-                  <li>Founded the Women in Engineering group at Nidec Drives which now includes all women in STEM roles at Nidec Drives.</li>
-                  <li>Took part in Women in Tech promotional events including chairing a Women in Engineering round-table video and attending International Women&#x27;s Day events.</li>
               </ul>
             </div>
           </div>
@@ -903,26 +942,20 @@ section>section:first-of-type {
                         <div class="column">
                             <div class="row wrap">
                                 <h6 class="chip">Python</h6>
+                                <h6 class="chip">C++</h6>
                                 <h6 class="chip">C#</h6>
-                                <h6 class="chip">.NET Framework</h6>
-                                <h6 class="chip">.NET Core</h6>
-                                <h6 class="chip">WPF</h6>
-                                <h6 class="chip">WinForms</h6>
+                                <h6 class="chip">.NET</h6>
                                 <h6 class="chip">Databases and SQL</h6>
                                 <h6 class="chip">JavaScript</h6>
                                 <h6 class="chip">Vue Framework</h6>
                                 <h6 class="chip">Node</h6>
                                 <h6 class="chip">ASP.NET</h6>
-                                <h6 class="chip">HTML</h6>
-                                <h6 class="chip">CSS</h6>
-                                <h6 class="chip">Bulma Framework</h6>
                                 <h6 class="chip">Linux</h6>
                                 <h6 class="chip">Windows</h6>
                                 <h6 class="chip">Qt</h6>
                                 <h6 class="chip">Tkinter</h6>
-                                <h6 class="chip">VBA</h6>
                                 <h6 class="chip">Docker</h6>
-                                <h6 class="chip">Golang</h6>
+                                <h6 class="chip">Docker Compose</h6>
                             </div>  
                         </div>
                     <div class="column fit">
@@ -932,10 +965,10 @@ section>section:first-of-type {
                             <div class="row wrap">
                                 <h6 class="chip">C++</h6>
                                 <h6 class="chip">C</h6>
+                                <h6 class="chip">FreeRTOS</h6>
+                                <h6 class="chip">Jetson</h6>
                                 <h6 class="chip">Arduino</h6>
                                 <h6 class="chip">Raspberry Pi</h6>
-                                <h6 class="chip">Automated Testing</h6>
-                                <h6 class="chip">Digital Signal Processing</h6>
                             </div>  
                         </div>
                     <div class="column fit">
@@ -1005,7 +1038,12 @@ section>section:first-of-type {
             </h2>
             <div class="keyline"></div>
         </div>
-        <div>
+        <div class="grid threecolumns">
+    
+                <div class="column fit start">
+                <div class="line"></div>
+                </div>
+    
                 <div class="column">
     
     
@@ -1022,6 +1060,11 @@ section>section:first-of-type {
                     <p>A static website for writing up personal projects written in vanilla HTMl and CSS (apart from the confetti).</p>
     
                 </div>
+    
+                <div class="column fit start">
+                <div class="line"></div>
+                </div>
+    
                 <div class="column">
     
     
@@ -1038,6 +1081,11 @@ section>section:first-of-type {
                     <p>A game were the player tries to get photos of themselves doing certain challenges. A full-stack web-application with Vue.js frontend, REST ASP.NET MVC API backend and SQLite database. The backed is deployed using Docker on my web server.</p>
     
                 </div>
+    
+                <div class="column fit start">
+                <div class="line"></div>
+                </div>
+    
                 <div class="column">
     
     
@@ -1054,6 +1102,11 @@ section>section:first-of-type {
                     <p>A set of earrings that blink different colours over BLE. Includes PCB panel design, NRF52833 embedded solution and MAUI app. The app uses a CI/CD pipeline to auto build the main branch (GitHub actions).</p>
     
                 </div>
+    
+                <div class="column fit start">
+                <div class="line"></div>
+                </div>
+    
                 <div class="column">
     
     
@@ -1070,6 +1123,11 @@ section>section:first-of-type {
                     <p>My dissertation project on designing metasurfaces for plenoptic, HDR imaging. Includes MATLAB lens generation program, from CST simulation results and Python image reconstruction program using Tkinter.</p>
     
                 </div>
+    
+                <div class="column fit start">
+                <div class="line"></div>
+                </div>
+    
                 <div class="column">
     
     
@@ -1142,11 +1200,22 @@ section>section:first-of-type {
                 <div class="line"></div>
             </div>
             <div class="column ">
+                <h4 class="bold capitalizess">Lead Software Engineer: James Martin</h4>
+            </div>
+        </div>
+        <p>
+            Company: Atlas Endoscopy
+        </p>
+        <div class="grid">
+            <div class="column fit">
+                <div class="line"></div>
+            </div>
+            <div class="column ">
                 <h4 class="bold capitalizess">Lead Power Electronics Engineer: Ed Peate</h4>
             </div>
         </div>
         <p>
-            Company: Nidec Drives, Email: available on request
+            Company: Nidec Drives
         </p>
     </section>
     </div>

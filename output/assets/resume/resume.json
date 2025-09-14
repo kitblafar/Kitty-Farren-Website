@@ -2,14 +2,14 @@
   "$schema": "https://raw.githubusercontent.com/jsonresume/resume-schema/v1.0.0/schema.json",
   "basics": {
     "name": "Kitty Farren",
-    "label": "Development Engineer at Nidec Drives",
+    "label": "Software Engineer at Atlas Endoscopy",
     "image": "me.png",
     "email": "farren.kitty@gmail.com",
     "website": "https://kittyfarren.dev",
     "phone": "07538096370",
-    "summary": "Development engineer with a 1st class master’s degree in electrical and electronics engineering. Currently working in internal tool development for an industrial automation company but looking to move into a software development role. For the past year, have been developing a power electronic thermal model generation system for AC drives including an MVVM C# .NET application; SQL database (Microsoft SQL Server) and electronics. Skilled in full-stack development, .NET and Python tooling.",
+    "summary": "Software engineer with a 1st class master’s degree in electrical and electronics engineering. Currently working as a software engineer at a medical robotics startup, writing embedded C++ on an FreeRTOS MPSoC and modern C++ on a custom Linux system deployed with Docker. In previous roles has worked with C# .NET; Microsoft SQL Server and electronics including PCB design. Skilled in C++, Docker, embedded architecture, Linux systems, Python and bash scripting and electronics.",
     "location": {
-      "address": "UK"
+      "address": "Manchester, UK"
     },
     "profiles": [
       {
@@ -26,14 +26,33 @@
   },
   "work": [
     {
+      "name": "Atlas Endoscopy",
+      "position": "Software Engineer",
+      "startDate": "2025-03-10",
+      "highlights": [
+        "Designed and implemented MISRA C++ compliant communications firmware on a Zynq Utrascale+ running FreeRTOS.",
+        "Developed an immediate mode user interface in modern C++ using Dear ImGui to run on Nvidia Jetson.",
+        "As a proof of concept, rewrote existing Python PyQt user interface to work with a new robotics system.",
+        "Built C++ software to stream high-frame-rate video from a Blackmagic capture card in an Nvidia Jetson.",
+        "Introduced best practices for version control.",
+        "Created a build process for a modified Linux image based on Jetson Linux.",
+        "Deployed containerised software on an Nvidia Jetson using Docker and Docker Compose.",
+        "Produced documentation in compliance with IEC 62304 (software development process for medical devices) and IEC 60601 (basic electrical safety and essential performance requirements for medical devices).",
+        "Implemented unit testing with Unity for embedded code and GTest for software running on the NVIDIA Jetson."
+      ],
+      "summary": "Embedded systems development and high-level user interface design for medical devices",
+      "url": "https://www.linkedin.com/company/atlas-endoscopy",
+      "location": "Leeds"
+    },
+    {
       "name": "Nidec Drives (prev Control Techniques)",
       "position": "Development Engineer",
       "startDate": "2024-10-01",
+      "endDate": "2025-03-28",
       "highlights": [
         "Wrote a C# .NET program for processing large amounts of IGBT thermal data into a VFD thermal model including ML algorithm, WPF UI and SQL server database.",
         "Constructed a panel for automated IGBT thermal data collection including a custom PCB, embedded C++ solution and 3D models.",
-        "Supported a junior engineer in using the developed program and test procedure",
-        "Practiced test driven development for data processing tasks by writing equivalent verbose functions in Python to test the C# equivalent with."
+        "Supported a junior engineer in using the developed program and test procedure"
       ],
       "summary": "Developed a new thermal model generation process.",
       "url": "https://www.linkedin.com/company/28614292",
@@ -45,7 +64,7 @@
       "startDate": "2022-07-31",
       "endDate": "2024-07-31",
       "highlights": [
-        "Power electronics: Developed a suite of .NET programs to control a test panel and the process the data collected; wrote a more efficient C# algorithm for processing thermal data that reduced test run time by 8 hours; Designed Python and VBA tools for automated power electronics simulation and data processing; researched novel current sensing technology for next gen drives.",
+        "Power electronics: Developed a suite of .NET programs to control a test panel and process the data collected; wrote a more efficient C# algorithm for processing thermal data that reduced run time by 8 hours; Refactored and further developed existing VBA tools for power electronic simulation and data processing; researched novel current sensing technology; Wrote documentation to comply with IEC 61800 (standard for Adjustable Speed Electrical Drive Systems)",
         "ECAD: Completed a lay out of a family of boards (FOB); demonstrated and presented use of distributed version control using Git on DevOps for PCB designs; set up an internal KiCAD workflow; and aided the India team in creating layouts and schematics.",
         "Tech Support: Produced a Python web-scraping and data processing tool with Qt framework and Selenium; wrote a specification for a set of Android setup wizards using Figma; answered customer tickets."
       ],
@@ -60,8 +79,7 @@
       "endDate": "2022-07-31",
       "highlights": [
         "Simulated control circuits in SIMetrix and carried out EMC testing.",
-        "Reviewed strings in drives to improve customer experience.",
-        "Specified and produced a suite of automated tests for elevator drives written in Structured Text on a PLC."
+        "Specified and produced a suite of automated tests for elevator drives written in IEC 61131-3 Structured Text on a PLC."
       ],
       "summary": "Summer placements in the Electronics (2019), Tech Support (2020) and Embedded Elevator (2021) teams as part of the E3 Academy scholarship scheme.",
       "url": "https://www.e3academy.org/",
@@ -81,18 +99,6 @@
         "Develop interactive demonstrations of software writing, electronics and control systems.",
         "Give presentations and Q&A sessions to help demystify STEM.",
         "Developed presentation skills explaining technical information to a non-technical audience."
-      ]
-    },
-    {
-      "organization": "Women in Engineering Society (WES)",
-      "position": "Member (MWES)",
-      "startDate": "2022-01-01",
-      "url": "https://www.wes.org.uk/",
-      "summary": "This is a group to support and increase the visibility of women in engineering.",
-      "highlights": [
-        "Organised company engagement with the \"Lottie Tour\" for Tomorrow's Engineers Week 2023 to show different sectors of engineering to young women.",
-        "Founded the Women in Engineering group at Nidec Drives which now includes all women in STEM roles at Nidec Drives.",
-        "Took part in Women in Tech promotional events including chairing a Women in Engineering round-table video and attending International Women's Day events."
       ]
     }
   ],
@@ -144,26 +150,20 @@
       "level": "",
       "keywords": [
         "Python",
+        "C++",
         "C#",
-        ".NET Framework",
-        ".NET Core",
-        "WPF",
-        "WinForms",
+        ".NET",
         "Databases and SQL",
         "JavaScript",
         "Vue Framework",
         "Node",
         "ASP.NET",
-        "HTML",
-        "CSS",
-        "Bulma Framework",
         "Linux",
         "Windows",
         "Qt",
         "Tkinter",
-        "VBA",
         "Docker",
-        "Golang"
+        "Docker Compose"
       ]
     },
     {
@@ -172,10 +172,10 @@
       "keywords": [
         "C++",
         "C",
+        "FreeRTOS",
+        "Jetson",
         "Arduino",
-        "Raspberry Pi",
-        "Automated Testing",
-        "Digital Signal Processing"
+        "Raspberry Pi"
       ]
     },
     {
@@ -264,8 +264,12 @@
   ],
   "references": [
     {
+      "name": "Lead Software Engineer: James Martin",
+      "reference": "Company: Atlas Endoscopy"
+    },
+    {
       "name": "Lead Power Electronics Engineer: Ed Peate",
-      "reference": "Company: Nidec Drives, Email: available on request"
+      "reference": "Company: Nidec Drives"
     }
   ],
   "projects": [
